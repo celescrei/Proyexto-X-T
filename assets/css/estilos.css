@@ -1,0 +1,689 @@
+/* INDEX HTML */
+body {
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: white !important;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: aqua !important;
+}
+
+
+/* main imagen */
+div .background {
+    margin: 0;
+
+}
+
+main div .background {
+    position: static;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.background img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/* div bienvenida */
+.bienvenida {
+    color: black;
+    text-align: left;
+    margin: 10px 40px 10px 40px;
+    background-color: white;
+    padding: 15px;
+    text-align: start;
+}
+
+/* testimonios */
+.containers {
+    background-color: black;
+    padding: 20px;
+}
+
+.titulo {
+    text-align: center;
+    background-color: black;
+    color: aqua;
+    margin: 0;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.testimonio {
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    margin: 10px auto;
+    width: 25%;
+}
+
+.testimonio h2, .testimonio img, .testimonio p {
+    display: block;
+    margin: 10px auto;
+    color: white;
+}
+
+main section {
+    display: flex;
+}
+
+.estrellas {
+    width: 50%;
+    max-width: 100px;
+    height: auto;
+}
+
+
+/* redes sociales */
+.outro {
+    background-color: black;
+    display: grid;
+    }
+
+.isologo {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    max-width: 300px;
+    height: auto;
+    border-bottom: 2px solid aqua;
+}
+
+.ig, .fb, .wpp {
+    width: 50px;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+div .ingreso {
+    color: black;
+    background-color: aqua;
+    border-radius: 5px;
+    height: 50px;
+}
+
+div .registro {
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.outro {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 20px;
+    grid-template-areas:
+        "logo botones"
+        "redes botones"
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.botones {
+    grid-area: botones;
+    display: flex;
+    gap: 10px;
+    justify-self: end;
+}
+
+.botones button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.botones button:hover {
+    background-color: lightblue;
+}
+
+.redes {
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* footer */
+footer {
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    background-color: black;
+    color: white;
+}
+
+
+/* NOSOTROS */
+.sobrenosotros {
+    padding: 15px;
+    margin: 20px;
+}
+
+.nosotros {
+    text-decoration: underline aqua;
+}
+
+.app {
+    display: flex;
+    color: white;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    gap: 30px;
+
+}
+
+.app div {
+    height: 370px;
+    width: 335px;
+    margin: 60px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.celular {
+    margin: 10px;
+    max-width: 450px;
+    height: auto;
+}
+
+.encabezado1, .encabezado2, .x, .y {
+    color: aqua;
+}
+
+.x, .y {
+    margin-top: 100px;
+}
+
+
+/* SERVICIOS HTML */
+.containerservice {
+    width: 100%;
+    display: flex;
+    background-color: black;
+}
+
+figure {
+    margin: 20px;
+}
+
+.card {
+    width: 450px;
+    margin: auto;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 240, 255, 4);
+}
+
+.card img {
+    width: 405px;
+    height: 300px;
+}
+
+.card .contenido {
+    padding-bottom: 15px;
+    text-align:center;
+}
+
+.card .contenido nav {
+    line-height: 1.5;
+    color: black;
+    margin: 15px;
+}
+
+.card .contenido h2 {
+    font-weight: 400px;
+    margin-bottom: 10px;
+}
+
+.card .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid aqua;
+    border-radius: 4px;
+    background-color: aqua;
+    color: black;
+}
+
+.card .contenido a:hover {
+    background-color: black;
+    color: aqua;
+}
+
+/* carrusel */
+section .carruselfl {
+    margin-top: 40px;
+    background-color: black;
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.carousel-slide {
+    position: relative;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* en casa */
+.virtual {
+    background-color: aqua;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px ;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+}
+
+.titulovirtual {
+    grid-row: 2/3;
+    grid-column: 2/10;
+}
+
+section .p1 {
+    grid-row: 4/5;
+    grid-column: 3/13;
+}
+
+section .p2 {
+    grid-row: 6/8;
+    grid-column: 3/13;
+}
+
+section .encasa  {
+    grid-row: 2/7;
+    grid-column: 17/21;
+    height: 300px;
+}
+
+
+/* EVENTO PRIMAVERA */
+.fotoevento {
+    width: 100%;
+}
+
+.infoevento {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px ;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
+}
+
+.infoevento h1 {
+    grid-column: 3/10;
+    grid-row: 2/3;
+    text-decoration: underline aqua;
+}
+
+.infoevento h2 {
+    grid-column: 3/12;
+    grid-row: 3/4;
+}
+
+.infoevento p {
+    grid-row: 4/6;
+    grid-column: 3/11;
+}
+
+.quehacer {
+    grid-column: 13/17;
+    grid-row: 2/7;
+}
+
+.infoevento h3  {
+    text-decoration: underline aqua;
+}
+
+.extra {
+    grid-column: 17/21;
+    grid-row: 2/7;
+}
+
+
+/* CONTACTO */
+.acordion {
+    margin: 20px;
+}
+
+main .preguntas {
+    text-decoration: underline aqua;
+}
+
+/* info */
+.contacto {
+    background-color: aqua;
+}
+
+.contenidocontact {
+    display: grid;
+    grid-template-columns: repeat(29, 50px);
+    grid-template-rows: repeat(9, 50px);
+}
+
+.contenidocontact h1 {
+    grid-column: 4/8;
+    grid-row: 2/3;
+}
+
+.infocontacto {
+    margin: 10px;
+    grid-column: 5/8;
+    grid-row: 3/6;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.contactofl, .contactovb {
+    display: grid;
+    grid-template-columns: repeat(18, 20px);
+    grid-template-rows: repeat(7, 20px);
+}
+
+.contactofl h5 {
+    grid-column: 1/7;
+}
+
+.direccion {
+    grid-column: 4/18;
+    margin-top: 10px;
+}
+
+.contactovb h5 {
+    grid-column: 1/10;
+}
+
+/* input */
+.form-floating1 {
+    grid-column: 18/22;
+    grid-row: 3/4;
+}
+
+.form-floating2 {
+    grid-column: 22/26;
+    grid-row: 3/4;
+}
+
+.form-floating3 {
+    grid-column: 18/22;
+    grid-row: 4/5;
+}
+
+.form-floating4 {
+    grid-column: 22/26;
+    grid-row: 4/5;
+}
+
+.form-floating5 {
+    grid-column: 18/26;
+    grid-row: 5/6;
+}
+
+.form-floating6 {
+    grid-column: 18/26;
+    grid-row: 6/9;
+}
+
+
+/* MOVILES */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    nav {
+        align-items: center;
+        display: flex;
+        margin: 5px;
+        margin-left: 15px;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .bienvenida {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .testimonio { 
+        width: 90%;
+    }
+
+    .outro {
+        grid-template-areas: 
+            "logo"
+            "redes"
+            "botones";
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .redes {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .redes img {
+        width: 40px;
+    }
+
+    .botones {
+        justify-self: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .botones button{
+        width: 100%;
+    }
+
+    main {
+        padding: 10px;
+    }
+    .app div{
+        min-width: 280px;
+    }
+
+    .celular {
+        width: 350px;
+    }
+
+    /* servicios */
+    .card {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .card .contenido {
+        padding: 10px;
+    }
+
+    .card .contenido a {
+        padding: 8px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carruselfl {
+        max-width: 100%;
+    }
+    
+    .carruselfl img {
+        max-width: 500px;
+    }
+
+
+    /* EVENTO */
+    .eventoprimavera {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fotoevento {
+        width: 100%;
+    }
+
+    .infoevento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        padding: 20px;
+    }
+
+    .infoevento h1, .infoevento h2, .infoevento p, .quehacer, .extra {
+        grid-column: auto;
+        grid-row: auto;
+        width: 100%;
+    }
+}
+
+
+/* TABLETS */
+@media (max-width: 1024px) {
+    .outro {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 15px;
+        display: flex;
+    }
+
+    .isologo {
+        justify-self: center;
+        max-width: 250px;
+    }
+
+    .botones {
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+    }
+
+    .redes {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .app {
+        flex-direction: column;
+    }
+
+    .app div {
+        max-width: 600px;
+    }
+
+    .containerservice {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* EVENTO */
+    .eventoprimavera {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .fotoevento {
+        width: 100%
+    }
+    
+    .infoevento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        padding: 30px;
+    }
+    
+    .infoevento h1,
+    .infoevento h2,
+    .infoevento p,
+    .quehacer,
+    .extra {
+        grid-column: auto;
+        grid-row: auto;
+        width: 90%;
+    }
+}
