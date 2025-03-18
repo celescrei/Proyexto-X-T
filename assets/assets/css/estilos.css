@@ -30,10 +30,10 @@ nav {
     align-items: center;
 }
 
-nav a {
+.tipografia nav a {
     font-weight: 600;
     padding-right: 10px;
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif;
     color: white !important;
     text-decoration: none;
 }
@@ -329,29 +329,30 @@ section .carruselfl {
 .virtual {
     background-color: aqua;
     display: grid;
-    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px ;
-    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-columns: repeat(29, 50px);
+    grid-template-rows: repeat(9, 50px);
+    max-width: 100%;
 }
 
 .titulovirtual {
-    grid-row: 2/3;
-    grid-column: 2/10;
+    grid-row: 3/4;
+    grid-column: 5/13;
 }
 
 section .p1 {
-    grid-row: 4/5;
-    grid-column: 3/13;
+    grid-row: 5/7;
+    grid-column: 6/13;
 }
 
 section .p2 {
-    grid-row: 6/8;
-    grid-column: 3/13;
+    grid-row: 7/9;
+    grid-column: 6/13;
 }
 
 section .encasa  {
-    grid-row: 2/7;
-    grid-column: 17/21;
-    height: 300px;
+    grid-row: 2/8;
+    grid-column: 21/26;
+    height: 350px;
 }
 
 
@@ -362,29 +363,30 @@ section .encasa  {
 
 .infoevento {
     display: grid;
-    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px ;
-    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-columns: repeat(29, 50px);
+    grid-template-rows: repeat(7, 50px);
+    max-width: 100%;
 }
 
 .infoevento h1 {
-    grid-column: 3/10;
     grid-row: 2/3;
+    grid-column: 6/12;
     text-decoration: underline aqua;
 }
 
 .infoevento h2 {
-    grid-column: 3/12;
     grid-row: 3/4;
+    grid-column: 6/15;
 }
 
 .infoevento p {
-    grid-row: 4/6;
-    grid-column: 3/11;
+    grid-row: 5/7;
+    grid-column: 6/14;
 }
 
 .quehacer {
-    grid-column: 13/17;
     grid-row: 2/7;
+    grid-column: 17/21;
 }
 
 .infoevento h3  {
@@ -392,8 +394,8 @@ section .encasa  {
 }
 
 .extra {
-    grid-column: 17/21;
     grid-row: 2/7;
+    grid-column: 22/26;
 }
 
 
