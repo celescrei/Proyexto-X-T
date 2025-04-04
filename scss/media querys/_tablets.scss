@@ -1,0 +1,100 @@
+/* TABLETS */
+@media (max-width: 1024px) {
+    .outro {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 15px;
+        display: flex;
+    }
+
+    .isologo {
+        justify-self: center;
+        max-width: 250px;
+    }
+
+    .botones {
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+    }
+
+    .redes {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .app {
+        flex-direction: column;
+    }
+
+    .app div {
+        max-width: 600px;
+    }
+
+    .containerservice {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* EVENTO */
+    .eventoprimavera {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .fotoevento {
+        width: 100%
+    }
+    
+    .infoevento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        padding: 30px;
+    }
+    
+    .infoevento h1,
+    .infoevento h2,
+    .infoevento p,
+    .quehacer,
+    .extra {
+        grid-column: auto;
+        grid-row: auto;
+        width: 90%;
+    }
+
+    /* CONTACTO */
+    .contenidocontact {
+        grid-template-rows: auto;
+        justify-items: center;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .infocontacto {
+        grid-column: auto;
+        grid-row: auto;
+        width: 90%;
+    }
+
+    .contactofl, .contactovb {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+

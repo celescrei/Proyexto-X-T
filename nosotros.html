@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>X-t | Nosotros</title>
-    <link rel="stylesheet" href="assets/assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header class="tipografia">
         <a href="index.html" class="logo">
             <img src="assets/img/logo-blango-ok.png" alt="Logo Xplora-t" class="logo">
         </a>
+        <button type="button" class="abrir-menu">Abrir</button>
         <nav>
             <a href="index.html" class="nav-link">Inicio</a>
             <a href="nosotros.html" class="nav-link">Sobre Nosotros</a>
@@ -32,7 +33,7 @@
         </div>
 
         <div class="info1"> 
-            <h1 class="encabezado1">Xplora-t Link</h1>
+            <h2 class="encabezado1">Xplora-t Link</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consequuntur repellendus veniam, iste, aut, ut aperiam corporis corrupti vero ipsam qui eum praesentium labore accusamus! Dolorum ratione dolor eos dicta.</p>
 
             <h2 class="x">fwefa</h2>
@@ -40,7 +41,7 @@
         </div>
 
         <div class="info2">
-            <h1 class="encabezado2">¿Qué Ofrecemos?</h1>
+            <h2 class="encabezado2">¿Qué Ofrecemos?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi possimus, blanditiis dolores, placeat autem incidunt ea voluptates aliquid mollitia accusamus voluptate temporibus quis voluptatem, reiciendis est impedit fuga adipisci odit.</p>
             
             <h2 class="y">wefawe</h2>
@@ -77,5 +78,16 @@
     </section>
     
     <footer>&copy; 2025 Todos los derechos reservados.</footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuBtn = document.querySelector(".abrir-menu");
+            const nav = document.querySelector("nav");
+        
+            menuBtn.addEventListener("click", function () {
+                nav.classList.toggle("mostrar-menu");
+            });
+        });
+    </script>
 </body>
 </html>

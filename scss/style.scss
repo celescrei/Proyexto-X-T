@@ -1,0 +1,26 @@
+@use 'base/generales';
+@use 'base/outro';
+@use 'base/footer';
+
+
+@use 'pages/index';
+
+@use 'pages/nosotros/app';
+@use 'pages/nosotros/nosotros';
+
+@use 'pages/servicios/carrusel';
+@use 'pages/servicios/encasa';
+@use 'pages/servicios/container';
+
+@use 'pages/eventos/eventos';
+
+@use 'pages/contacto/acordion';
+@use 'pages/contacto/contacto';
+@use 'pages/contacto/info';
+@use 'pages/contacto/input';
+
+
+@use 'media querys/moviles';
+@use 'media querys/tablets';
+
+/* seguir clase desde 1:55:26 */

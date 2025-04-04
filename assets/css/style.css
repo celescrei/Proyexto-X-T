@@ -1,0 +1,570 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+body header {
+  display: flex;
+  height: 100px;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+body header .logo {
+  display: flex;
+  align-items: center;
+}
+body header .logo img {
+  height: 80px;
+  margin-left: 10px;
+}
+body header .abrir-menu {
+  display: none;
+}
+body header nav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+body header nav .nav-link {
+  font-weight: 600;
+  padding-right: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+body header nav .nav-link:hover {
+  color: aqua;
+}
+
+/* redes sociales */
+.outro {
+  background-color: black;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 20px;
+  grid-template-areas: "logo botones" "redes botones";
+}
+.outro .logo {
+  grid-area: logo;
+}
+.outro .logo .isologo {
+  display: flex;
+  margin-top: 10px;
+  padding: 10px;
+  max-width: 300px;
+  height: auto;
+  border-bottom: 2px solid aqua;
+}
+.outro .redes {
+  grid-area: redes;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.outro .redes .ig, .outro .redes .fb, .outro .redes .wpp {
+  width: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+.outro .botones {
+  grid-area: botones;
+  display: flex;
+  gap: 10px;
+  justify-self: end;
+}
+.outro .botones .ingreso {
+  color: black;
+  background-color: aqua;
+  border-radius: 5px;
+  height: 50px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.outro .botones .registro {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.outro .botones button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.outro .botones button:hover {
+  background-color: lightblue;
+}
+
+footer {
+  height: 50px;
+  text-align: center;
+  align-content: center;
+  background-color: black;
+  color: white;
+}
+
+/* div bienvenida */
+main section {
+  display: flex;
+}
+main .background {
+  margin: 0;
+  position: static;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+}
+main .background img {
+  width: 100%;
+  object-fit: cover;
+}
+main .bienvenida {
+  color: black;
+  text-align: left;
+  margin: 10px 40px 10px 40px;
+  background-color: white;
+  padding: 15px;
+  text-align: start;
+}
+main .titulo {
+  text-align: center;
+  background-color: black;
+  color: aqua;
+  margin: 0;
+  padding: 20px;
+  text-decoration: underline;
+}
+main .containers {
+  background-color: black;
+  padding: 20px;
+}
+main .containers .testimonio {
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  margin: 10px auto;
+  width: 25%;
+}
+main .containers .testimonio h2, main .containers .testimonio img, main .containers .testimonio p {
+  display: block;
+  margin: 10px auto;
+  color: white;
+}
+main .containers .testimonio .estrellas {
+  width: 50%;
+  max-width: 100px;
+  height: auto;
+}
+
+.app {
+  display: flex;
+  color: white;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  gap: 30px;
+}
+.app div {
+  height: 500px;
+  width: 335px;
+  margin: 60px;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+.app div .celular {
+  margin: 10px;
+  max-width: 450px;
+  height: auto;
+}
+.app div .encabezado1, .app div .encabezado2, .app div .x, .app div .y {
+  margin-top: 40px;
+  color: aqua;
+}
+.app div .x, .app div .y {
+  margin-top: 100px;
+}
+
+/* NOSOTROS */
+.sobrenosotros {
+  padding: 15px;
+  margin: 20px;
+}
+.sobrenosotros .nosotros {
+  text-decoration: underline aqua;
+}
+
+/* carrusel */
+.carruselfl,
+.carruselvb {
+  margin-top: 40px;
+  background-color: black;
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+.carruselfl .carousel-inner,
+.carruselfl .carousel-item,
+.carruselfl img,
+.carruselvb .carousel-inner,
+.carruselvb .carousel-item,
+.carruselvb img {
+  height: 600px;
+  object-fit: cover;
+}
+.carruselfl .carousel-slide,
+.carruselvb .carousel-slide {
+  position: relative;
+}
+.carruselfl .carousel-control-prev, .carruselfl .carousel-control-next,
+.carruselvb .carousel-control-prev,
+.carruselvb .carousel-control-next {
+  width: 5%;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* en casa */
+.virtual {
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(29, 50px);
+  grid-template-rows: repeat(9, 50px);
+  max-width: 100%;
+}
+.virtual .titulovirtual {
+  grid-row: 3/4;
+  grid-column: 5/13;
+}
+.virtual .p1 {
+  grid-row: 5/7;
+  grid-column: 6/13;
+}
+.virtual .p2 {
+  grid-row: 7/9;
+  grid-column: 6/13;
+}
+.virtual .encasa {
+  grid-row: 2/8;
+  grid-column: 21/26;
+  height: 350px;
+}
+
+.sedes .containerservice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: black;
+}
+.sedes .containerservice .card {
+  width: 450px;
+  margin: 30px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+.sedes .containerservice .card:hover {
+  box-shadow: 5px 5px 20px rgb(0, 240, 255);
+}
+.sedes .containerservice .card figure {
+  margin: 20px;
+}
+.sedes .containerservice .card figure img {
+  width: 405px;
+  height: 300px;
+  object-fit: cover;
+}
+.sedes .containerservice .card .contenido {
+  padding-bottom: 15px;
+  text-align: center;
+}
+.sedes .containerservice .card .contenido h2 {
+  font-weight: 400px;
+  margin-bottom: 10px;
+}
+.sedes .containerservice .card .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid aqua;
+  border-radius: 4px;
+  background-color: aqua;
+  color: black;
+}
+.sedes .containerservice .card .contenido a:hover {
+  background-color: black;
+  color: aqua;
+}
+.sedes .containerservice .card .contenido nav {
+  line-height: 1.5;
+  color: black;
+  margin: 15px;
+}
+
+/* EVENTO PRIMAVERA */
+.eventoprimavera .fotoevento {
+  width: 100%;
+}
+.eventoprimavera .infoevento {
+  display: grid;
+  grid-template-columns: repeat(29, 50px);
+  grid-template-rows: repeat(7, 50px);
+  max-width: 100%;
+}
+.eventoprimavera .infoevento h1 {
+  grid-row: 2/3;
+  grid-column: 6/12;
+  text-decoration: underline aqua;
+}
+.eventoprimavera .infoevento h2 {
+  grid-row: 3/4;
+  grid-column: 6/15;
+}
+.eventoprimavera .infoevento p {
+  grid-row: 5/7;
+  grid-column: 6/14;
+}
+.eventoprimavera .infoevento h3 {
+  text-decoration: underline aqua;
+}
+.eventoprimavera .infoevento .quehacer {
+  grid-row: 2/7;
+  grid-column: 17/21;
+}
+.eventoprimavera .infoevento .extra {
+  grid-row: 2/7;
+  grid-column: 22/26;
+}
+
+/* CONTACTO */
+.acordion {
+  margin: 40px;
+}
+.acordion .preguntas {
+  text-decoration: underline aqua;
+}
+
+/* info */
+.contacto {
+  background-color: aqua;
+  width: 100%;
+  padding: 20px;
+}
+.contacto .contenidocontact {
+  display: grid;
+  grid-template-columns: repeat(29, 50px);
+  grid-template-rows: repeat(9, 50px);
+  max-width: 100%;
+}
+.contacto .contenidocontact h1 {
+  grid-column: 4/8;
+  grid-row: 2/3;
+}
+.contacto .contenidocontact .infocontacto {
+  margin: 10px;
+  grid-column: 5/13;
+  grid-row: 3/6;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.contacto .contenidocontact .infocontacto .contactofl {
+  display: grid;
+  grid-template-columns: repeat(18, 20px);
+  grid-template-rows: repeat(7, 20px);
+}
+.contacto .contenidocontact .infocontacto .contactofl h5 {
+  grid-column: 1/8;
+  grid-row: 1/2;
+}
+.contacto .contenidocontact .infocontacto .contactovb {
+  display: grid;
+  grid-template-columns: repeat(18, 20px);
+  grid-template-rows: repeat(7, 20px);
+}
+.contacto .contenidocontact .infocontacto .contactovb h5 {
+  grid-column: 1/10;
+  grid-row: 1/4;
+}
+.contacto .contenidocontact .infocontacto div .direccion {
+  grid-column: 4/19;
+  grid-row: 3/8;
+}
+
+/* input */
+.form-floating1, .form-floating2, .form-floating3, .form-floating4, .form-floating5, .form-floating6 {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.form-floating1 {
+  grid-column: 18/22;
+  grid-row: 3/4;
+}
+
+.form-floating2 {
+  grid-column: 22/26;
+  grid-row: 3/4;
+}
+
+.form-floating3 {
+  grid-column: 18/22;
+  grid-row: 4/5;
+}
+
+.form-floating4 {
+  grid-column: 22/26;
+  grid-row: 4/5;
+}
+
+.form-floating5 {
+  grid-column: 18/26;
+  grid-row: 5/6;
+}
+
+.form-floating6 {
+  grid-column: 18/26;
+  grid-row: 6/9;
+}
+
+@media (max-width: 800px) {
+  body {
+    margin: 0;
+  }
+  body header {
+    height: auto;
+    padding: 10px;
+    position: relative;
+    background-color: black;
+    flex-direction: row;
+    padding: 10px;
+  }
+  body header .logo img {
+    height: 80px;
+    margin: 10px;
+  }
+  body header .abrir-menu {
+    display: block !important;
+    background: aqua;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  body header nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px;
+  }
+  body header nav.mostrar-menu {
+    display: flex !important;
+  }
+}
+/* TABLETS */
+@media (max-width: 1024px) {
+  .outro {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    display: flex;
+  }
+  .isologo {
+    justify-self: center;
+    max-width: 250px;
+  }
+  .botones {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+  }
+  .redes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  .app {
+    flex-direction: column;
+  }
+  .app div {
+    max-width: 600px;
+  }
+  .containerservice {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  /* EVENTO */
+  .eventoprimavera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fotoevento {
+    width: 100%;
+  }
+  .infoevento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: none;
+    grid-template-rows: none;
+    padding: 30px;
+  }
+  .infoevento h1,
+  .infoevento h2,
+  .infoevento p,
+  .quehacer,
+  .extra {
+    grid-column: auto;
+    grid-row: auto;
+    width: 90%;
+  }
+  /* CONTACTO */
+  .contenidocontact {
+    grid-template-rows: auto;
+    justify-items: center;
+    padding: 20px;
+    max-width: 100%;
+  }
+  .infocontacto {
+    grid-column: auto;
+    grid-row: auto;
+    width: 90%;
+  }
+  .contactofl, .contactovb {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+/* seguir clase desde 1:55:26 */
+
+/*# sourceMappingURL=style.css.map */

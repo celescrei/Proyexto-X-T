@@ -1,0 +1,29 @@
+/* en casa */
+.virtual {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(29, 50px);
+    grid-template-rows: repeat(9, 50px);
+    max-width: 100%;
+
+    .titulovirtual {
+        grid-row: 3/4;
+        grid-column: 5/13;
+    }
+
+    .p1 {
+        grid-row: 5/7;
+        grid-column: 6/13;
+    }
+
+    .p2 {
+        grid-row: 7/9;
+        grid-column: 6/13;
+    }
+
+    .encasa  {
+        grid-row: 2/8;
+        grid-column: 21/26;
+        height: 350px;
+    }
+}

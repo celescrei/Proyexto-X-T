@@ -1,0 +1,35 @@
+.app {
+    display: flex;
+    color: white;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    gap: 30px;
+    
+    div {
+        height: 500px;
+        width: 335px;
+        margin: 60px;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+
+        .celular {
+            margin: 10px;
+            max-width: 450px;
+            height: auto;
+        }
+
+        .encabezado1, .encabezado2, .x, .y {
+            margin-top: 40px;
+            color: aqua;
+        }
+        
+        .x, .y {
+            margin-top: 100px;
+        }
+    }
+
+}
+

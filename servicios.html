@@ -7,13 +7,14 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header class="tipografia">
         <a href="index.html" class="logo">
             <img src="assets/img/logo-blango-ok.png" alt="Logo Xplora-t" class="logo">
         </a>
+        <button type="button" class="abrir-menu">Abrir</button>
         <nav>
             <a href="index.html" class="nav-link">Inicio</a>
             <a href="nosotros.html" class="nav-link">Sobre Nosotros</a>
@@ -196,6 +197,17 @@
     <footer>&copy; 2025 Todos los derechos reservados.</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuBtn = document.querySelector(".abrir-menu");
+            const nav = document.querySelector("nav");
+        
+            menuBtn.addEventListener("click", function () {
+                nav.classList.toggle("mostrar-menu");
+            });
+        });
+    </script>
 
 </body>
 </html>
