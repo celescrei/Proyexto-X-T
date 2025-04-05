@@ -23,6 +23,7 @@ main {
         margin: 10px 40px 10px 40px;
         background-color: white;
         padding: 15px;
+        margin: 150px;
         text-align: start;
     }
 
@@ -31,13 +32,13 @@ main {
         background-color: black;
         color: aqua;
         margin: 0;
-        padding: 20px;
+        padding: 40px;
         text-decoration: underline;
     }
 
     .containers {
         background-color: black;
-        padding: 20px;
+        margin: 20px solid black;
 
         .testimonio {
             border-radius: 10px;

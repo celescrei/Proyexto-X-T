@@ -19,6 +19,12 @@
             margin: 10px;
             max-width: 450px;
             height: auto;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .animate__fadeInUp {
+            opacity: 1 !important;
         }
 
         .encabezado1, .encabezado2, .x, .y {
@@ -30,6 +36,5 @@
             margin-top: 100px;
         }
     }
-
 }
 

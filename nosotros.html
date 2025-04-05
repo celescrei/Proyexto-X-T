@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>X-t | Nosotros</title>
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
 </head>
 <body>
     <header class="tipografia">
@@ -28,7 +32,7 @@
     </main>
     
     <section class="app">
-        <div class="celular">
+        <div class="celular-container" data-aos="fade-up">
             <img src="assets/img/celular.png" alt="Celular" class="celular">
         </div>
 
@@ -79,6 +83,7 @@
     
     <footer>&copy; 2025 Todos los derechos reservados.</footer>
 
+    <!-- Script de menu -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const menuBtn = document.querySelector(".abrir-menu");
@@ -89,5 +94,30 @@
             });
         });
     </script>
+
+    <!-- Script de animacion para app -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const elemento = document.querySelector('.celular');
+    
+            function mostrarAlScroll() {
+                const rect = elemento.getBoundingClientRect();
+                const estaVisible = rect.top < window.innerHeight;
+    
+                if (estaVisible) {
+                    elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                    window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                }
+            }
+
+            window.addEventListener('scroll', mostrarAlScroll);
+            mostrarAlScroll(); // Por si ya está visible al cargar
+        });
+    </script>
+    
+    
+
+
+
 </body>
 </html>

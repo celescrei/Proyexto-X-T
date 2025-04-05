@@ -1,58 +1,7 @@
 
-.logo {
-    justify-content: center;
-    margin-top: 10px;
-}
 
-/* index */
-.bienvenida {
-    text-align: center;
-    margin: 10px;
-}
 
-.testimonio { 
-    width: 90%;
-}
 
-.outro {
-    grid-template-areas: 
-        "logo"
-        "redes"
-        "botones";
-    grid-template-columns: 1fr;
-    text-align: center;
-}
-
-.redes {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.redes img {
-    width: 40px;
-}
-
-.botones {
-    justify-self: center;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.botones button{
-    width: 100%;
-}
-
-main {
-    padding: 10px;
-}
-.app div{
-    min-width: 280px;
-}
-
-.celular {
-    width: 350px;
-}
 
 /* servicios */
 .card {

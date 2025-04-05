@@ -20,7 +20,19 @@
 @use 'pages/contacto/input';
 
 
-@use 'media querys/moviles';
-@use 'media querys/tablets';
+@use 'media querys/moviles/mgral';
+@use 'media querys/moviles/mindex';
+@use 'media querys/moviles/mnosotros';
+@use 'media querys/moviles/mservicios';
+@use 'media querys/moviles/meventos';
+@use 'media querys/moviles/mcontacto';
+
+@use 'media querys/tablets/tablets';
+@use 'media querys/tablets/tindex';
+@use 'media querys/tablets/tnosotros';
+@use 'media querys/tablets/tservicios';
+@use 'media querys/tablets/teventos';
+@use 'media querys/tablets/tcontacto';
+
 
 /* seguir clase desde 1:55:26 */

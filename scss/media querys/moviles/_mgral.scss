@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 760px) {
     body {
         margin: 0;
         
@@ -44,4 +44,39 @@
             }
         }
     }
+
+    .outro {
+        grid-template-areas: 
+            "logo"
+            "redes"
+            "botones";
+        grid-template-columns: 1fr;
+        text-align: center;
+
+        .logo {
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .redes {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            img {
+                width: 40px;
+            }
+        }
+
+        .botones {
+            justify-self: center;
+            flex-direction: column;
+            gap: 10px;
+
+            button{
+                width: 100%;
+            }
+        }
+    }
 }
+

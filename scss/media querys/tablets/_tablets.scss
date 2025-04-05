@@ -1,37 +1,30 @@
 /* TABLETS */
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
     .outro {
         flex-direction: column;
         text-align: center;
         align-items: center;
         gap: 15px;
         display: flex;
-    }
 
-    .isologo {
-        justify-self: center;
-        max-width: 250px;
-    }
+        .isologo {
+            justify-self: center;
+            max-width: 250px;
+        }
 
-    .botones {
-        justify-content: center;
-        display: flex;
-        gap: 10px;
-    }
+        .redes {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
 
-    .redes {
-        display: flex;
-        gap: 15px;
-        justify-content: center;
+        .botones {
+            justify-content: center;
+            display: flex;
+            gap: 10px;
+        }
     }
-
-    .app {
-        flex-direction: column;
-    }
-
-    .app div {
-        max-width: 600px;
-    }
+}
 
     .containerservice {
         flex-direction: column;
@@ -96,5 +89,5 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
-}
+
 
