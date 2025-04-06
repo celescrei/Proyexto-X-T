@@ -1,0 +1,35 @@
+@media (max-width: 1500px) {
+    .eventoprimavera {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .fotoevento {
+            width: 100%
+        }
+
+        .infoevento {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 30px;
+
+            h1,
+            h2,
+            p,
+            .quehacer,
+            .extra {
+                text-align: center;
+                width: 100%;
+                margin-bottom: 15px;
+                line-height: 1.6;
+            }
+
+            ul {
+                padding-left: 1.5rem;
+                list-style: disc outside;
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+@media (max-width: 760px) {
+    .sedes {
+        justify-content: center;
+
+        .card {
+            width: 90%;
+            margin: 20px;
+            z-index: 10;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .contenido {
+                padding: 10px;
+
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                nav {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+
+    .carruselfl,
+    .carruselvb {
+        .carousel-inner,
+        .carousel-item,
+        img {
+            height: 400px;
+        }
+
+        .carousel-caption {
+            bottom: 30px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 10%;
+
+            &::before {
+                opacity: 0.6;
+            }
+        }
+
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+

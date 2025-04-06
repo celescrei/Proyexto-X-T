@@ -1,5 +1,5 @@
 /* TABLETS */
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
     .outro {
         flex-direction: column;
         text-align: center;
@@ -26,68 +26,10 @@
     }
 }
 
-    .containerservice {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .card {
-        width: 80%;
-    }
 
-    .card img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* EVENTO */
-    .eventoprimavera {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
     
-    .fotoevento {
-        width: 100%
-    }
+
     
-    .infoevento {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        grid-template-columns: none;
-        grid-template-rows: none;
-        padding: 30px;
-    }
-    
-    .infoevento h1,
-    .infoevento h2,
-    .infoevento p,
-    .quehacer,
-    .extra {
-        grid-column: auto;
-        grid-row: auto;
-        width: 90%;
-    }
-
-    /* CONTACTO */
-    .contenidocontact {
-        grid-template-rows: auto;
-        justify-items: center;
-        padding: 20px;
-        max-width: 100%;
-    }
-
-    .infocontacto {
-        grid-column: auto;
-        grid-row: auto;
-        width: 90%;
-    }
-
-    .contactofl, .contactovb {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
 
 
