@@ -3,14 +3,30 @@
         .bienvenida {
             text-align: center;
             margin: 100px;
+
+            p {
+                line-height: 1.6;
+                font-size: 1.2rem;
+            }
         }
 
         .titulo {
             padding: 40px;
         }
 
-        section {
-            margin: 20px solid black;
+        .containers {
+            margin: 20px black;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            
+        }
+
+        .testimonio {
+            width: 100%;
+            line-height: 1.6;
+            font-size: 1.5rem;
         }
     }
 }

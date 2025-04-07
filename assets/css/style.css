@@ -137,6 +137,14 @@ main .bienvenida {
   margin: 150px;
   text-align: start;
 }
+main .bienvenida h1 {
+  line-height: 1.6;
+  font-size: 2rem;
+}
+main .bienvenida p {
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
 main .titulo {
   text-align: center;
   background-color: black;
@@ -153,8 +161,8 @@ main .containers .testimonio {
   border-radius: 10px;
   padding: 15px;
   text-align: center;
-  margin: 10px auto;
-  width: 25%;
+  margin: 10px;
+  line-height: 1.6;
 }
 main .containers .testimonio h2, main .containers .testimonio img, main .containers .testimonio p {
   display: block;
@@ -189,7 +197,7 @@ main .containers .testimonio .estrellas {
   max-width: 450px;
   height: auto;
   opacity: 0;
-  transition: opacity 0.8s ease;
+  transition: opacity 1.2s ease;
 }
 .app div .animate__fadeInUp {
   opacity: 1 !important;
@@ -499,40 +507,36 @@ main .containers .testimonio .estrellas {
   grid-column: 4/19;
   grid-row: 3/8;
 }
-
-/* input */
-.form-floating1, .form-floating2, .form-floating3, .form-floating4, .form-floating5, .form-floating6 {
-  width: 100%;
-  max-width: 400px;
-  margin: 10px auto;
+.contacto .contenidocontact .formulario {
+  grid-column: 17/28;
+  grid-row: 2/10;
+  gap: 10px;
 }
-
-.form-floating1 {
-  grid-column: 18/22;
+.contacto .contenidocontact .formulario input, .contacto .contenidocontact .formulario textarea {
+  padding: 10px;
+  font-size: 1rem;
+}
+.contacto .contenidocontact .formulario .form-floating1 {
+  grid-column: 15/22;
   grid-row: 3/4;
 }
-
-.form-floating2 {
+.contacto .contenidocontact .formulario .form-floating2 {
   grid-column: 22/26;
   grid-row: 3/4;
 }
-
-.form-floating3 {
+.contacto .contenidocontact .formulario .form-floating3 {
   grid-column: 18/22;
   grid-row: 4/5;
 }
-
-.form-floating4 {
+.contacto .contenidocontact .formulario .form-floating4 {
   grid-column: 22/26;
   grid-row: 4/5;
 }
-
-.form-floating5 {
-  grid-column: 18/26;
+.contacto .contenidocontact .formulario .form-floating5 {
+  grid-column: 1/26;
   grid-row: 5/6;
 }
-
-.form-floating6 {
+.contacto .contenidocontact .formulario .form-floating6 {
   grid-column: 18/26;
   grid-row: 6/9;
 }
@@ -608,11 +612,24 @@ main .containers .testimonio .estrellas {
     text-align: center;
     margin: 100px;
   }
+  main .bienvenida p {
+    line-height: 1.6;
+    font-size: 1.2rem;
+  }
   main .titulo {
     padding: 40px;
   }
-  main section {
-    margin: 20px solid black;
+  main .containers {
+    margin: 20px black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  main .testimonio {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 760px) {
@@ -836,13 +853,22 @@ main .containers .testimonio .estrellas {
 @media (max-width: 1500px) {
   main .bienvenida {
     text-align: center;
-    margin: 200px;
+    margin: 40px;
+    line-height: 1.6;
+    font-size: 1.5rem;
   }
   main .titulo {
     padding: 40px;
+    font-size: 1.5rem;
   }
-  main section {
-    margin: 20px solid black;
+  main .containers {
+    margin: 20px black;
+    gap: 20px;
+    padding: 20px;
+  }
+  main .testimonio {
+    width: 100%;
+    line-height: 1.6;
   }
 }
 @media (max-width: 1500px) {
@@ -979,17 +1005,16 @@ main .containers .testimonio .estrellas {
 }
 @media (max-width: 1500px) {
   .contacto {
-    padding: 30px;
+    padding: 15px;
   }
   .contacto .contenidocontact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
     padding: 20px;
   }
   .contacto .contenidocontact h1 {
-    grid-column: 1/3;
+    grid-column: 2/12;
     grid-row: 3/4;
     font-size: 2.5rem;
     text-align: center;
