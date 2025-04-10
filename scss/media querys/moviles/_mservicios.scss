@@ -1,16 +1,28 @@
 @media (max-width: 760px) {
     .sedes {
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .card {
             width: 90%;
             margin: 20px;
             z-index: 10;
             position: relative;
+            flex-direction: column;
+            align-items: center;
 
-            img {
+            figure {
                 width: 100%;
-                height: auto;
+                display: flex;
+                justify-content: center;
+                margin: 0;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
             }
 
             .contenido {
@@ -28,12 +40,13 @@
     }
 
 
-    .carruselfl,
-    .carruselvb {
+    section .carruselfl,
+    section .carruselvb {
         .carousel-inner,
         .carousel-item,
         img {
             height: 400px;
+            width: auto;
         }
 
         .carousel-caption {

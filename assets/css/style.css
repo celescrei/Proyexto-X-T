@@ -383,7 +383,6 @@ main .containers .testimonio .estrellas {
   margin: 20px;
 }
 .sedes .containerservice .card figure img {
-  width: 405px;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -673,17 +672,28 @@ main .containers .testimonio .estrellas {
 }
 @media (max-width: 760px) {
   .sedes {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .sedes .card {
     width: 90%;
     margin: 20px;
     z-index: 10;
     position: relative;
+    flex-direction: column;
+    align-items: center;
   }
-  .sedes .card img {
+  .sedes .card figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .sedes .card figure img {
     width: 100%;
     height: auto;
+    display: block;
   }
   .sedes .card .contenido {
     padding: 10px;
@@ -694,53 +704,50 @@ main .containers .testimonio .estrellas {
   .sedes .card .contenido nav {
     font-size: 1rem;
   }
-  .carruselfl .carousel-inner,
-  .carruselfl .carousel-item,
-  .carruselfl img,
-  .carruselvb .carousel-inner,
-  .carruselvb .carousel-item,
-  .carruselvb img {
+  section .carruselfl .carousel-inner,
+  section .carruselfl .carousel-item,
+  section .carruselfl img,
+  section .carruselvb .carousel-inner,
+  section .carruselvb .carousel-item,
+  section .carruselvb img {
     height: 400px;
+    width: auto;
   }
-  .carruselfl .carousel-caption,
-  .carruselvb .carousel-caption {
+  section .carruselfl .carousel-caption,
+  section .carruselvb .carousel-caption {
     bottom: 30px;
     text-align: center;
     font-size: 1.2rem;
   }
-  .carruselfl .carousel-control-prev,
-  .carruselfl .carousel-control-next,
-  .carruselvb .carousel-control-prev,
-  .carruselvb .carousel-control-next {
+  section .carruselfl .carousel-control-prev,
+  section .carruselfl .carousel-control-next,
+  section .carruselvb .carousel-control-prev,
+  section .carruselvb .carousel-control-next {
     width: 10%;
   }
-  .carruselfl .carousel-control-prev::before,
-  .carruselfl .carousel-control-next::before,
-  .carruselvb .carousel-control-prev::before,
-  .carruselvb .carousel-control-next::before {
+  section .carruselfl .carousel-control-prev::before,
+  section .carruselfl .carousel-control-next::before,
+  section .carruselvb .carousel-control-prev::before,
+  section .carruselvb .carousel-control-next::before {
     opacity: 0.6;
   }
-  .carruselfl .carousel-control-next-icon,
-  .carruselfl .carousel-control-prev-icon,
-  .carruselvb .carousel-control-next-icon,
-  .carruselvb .carousel-control-prev-icon {
+  section .carruselfl .carousel-control-next-icon,
+  section .carruselfl .carousel-control-prev-icon,
+  section .carruselvb .carousel-control-next-icon,
+  section .carruselvb .carousel-control-prev-icon {
     width: 30px;
     height: 30px;
   }
 }
 @media (max-width: 760px) {
   .eventoprimavera {
-    display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .eventoprimavera .fotoevento {
     width: 100%;
   }
   .eventoprimavera .infoevento {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     grid-template-columns: none;
     grid-template-rows: none;
     padding: 20px;
@@ -754,7 +761,6 @@ main .containers .testimonio .estrellas {
   .eventoprimavera .infoevento .extra {
     grid-column: auto;
     grid-row: auto;
-    text-align: center;
     width: 100%;
     line-height: 1.6;
     margin: 10px;
@@ -1015,13 +1021,13 @@ main .containers .testimonio .estrellas {
   }
   .contacto .contenidocontact h1 {
     grid-column: 2/12;
-    grid-row: 3/4;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
   }
   .contacto .contenidocontact .infocontacto {
-    grid-column: 1/3;
-    grid-row: 4/8;
+    grid-column: 2/12;
+    display: flex;
+    flex-direction: row;
   }
   .contacto .contenidocontact .infocontacto .contactofl,
   .contacto .contenidocontact .infocontacto .contactovb {
