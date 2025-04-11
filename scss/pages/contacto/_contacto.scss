@@ -1,23 +1,21 @@
-/* info */
 .contacto {
     background-color: aqua;
     width: 100%;
-    padding: 20px;
 
     .contenidocontact {
         display: grid;
-        grid-template-columns: repeat(29, 50px);
-        grid-template-rows: repeat(9, 50px);
+        grid-template-columns: repeat(32, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         max-width: 100%;
     
         h1 {
-            grid-column: 4/8;
+            grid-column: 6/12;
             grid-row: 2/3;
         }
 
         .infocontacto {
             margin: 10px;
-            grid-column: 5/13;
+            grid-column: 6/13;
             grid-row: 3/6;
             display: grid;
             grid-template-columns: 1fr;
@@ -36,8 +34,8 @@
 
             .contactovb {
                 display: grid;
-                grid-template-columns: repeat(18, 20px);
-                grid-template-rows: repeat(7, 20px);
+                grid-template-columns: repeat(18, 1fr);
+                grid-template-rows: repeat(7, auto);
 
                 h5 {
                     grid-column: 1/10;
@@ -52,8 +50,8 @@
         }
 
         .formulario {
-            grid-column: 17/28;
-            grid-row: 2/10;
+            grid-column: 19/29;
+            grid-row: 2/9;
             gap: 10px;
 
             input, textarea {
@@ -64,7 +62,7 @@
             
             
             .form-floating1 {
-                grid-column: 15/22;
+                grid-column: 17/22;
                 grid-row: 3/4;
             }
             

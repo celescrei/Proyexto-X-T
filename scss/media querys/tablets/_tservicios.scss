@@ -3,7 +3,7 @@
         justify-content: center;
 
         .card {
-            width: 90%;
+
             margin: 20px auto;
 
             figure {
@@ -32,6 +32,12 @@
 
     .carruselfl,
     .carruselvb {
+        .carousel-inner,
+        .carousel-item {
+            img {
+                height: 600px;
+            }
+        }
 
         .carousel-caption {
             bottom: 30px;

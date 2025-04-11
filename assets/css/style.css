@@ -175,6 +175,33 @@ main .containers .testimonio .estrellas {
   height: auto;
 }
 
+/* NOSOTROS */
+.sobrenosotros {
+  padding: 15px;
+  margin: 100px 200px;
+  text-align: center;
+}
+.sobrenosotros .nosotros {
+  -webkit-text-decoration: underline aqua;
+          text-decoration: underline aqua;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 20px auto;
+  background-color: black;
+  background-size: 10px;
+  border-radius: 40px;
+  color: white;
+  font-weight: bold;
+}
+.sobrenosotros p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 10px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
 .app {
   display: flex;
   color: white;
@@ -210,31 +237,55 @@ main .containers .testimonio .estrellas {
   margin-top: 100px;
 }
 
-/* NOSOTROS */
-.sobrenosotros {
-  padding: 15px;
-  margin: 100px 200px;
-  text-align: center;
-}
-.sobrenosotros .nosotros {
-  -webkit-text-decoration: underline aqua;
-          text-decoration: underline aqua;
-  display: inline-block;
-  padding: 15px 30px;
-  margin: 20px auto;
+.sedes .containerservice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   background-color: black;
-  background-size: 10px;
-  border-radius: 40px;
-  color: white;
-  font-weight: bold;
 }
-.sobrenosotros p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  padding: 10px 20px;
+.sedes .containerservice .card {
+  margin: 30px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.sedes .containerservice .card:hover {
+  box-shadow: 5px 5px 20px rgb(0, 240, 255);
+  transform: translateY(-3%);
+}
+.sedes .containerservice .card figure {
+  margin: 20px;
+}
+.sedes .containerservice .card figure img {
+  height: 400px;
+}
+.sedes .containerservice .card .contenido {
+  padding-bottom: 15px;
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto 20px;
+}
+.sedes .containerservice .card .contenido h2 {
+  font-weight: 400px;
+  margin-bottom: 10px;
+}
+.sedes .containerservice .card .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid aqua;
+  border-radius: 4px;
+  background-color: aqua;
+  color: black;
+}
+.sedes .containerservice .card .contenido a:hover {
+  background-color: black;
+  color: aqua;
+}
+.sedes .containerservice .card .contenido nav {
+  line-height: 1.5;
+  color: black;
+  margin: 15px;
 }
 
 /* carrusel */
@@ -246,18 +297,12 @@ main .containers .testimonio .estrellas {
   max-width: 100%;
   margin: auto;
 }
-.carruselfl .carousel-inner,
-.carruselfl .carousel-item,
-.carruselvb .carousel-inner,
-.carruselvb .carousel-item {
-  height: 600px;
-}
 .carruselfl .carousel-inner img,
 .carruselfl .carousel-item img,
 .carruselvb .carousel-inner img,
 .carruselvb .carousel-item img {
   width: 100%;
-  height: 100%;
+  height: 800px;
   display: block;
   -o-object-fit: fill;
      object-fit: fill;
@@ -337,81 +382,26 @@ main .containers .testimonio .estrellas {
 .virtual {
   background-color: aqua;
   display: grid;
-  grid-template-columns: repeat(29, 50px);
+  grid-template-columns: repeat(33, 50px);
   grid-template-rows: repeat(9, 50px);
   max-width: 100%;
 }
 .virtual .titulovirtual {
   grid-row: 3/4;
-  grid-column: 5/13;
+  grid-column: 7/15;
 }
 .virtual .p1 {
   grid-row: 5/7;
-  grid-column: 6/13;
+  grid-column: 8/15;
 }
 .virtual .p2 {
   grid-row: 7/9;
-  grid-column: 6/13;
+  grid-column: 8/15;
 }
 .virtual .encasa {
   grid-row: 2/8;
-  grid-column: 21/26;
+  grid-column: 23/28;
   height: 350px;
-}
-
-.sedes .containerservice {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  background-color: black;
-}
-.sedes .containerservice .card {
-  width: 450px;
-  margin: 30px;
-  border-radius: 6px;
-  overflow: hidden;
-  background-color: white;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  display: block;
-}
-.sedes .containerservice .card:hover {
-  box-shadow: 5px 5px 20px rgb(0, 240, 255);
-  transform: translateY(-3%);
-}
-.sedes .containerservice .card figure {
-  margin: 20px;
-}
-.sedes .containerservice .card figure img {
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.sedes .containerservice .card .contenido {
-  padding-bottom: 15px;
-  text-align: center;
-}
-.sedes .containerservice .card .contenido h2 {
-  font-weight: 400px;
-  margin-bottom: 10px;
-}
-.sedes .containerservice .card .contenido a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px;
-  border: 1px solid aqua;
-  border-radius: 4px;
-  background-color: aqua;
-  color: black;
-}
-.sedes .containerservice .card .contenido a:hover {
-  background-color: black;
-  color: aqua;
-}
-.sedes .containerservice .card .contenido nav {
-  line-height: 1.5;
-  color: black;
-  margin: 15px;
 }
 
 /* EVENTO PRIMAVERA */
@@ -460,25 +450,23 @@ main .containers .testimonio .estrellas {
           text-decoration: underline aqua;
 }
 
-/* info */
 .contacto {
   background-color: aqua;
   width: 100%;
-  padding: 20px;
 }
 .contacto .contenidocontact {
   display: grid;
-  grid-template-columns: repeat(29, 50px);
-  grid-template-rows: repeat(9, 50px);
+  grid-template-columns: repeat(32, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   max-width: 100%;
 }
 .contacto .contenidocontact h1 {
-  grid-column: 4/8;
+  grid-column: 6/12;
   grid-row: 2/3;
 }
 .contacto .contenidocontact .infocontacto {
   margin: 10px;
-  grid-column: 5/13;
+  grid-column: 6/13;
   grid-row: 3/6;
   display: grid;
   grid-template-columns: 1fr;
@@ -495,8 +483,8 @@ main .containers .testimonio .estrellas {
 }
 .contacto .contenidocontact .infocontacto .contactovb {
   display: grid;
-  grid-template-columns: repeat(18, 20px);
-  grid-template-rows: repeat(7, 20px);
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(7, auto);
 }
 .contacto .contenidocontact .infocontacto .contactovb h5 {
   grid-column: 1/10;
@@ -507,8 +495,8 @@ main .containers .testimonio .estrellas {
   grid-row: 3/8;
 }
 .contacto .contenidocontact .formulario {
-  grid-column: 17/28;
-  grid-row: 2/10;
+  grid-column: 19/29;
+  grid-row: 2/9;
   gap: 10px;
 }
 .contacto .contenidocontact .formulario input, .contacto .contenidocontact .formulario textarea {
@@ -516,7 +504,7 @@ main .containers .testimonio .estrellas {
   font-size: 1rem;
 }
 .contacto .contenidocontact .formulario .form-floating1 {
-  grid-column: 15/22;
+  grid-column: 17/22;
   grid-row: 3/4;
 }
 .contacto .contenidocontact .formulario .form-floating2 {
@@ -540,6 +528,226 @@ main .containers .testimonio .estrellas {
   grid-row: 6/9;
 }
 
+/* TABLETS */
+@media (max-width: 1500px) {
+  .outro {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    display: flex;
+  }
+  .outro .isologo {
+    justify-self: center;
+    max-width: 250px;
+  }
+  .outro .redes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  .outro .botones {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+  }
+}
+@media (max-width: 1500px) {
+  main .bienvenida {
+    text-align: center;
+    margin: 40px;
+    line-height: 1.6;
+    font-size: 1.5rem;
+  }
+  main .titulo {
+    padding: 40px;
+    font-size: 1.5rem;
+  }
+  main .containers {
+    margin: 20px black;
+    gap: 20px;
+    padding: 20px;
+  }
+  main .testimonio {
+    width: 100%;
+    line-height: 1.6;
+  }
+}
+@media (max-width: 1500px) {
+  .app {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  .app .celular-container,
+  .app .info1,
+  .app .info2 {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .app .encabezado1,
+  .app .encabezado2,
+  .app .x,
+  .app .y {
+    font-size: 1.5rem;
+  }
+  .app p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1500px) {
+  .sedes {
+    justify-content: center;
+  }
+  .sedes .card {
+    margin: 20px auto;
+  }
+  .sedes .card figure {
+    margin: 15px;
+  }
+  .sedes .card figure img {
+    width: 100%;
+    height: auto;
+  }
+  .sedes .card .contenido {
+    padding: 10px;
+  }
+  .sedes .card .contenido h2 {
+    font-size: 1.5rem;
+  }
+  .sedes .card .contenido nav {
+    font-size: 1rem;
+  }
+  .carruselfl .carousel-inner img,
+  .carruselfl .carousel-item img,
+  .carruselvb .carousel-inner img,
+  .carruselvb .carousel-item img {
+    height: 600px;
+  }
+  .carruselfl .carousel-caption,
+  .carruselvb .carousel-caption {
+    bottom: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .carruselfl .carousel-control-prev, .carruselfl .carousel-control-next,
+  .carruselvb .carousel-control-prev,
+  .carruselvb .carousel-control-next {
+    width: 10%;
+  }
+  .carruselfl .carousel-control-prev::before, .carruselfl .carousel-control-next::before,
+  .carruselvb .carousel-control-prev::before,
+  .carruselvb .carousel-control-next::before {
+    opacity: 0.6;
+  }
+  .carruselfl .carousel-control-prev-icon,
+  .carruselfl .carousel-control-next-icon,
+  .carruselvb .carousel-control-prev-icon,
+  .carruselvb .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .virtual {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, auto);
+    padding: 40px;
+  }
+  .virtual .titulovirtual {
+    grid-row: 1/2;
+    grid-column: 3/11;
+    text-align: center;
+  }
+  .virtual .p1 {
+    grid-row: 2/3;
+    grid-column: 3/11;
+    text-align: center;
+  }
+  .virtual .p2 {
+    grid-row: 3/4;
+    grid-column: 3/11;
+    text-align: center;
+  }
+  .virtual .encasa {
+    grid-row: 4/6;
+    grid-column: 3/11;
+    height: auto;
+    max-width: 100%;
+    justify-self: center;
+  }
+}
+@media (max-width: 1500px) {
+  .eventoprimavera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .eventoprimavera .fotoevento {
+    width: 100%;
+  }
+  .eventoprimavera .infoevento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 30px;
+  }
+  .eventoprimavera .infoevento h1,
+  .eventoprimavera .infoevento h2,
+  .eventoprimavera .infoevento p,
+  .eventoprimavera .infoevento .quehacer,
+  .eventoprimavera .infoevento .extra {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+}
+@media (max-width: 1500px) {
+  .contacto .contenidocontact {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 80px);
+  }
+  .contacto .contenidocontact h1 {
+    grid-column: 5/9;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .contacto .contenidocontact .infocontacto {
+    grid-column: 3/8;
+    grid-row: 3/8;
+    flex-direction: row;
+  }
+  .contacto .contenidocontact .infocontacto .contactofl h5,
+  .contacto .contenidocontact .infocontacto .contactovb h5 {
+    font-size: 1.5rem;
+  }
+  .contacto .contenidocontact .infocontacto .contactofl .direction,
+  .contacto .contenidocontact .infocontacto .contactovb .direction {
+    padding-left: 10px;
+  }
+  .contacto .contenidocontact .infocontacto .contactofl .direction p,
+  .contacto .contenidocontact .infocontacto .contactovb .direction p {
+    margin: 5px;
+    font-size: 1rem;
+  }
+  .contacto .contenidocontact .infocontacto .contactovb {
+    grid-template-columns: repeat(18, 20px);
+    grid-template-rows: repeat(7, 20px);
+  }
+  .contacto .contenidocontact .infocontacto .contactovb h5 {
+    grid-column: 1/15;
+  }
+  .contacto .contenidocontact .formulario {
+    grid-column: 7/11;
+    grid-row: 3/7;
+    gap: 10px;
+  }
+}
 @media (max-width: 760px) {
   body {
     margin: 0;
@@ -677,23 +885,22 @@ main .containers .testimonio .estrellas {
     align-items: center;
   }
   .sedes .card {
-    width: 90%;
-    margin: 20px;
     z-index: 10;
     position: relative;
     flex-direction: column;
     align-items: center;
+    height: 350px;
+    width: 300px;
   }
   .sedes .card figure {
-    width: 100%;
+    width: 90%;
+    height: 200px;
     display: flex;
     justify-content: center;
-    margin: 0;
   }
   .sedes .card figure img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100% !important;
   }
   .sedes .card .contenido {
     padding: 10px;
@@ -704,44 +911,51 @@ main .containers .testimonio .estrellas {
   .sedes .card .contenido nav {
     font-size: 1rem;
   }
-  section .carruselfl .carousel-inner,
-  section .carruselfl .carousel-item,
-  section .carruselfl img,
-  section .carruselvb .carousel-inner,
-  section .carruselvb .carousel-item,
-  section .carruselvb img {
-    height: 400px;
-    width: auto;
+  .carruselfl .carousel-inner img,
+  .carruselfl .carousel-item img,
+  .carruselvb .carousel-inner img,
+  .carruselvb .carousel-item img {
+    height: 250px;
   }
-  section .carruselfl .carousel-caption,
-  section .carruselvb .carousel-caption {
+  .carruselfl .carousel-caption,
+  .carruselvb .carousel-caption {
     bottom: 30px;
     text-align: center;
     font-size: 1.2rem;
   }
-  section .carruselfl .carousel-control-prev,
-  section .carruselfl .carousel-control-next,
-  section .carruselvb .carousel-control-prev,
-  section .carruselvb .carousel-control-next {
+  .carruselfl .carousel-control-prev,
+  .carruselfl .carousel-control-next,
+  .carruselvb .carousel-control-prev,
+  .carruselvb .carousel-control-next {
     width: 10%;
   }
-  section .carruselfl .carousel-control-prev::before,
-  section .carruselfl .carousel-control-next::before,
-  section .carruselvb .carousel-control-prev::before,
-  section .carruselvb .carousel-control-next::before {
+  .carruselfl .carousel-control-prev::before,
+  .carruselfl .carousel-control-next::before,
+  .carruselvb .carousel-control-prev::before,
+  .carruselvb .carousel-control-next::before {
     opacity: 0.6;
   }
-  section .carruselfl .carousel-control-next-icon,
-  section .carruselfl .carousel-control-prev-icon,
-  section .carruselvb .carousel-control-next-icon,
-  section .carruselvb .carousel-control-prev-icon {
+  .carruselfl .carousel-control-next-icon,
+  .carruselfl .carousel-control-prev-icon,
+  .carruselvb .carousel-control-next-icon,
+  .carruselvb .carousel-control-prev-icon {
     width: 30px;
     height: 30px;
+  }
+  .virtual {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, auto);
+  }
+  .virtual .titulovirtual,
+  .virtual .p1,
+  .virtual .p2 {
+    grid-column: 2/12;
   }
 }
 @media (max-width: 760px) {
   .eventoprimavera {
     flex-direction: column;
+    align-items: center;
   }
   .eventoprimavera .fotoevento {
     width: 100%;
@@ -751,8 +965,6 @@ main .containers .testimonio .estrellas {
     grid-template-columns: none;
     grid-template-rows: none;
     padding: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
   .eventoprimavera .infoevento h1,
   .eventoprimavera .infoevento h2,
@@ -761,61 +973,71 @@ main .containers .testimonio .estrellas {
   .eventoprimavera .infoevento .extra {
     grid-column: auto;
     grid-row: auto;
-    width: 100%;
-    line-height: 1.6;
+    line-height: 1;
     margin: 10px;
-  }
-  .eventoprimavera .infoevento h1 ul,
-  .eventoprimavera .infoevento h2 ul,
-  .eventoprimavera .infoevento p ul,
-  .eventoprimavera .infoevento .quehacer ul,
-  .eventoprimavera .infoevento .extra ul {
-    margin-left: 0;
-    padding-left: 1.5rem;
-    list-style: disc outside;
   }
 }
 @media (max-width: 760px) {
   .contacto {
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
   }
   .contacto .contenidocontact {
     display: grid;
-    gap: 20px;
-    padding: 10px;
-    margin: 0 auto;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(15, auto);
     width: 100%;
   }
   .contacto .contenidocontact h1 {
     font-size: 1.5rem;
     text-align: center;
+    grid-column: 4/8;
+    gap: 20px;
+    margin: 20px;
   }
   .contacto .contenidocontact .infocontacto {
-    display: flex;
-    gap: 15px;
+    grid-column: 1/-1;
+    gap: 20px;
+    margin: 40px;
   }
   .contacto .contenidocontact .infocontacto .contactofl,
   .contacto .contenidocontact .infocontacto .contactovb {
-    display: flex;
-    flex-direction: column;
+    flex: 45%;
+    min-width: 150px;
+    box-sizing: border-box;
+  }
+  .contacto .contenidocontact .infocontacto .contactofl {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(15, auto);
+  }
+  .contacto .contenidocontact .infocontacto .contactofl h5 {
+    font-size: 1.2rem;
+  }
+  .contacto .contenidocontact .infocontacto .contactofl .direction {
+    padding-left: 10px;
+    grid-column: 2/10 !important;
+  }
+  .contacto .contenidocontact .infocontacto .contactofl .direction p {
+    margin: 2px;
+    font-size: 1rem;
+  }
+  .contacto .contenidocontact .infocontacto .contactovb {
+    grid-column: 6/10;
     gap: 10px;
   }
-  .contacto .contenidocontact .infocontacto .contactofl h5,
   .contacto .contenidocontact .infocontacto .contactovb h5 {
     font-size: 1.2rem;
   }
-  .contacto .contenidocontact .infocontacto .contactofl .direction,
   .contacto .contenidocontact .infocontacto .contactovb .direction {
     padding-left: 10px;
   }
-  .contacto .contenidocontact .infocontacto .contactofl .direction p,
   .contacto .contenidocontact .infocontacto .contactovb .direction p {
     margin: 2px;
     font-size: 1rem;
   }
   .contacto .contenidocontact .formulario {
-    display: flex;
-    flex-direction: column;
+    grid-column: 2/10;
+    grid-row: 10/15;
     gap: 10px;
   }
   .contacto .contenidocontact .formulario .form-floating1,
@@ -831,221 +1053,4 @@ main .containers .testimonio .estrellas {
   .contacto .contenidocontact .formulario .form-floating6 textarea {
     height: 120px !important;
   }
-}
-/* TABLETS */
-@media (max-width: 1500px) {
-  .outro {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    gap: 15px;
-    display: flex;
-  }
-  .outro .isologo {
-    justify-self: center;
-    max-width: 250px;
-  }
-  .outro .redes {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-  }
-  .outro .botones {
-    justify-content: center;
-    display: flex;
-    gap: 10px;
-  }
-}
-@media (max-width: 1500px) {
-  main .bienvenida {
-    text-align: center;
-    margin: 40px;
-    line-height: 1.6;
-    font-size: 1.5rem;
-  }
-  main .titulo {
-    padding: 40px;
-    font-size: 1.5rem;
-  }
-  main .containers {
-    margin: 20px black;
-    gap: 20px;
-    padding: 20px;
-  }
-  main .testimonio {
-    width: 100%;
-    line-height: 1.6;
-  }
-}
-@media (max-width: 1500px) {
-  .app {
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-  }
-  .app .celular-container,
-  .app .info1,
-  .app .info2 {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px 0;
-    text-align: center;
-  }
-  .app .encabezado1,
-  .app .encabezado2,
-  .app .x,
-  .app .y {
-    font-size: 1.5rem;
-  }
-  .app p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    padding: 0 20px;
-  }
-}
-@media (max-width: 1500px) {
-  .sedes {
-    justify-content: center;
-  }
-  .sedes .card {
-    width: 90%;
-    margin: 20px auto;
-  }
-  .sedes .card figure {
-    margin: 15px;
-  }
-  .sedes .card figure img {
-    width: 100%;
-    height: auto;
-  }
-  .sedes .card .contenido {
-    padding: 10px;
-  }
-  .sedes .card .contenido h2 {
-    font-size: 1.5rem;
-  }
-  .sedes .card .contenido nav {
-    font-size: 1rem;
-  }
-  .carruselfl .carousel-caption,
-  .carruselvb .carousel-caption {
-    bottom: 30px;
-    text-align: center;
-    font-size: 1.2rem;
-  }
-  .carruselfl .carousel-control-prev, .carruselfl .carousel-control-next,
-  .carruselvb .carousel-control-prev,
-  .carruselvb .carousel-control-next {
-    width: 10%;
-  }
-  .carruselfl .carousel-control-prev::before, .carruselfl .carousel-control-next::before,
-  .carruselvb .carousel-control-prev::before,
-  .carruselvb .carousel-control-next::before {
-    opacity: 0.6;
-  }
-  .carruselfl .carousel-control-prev-icon,
-  .carruselfl .carousel-control-next-icon,
-  .carruselvb .carousel-control-prev-icon,
-  .carruselvb .carousel-control-next-icon {
-    width: 30px;
-    height: 30px;
-  }
-  .virtual {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(9, auto);
-    padding: 40px;
-  }
-  .virtual .titulovirtual {
-    grid-row: 1/2;
-    grid-column: 3/11;
-    text-align: center;
-  }
-  .virtual .p1 {
-    grid-row: 2/3;
-    grid-column: 3/11;
-    text-align: center;
-  }
-  .virtual .p2 {
-    grid-row: 3/4;
-    grid-column: 3/11;
-    text-align: center;
-  }
-  .virtual .encasa {
-    grid-row: 4/6;
-    grid-column: 3/11;
-    height: auto;
-    max-width: 100%;
-    justify-self: center;
-  }
-}
-@media (max-width: 1500px) {
-  .eventoprimavera {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .eventoprimavera .fotoevento {
-    width: 100%;
-  }
-  .eventoprimavera .infoevento {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin: 30px;
-  }
-  .eventoprimavera .infoevento h1,
-  .eventoprimavera .infoevento h2,
-  .eventoprimavera .infoevento p,
-  .eventoprimavera .infoevento .quehacer,
-  .eventoprimavera .infoevento .extra {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 15px;
-    line-height: 1.6;
-  }
-  .eventoprimavera .infoevento ul {
-    padding-left: 1.5rem;
-    list-style: disc outside;
-  }
-}
-@media (max-width: 1500px) {
-  .contacto {
-    padding: 15px;
-  }
-  .contacto .contenidocontact {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    padding: 20px;
-  }
-  .contacto .contenidocontact h1 {
-    grid-column: 2/12;
-    font-size: 2rem;
-    text-align: center;
-  }
-  .contacto .contenidocontact .infocontacto {
-    grid-column: 2/12;
-    display: flex;
-    flex-direction: row;
-  }
-  .contacto .contenidocontact .infocontacto .contactofl,
-  .contacto .contenidocontact .infocontacto .contactovb {
-    display: flex;
-    flex-direction: column;
-  }
-  .contacto .contenidocontact .infocontacto .contactofl h5,
-  .contacto .contenidocontact .infocontacto .contactovb h5 {
-    font-size: 1.5rem;
-  }
-  .contacto .contenidocontact .infocontacto .contactofl .direction,
-  .contacto .contenidocontact .infocontacto .contactovb .direction {
-    padding-left: 10px;
-  }
-  .contacto .contenidocontact .infocontacto .contactofl .direction p,
-  .contacto .contenidocontact .infocontacto .contactovb .direction p {
-    margin: 5px;
-    font-size: 1rem;
-  }
-}
-/* seguir clase desde 1:55:26 *//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

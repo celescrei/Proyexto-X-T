@@ -2,28 +2,28 @@
 .virtual {
     background-color: aqua;
     display: grid;
-    grid-template-columns: repeat(29, 50px);
+    grid-template-columns: repeat(33, 50px);
     grid-template-rows: repeat(9, 50px);
     max-width: 100%;
 
     .titulovirtual {
         grid-row: 3/4;
-        grid-column: 5/13;
+        grid-column: 7/15;
     }
 
     .p1 {
         grid-row: 5/7;
-        grid-column: 6/13;
+        grid-column: 8/15;
     }
 
     .p2 {
         grid-row: 7/9;
-        grid-column: 6/13;
+        grid-column: 8/15;
     }
 
     .encasa  {
         grid-row: 2/8;
-        grid-column: 21/26;
+        grid-column: 23/28;
         height: 350px;
     }
 }

@@ -5,12 +5,12 @@
 
 @use 'pages/index';
 
-@use 'pages/nosotros/app';
 @use 'pages/nosotros/nosotros';
+@use 'pages/nosotros/app';
 
+@use 'pages/servicios/container';
 @use 'pages/servicios/carrusel';
 @use 'pages/servicios/encasa';
-@use 'pages/servicios/container';
 
 @use 'pages/eventos/eventos';
 
@@ -20,13 +20,6 @@
 
 
 
-@use 'media querys/moviles/mgral';
-@use 'media querys/moviles/mindex';
-@use 'media querys/moviles/mnosotros';
-@use 'media querys/moviles/mservicios';
-@use 'media querys/moviles/meventos';
-@use 'media querys/moviles/mcontacto';
-
 @use 'media querys/tablets/tablets';
 @use 'media querys/tablets/tindex';
 @use 'media querys/tablets/tnosotros';
@@ -34,5 +27,10 @@
 @use 'media querys/tablets/teventos';
 @use 'media querys/tablets/tcontacto';
 
+@use 'media querys/moviles/mgral';
+@use 'media querys/moviles/mindex';
+@use 'media querys/moviles/mnosotros';
+@use 'media querys/moviles/mservicios';
+@use 'media querys/moviles/meventos';
+@use 'media querys/moviles/mcontacto';
 
-/* seguir clase desde 1:55:26 */
