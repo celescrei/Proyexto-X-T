@@ -19,30 +19,35 @@
         flex-direction: column;
         padding: 20px;
 
-        div {
+        .celular-container {
             width: 100%;
             margin: 20px 0;
             padding: 10px;
+            max-height: 350px;
 
             .celular {
                 max-width: 80%;
             }
+        }
 
-            .encabezado1, .encabezado2, .x, .y {
-                margin-top: 20px;
-                font-size: 1.2rem;
-            }
+        .info1,
+        .info2 {
+            max-height: 400px;
+        }
 
-            .x, .y {
-                margin-top: 60px;
-            }
+        .encabezado1, .encabezado2, .x, .y {
+            margin-top: 20px !important;
+            font-size: 1.2rem;
+        }
 
-            p {
-                font-size: 1rem;
-                line-height: 1.6;
-                padding: 0 10px;
-            }
-            
+        .x, .y {
+            margin-top: 60px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            padding: 0 10px;
         }
     }
 }

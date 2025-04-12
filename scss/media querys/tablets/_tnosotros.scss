@@ -4,12 +4,17 @@
         align-items: center;
         padding: 30px;
 
-        .celular-container,
+
+        .celular-container {
+            height: 600px;
+            width: 500px;
+        }
+
         .info1,
         .info2 {
             width: 100%;
             max-width: 600px;
-            margin: 20px 0;
+            height: 400px;
             text-align: center;
         }
 

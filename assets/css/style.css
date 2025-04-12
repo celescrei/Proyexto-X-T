@@ -161,7 +161,7 @@ main .containers .testimonio {
   border-radius: 10px;
   padding: 15px;
   text-align: center;
-  margin: 10px;
+  max-width: 550px;
   line-height: 1.6;
 }
 main .containers .testimonio h2, main .containers .testimonio img, main .containers .testimonio p {
@@ -212,12 +212,10 @@ main .containers .testimonio .estrellas {
   gap: 30px;
 }
 .app div {
-  height: 500px;
-  width: 335px;
-  margin: 60px;
-  text-align: center;
   width: 100%;
   padding: 10px;
+  min-height: 300px;
+  text-align: center;
 }
 .app div .celular {
   margin: 10px;
@@ -410,23 +408,34 @@ main .containers .testimonio .estrellas {
 }
 .eventoprimavera .infoevento {
   display: grid;
-  grid-template-columns: repeat(29, 50px);
-  grid-template-rows: repeat(7, 50px);
+  grid-template-columns: repeat(29, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   max-width: 100%;
 }
 .eventoprimavera .infoevento h1 {
   grid-row: 2/3;
-  grid-column: 6/12;
+  grid-column: 12/19;
   -webkit-text-decoration: underline aqua;
           text-decoration: underline aqua;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 20px auto;
+  background-color: black;
+  background-size: 10px;
+  border-radius: 40px;
+  color: white;
+  font-weight: bold;
 }
 .eventoprimavera .infoevento h2 {
   grid-row: 3/4;
-  grid-column: 6/15;
+  grid-column: 11/20;
+  text-align: center;
 }
 .eventoprimavera .infoevento p {
-  grid-row: 5/7;
-  grid-column: 6/14;
+  grid-row: 3/4;
+  grid-column: 10/21;
+  text-align: center;
+  justify-self: end;
 }
 .eventoprimavera .infoevento h3 {
   -webkit-text-decoration: underline aqua;
@@ -561,7 +570,6 @@ main .containers .testimonio .estrellas {
   }
   main .titulo {
     padding: 40px;
-    font-size: 1.5rem;
   }
   main .containers {
     margin: 20px black;
@@ -579,12 +587,15 @@ main .containers .testimonio .estrellas {
     align-items: center;
     padding: 30px;
   }
-  .app .celular-container,
+  .app .celular-container {
+    height: 600px;
+    width: 500px;
+  }
   .app .info1,
   .app .info2 {
     width: 100%;
     max-width: 600px;
-    margin: 20px 0;
+    height: 400px;
     text-align: center;
   }
   .app .encabezado1,
@@ -817,7 +828,7 @@ main .containers .testimonio .estrellas {
 @media (max-width: 760px) {
   main .bienvenida {
     text-align: center;
-    margin: 100px;
+    margin: 60px;
   }
   main .bienvenida p {
     line-height: 1.6;
@@ -827,16 +838,14 @@ main .containers .testimonio .estrellas {
     padding: 40px;
   }
   main .containers {
-    margin: 20px black;
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
   }
   main .testimonio {
-    width: 100%;
-    line-height: 1.6;
-    font-size: 1.5rem;
+    width: 285px;
   }
 }
 @media (max-width: 760px) {
@@ -857,22 +866,27 @@ main .containers .testimonio .estrellas {
     flex-direction: column;
     padding: 20px;
   }
-  .app div {
+  .app .celular-container {
     width: 100%;
     margin: 20px 0;
     padding: 10px;
+    max-height: 350px;
   }
-  .app div .celular {
+  .app .celular-container .celular {
     max-width: 80%;
   }
-  .app div .encabezado1, .app div .encabezado2, .app div .x, .app div .y {
-    margin-top: 20px;
+  .app .info1,
+  .app .info2 {
+    max-height: 400px;
+  }
+  .app .encabezado1, .app .encabezado2, .app .x, .app .y {
+    margin-top: 20px !important;
     font-size: 1.2rem;
   }
-  .app div .x, .app div .y {
+  .app .x, .app .y {
     margin-top: 60px;
   }
-  .app div p {
+  .app p {
     font-size: 1rem;
     line-height: 1.6;
     padding: 0 10px;
