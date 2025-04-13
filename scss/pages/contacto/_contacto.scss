@@ -5,17 +5,17 @@
     .contenidocontact {
         display: grid;
         grid-template-columns: repeat(32, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 120px);
         max-width: 100%;
     
         h1 {
-            grid-column: 6/12;
+            grid-column: 14/20;
             grid-row: 2/3;
         }
 
         .infocontacto {
             margin: 10px;
-            grid-column: 6/13;
+            grid-column: 6/15;
             grid-row: 3/6;
             display: grid;
             grid-template-columns: 1fr;
@@ -23,35 +23,38 @@
             
             .contactofl {
                 display: grid;
-                grid-template-columns: repeat(18, 20px);
-                grid-template-rows: repeat(7, 20px);
+                grid-template-columns: repeat(16, 1fr);
+                grid-template-rows: repeat(5, 1fr);
 
                 h5 {
                     grid-column: 1/8;
                     grid-row: 1/2;
+                    font-size: 1.5rem;
                 }
             }
 
             .contactovb {
                 display: grid;
-                grid-template-columns: repeat(18, 1fr);
-                grid-template-rows: repeat(7, auto);
+                grid-template-columns: repeat(17, 1fr);
+                grid-template-rows: repeat(5, 1fr);
 
                 h5 {
-                    grid-column: 1/10;
+                    grid-column: 1/12;
                     grid-row: 1/4;
+                    font-size: 1.5rem;
                 }
             }
 
             div .direccion {
-                grid-column: 4/19;
-                grid-row: 3/8;
+                grid-column: 4/-1;
+                grid-row: 2/8;
+                margin-top: 20px;
             }
         }
 
         .formulario {
             grid-column: 19/29;
-            grid-row: 2/9;
+            grid-row: 3/6;
             gap: 10px;
 
             input, textarea {
