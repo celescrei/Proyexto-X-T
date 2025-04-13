@@ -114,14 +114,15 @@ footer {
 
 .navoutro {
   background-color: black;
+  align-self: center;
 }
 .navoutro::before {
   content: "";
   display: block;
-  width: 40%;
+  max-width: 40%;
   height: 2px;
   background-color: aqua;
-  margin-left: 495px;
+  margin-left: 500px;
 }
 .navoutro .linksnav nav {
   display: flex;
@@ -585,6 +586,18 @@ main .containers .testimonio .estrellas {
   grid-row: 6/9;
 }
 
+@media (max-width: 1500px) {
+  .navoutro {
+    text-align: center;
+  }
+  .navoutro::before {
+    margin-left: 420px;
+    max-width: 40%;
+  }
+  .navoutro .linksnav nav a {
+    font-size: 1rem;
+  }
+}
 /* TABLETS */
 @media (max-width: 1500px) {
   .outro {
@@ -814,6 +827,11 @@ main .containers .testimonio .estrellas {
     grid-column: 7/11;
     grid-row: 3/7;
     gap: 10px;
+  }
+}
+@media (max-width: 760px) {
+  .navoutro::before {
+    margin-left: 200px;
   }
 }
 @media (max-width: 760px) {

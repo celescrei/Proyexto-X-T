@@ -1,13 +1,14 @@
 .navoutro {
     background-color: black;
-
+    align-self: center;
+    
     &::before {
         content: "";
         display: block;
-        width: 40%;
+        max-width: 40%;
         height: 2px;
         background-color: aqua;
-        margin-left: 495px;
+        margin-left: 500px;
     }
 
     .linksnav {

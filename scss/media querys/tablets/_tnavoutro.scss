@@ -1,0 +1,18 @@
+@media (max-width: 1500px) {
+    .navoutro {
+        text-align: center;
+        &::before {
+            margin-left: 420px;
+            max-width: 40%;
+        }
+
+        .linksnav {
+            nav {
+                
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

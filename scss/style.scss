@@ -19,7 +19,7 @@
 @use 'pages/contacto/info';
 
 
-
+@use 'media querys/tablets/tnavoutro';
 @use 'media querys/tablets/tablets';
 @use 'media querys/tablets/tindex';
 @use 'media querys/tablets/tnosotros';
@@ -27,6 +27,8 @@
 @use 'media querys/tablets/teventos';
 @use 'media querys/tablets/tcontacto';
 
+
+@use 'media querys/moviles/mnavoutro';
 @use 'media querys/moviles/mgral';
 @use 'media querys/moviles/mindex';
 @use 'media querys/moviles/mnosotros';
