@@ -1,7 +1,15 @@
 @media (max-width: 760px) {
-    .navoutro {
-        &::before {
-            margin-left: 200px;
-        }
+    .navoutro::before {
+            max-width: 90%;
+    }
+
+    .navoutro,
+    .linksnav,
+    nav {
+        
+        height: auto;
+        gap: 5px;
+        padding: 10px;
+
     }
 }
