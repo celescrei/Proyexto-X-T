@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 20px;
+    padding: 60px;
     grid-template-areas:
         "logo botones"
         "redes botones";
@@ -36,36 +36,21 @@
         }
     }
 
-    .botones {
-        grid-area: botones;
-        display: flex;
-        gap: 10px;
-        justify-self: end;
-        
+    .linksnav {
 
-        .ingreso {
-            color: black;
-            background-color: aqua;
-            border-radius: 5px;
-            height: 50px;
-            padding: 10px 15px;
-            cursor: pointer;
-        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+            gap: 10px;
+            text-align: end;
 
-        .registro {
-            background-color: white;
-            border-radius: 5px;
-            padding: 10px 15px;
-            cursor: pointer;
-        }
-
-        button {
-            padding: 10px 15px;
-            cursor: pointer;
-            
-            &:hover {
-                background-color: lightblue;
+            a {
+                color: white !important;
+                text-decoration: none;
+                font-size: 1.2rem;
             }
         }
     }
 }
+

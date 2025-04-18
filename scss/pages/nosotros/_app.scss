@@ -12,26 +12,34 @@
         padding: 10px;
         min-height: 300px;
         text-align: center;
+        padding: 50px;
 
         .celular {
             margin: 10px;
             max-width: 450px;
             height: auto;
             opacity: 0;
-            transition: opacity 1.2s ease;
+            transition: opacity 2s ease;
         }
 
         .animate__fadeInUp {
             opacity: 1 !important;
         }
 
-        .encabezado1, .encabezado2, .x, .y {
-            margin-top: 40px;
-            color: aqua;
-        }
         
-        .x, .y {
-            margin-top: 100px;
+    }
+    .info1,
+    .info2 {
+        transition: opacity 1.2s ease;
+
+        h2 {
+            color: aqua;
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.2;    
         }
     }
 }

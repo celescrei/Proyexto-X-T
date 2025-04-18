@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>X-t | Evento de Primavera</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 <body>
     <header class="tipografia">
@@ -25,11 +29,11 @@
         <div>
             <img src="assets/img/Xplorat-Rio.png" alt="evento" class="fotoevento">
         </div>
-        <div class="infoevento">
+        <div class="infoevento" data-aos="fade-up">
             <h1>Evento de Primavera</h1>
             <h2>¡Sumate a nuestras actividades en el río!</h2>
             <p>¡Empezá la primavera de la mejor forma posible! Te invitamos al río para una mañana de fitness abierta y gratuita. ¡Es el momento perfecto para moverte y disfrutar!</p>
-            <div class="containerinfoevento">
+            <div class="containerinfoevento" data-aos="fade-up">
                 <div class="quehacer">
                     <h3>¿Qué vas a hacer?</h3>
                     <ul>
@@ -53,33 +57,26 @@
     </main>
 
     <section class="outro">
-
-        <a href="index.html" class="logo">
-            <img src="assets/img/isologo xt.png" alt="Xplora-t" class="isologo">
-        </a>
-
-        <div class="redes">
-            <a href="https://www.instagram.com/xplorat/" class="instagram">
-                <img src="assets/img/logo-ig.png" alt="Instagram" class="ig">
+        <div>
+            <a href="index.html" class="logo">
+                <img src="assets/img/isologo xt.png" alt="Xplora-t" class="isologo">
             </a>
-
-            <a href="https://www.facebook.com/xploratmueve/" class="facebook">
-                <img src="assets/img/logo-fb-con-blanco.png" alt="Facebook" class="fb">
-            </a>
-
-            <a href="http://wa.me/message/LN4BUKVY6CCKH1" class="whatsapp">
-                <img src="assets/img/logo-wpp.png" alt="Whatsapp" class="wpp">
-            </a>
-        </div>
-
-        <div class="botones">
-            <button class="ingreso" type="ingreso">Ingresar</button>
-            <button class="registro" type="registro">Registrarse</button>
+    
+            <div class="redes">
+                <a href="https://www.instagram.com/xplorat/" class="instagram">
+                    <img src="assets/img/logo-ig.png" alt="Instagram" class="ig">
+                </a>
+    
+                <a href="https://www.facebook.com/xploratmueve/" class="facebook">
+                    <img src="assets/img/logo-fb-con-blanco.png" alt="Facebook" class="fb">
+                </a>
+    
+                <a href="http://wa.me/message/LN4BUKVY6CCKH1" class="whatsapp">
+                    <img src="assets/img/logo-wpp.png" alt="Whatsapp" class="wpp">
+                </a>
+            </div>
         </div>
         
-    </section>
-
-    <section class="navoutro">
         <div class="linksnav">
             <nav>
                 <a href="index.html" class="nav-link">Inicio</a>
@@ -89,7 +86,7 @@
                 <a href="contacto.html" class="nav-link">Contacto</a>
             </nav>
         </div>
-        
+
     </section>
     
     <footer>&copy; 2025 Todos los derechos reservados.</footer>
@@ -104,5 +101,84 @@
             });
         });
     </script>
+
+    <!-- Scripts de transiciones -->
+    <section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.infoevento h1');
+
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.infoevento h2');
+
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.infoevento p');
+
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.containerinfoevento');
+
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+    </section>
 </body>
 </html>

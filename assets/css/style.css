@@ -15,7 +15,7 @@ body header {
   background-color: black;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 60px;
   position: relative;
 }
 body header .logo {
@@ -23,7 +23,7 @@ body header .logo {
   align-items: center;
 }
 body header .logo img {
-  height: 80px;
+  height: 100px;
   margin-left: 10px;
 }
 body header .abrir-menu {
@@ -51,7 +51,7 @@ body header nav .nav-link:hover {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  padding: 20px;
+  padding: 60px;
   grid-template-areas: "logo botones" "redes botones";
 }
 .outro .logo {
@@ -76,32 +76,17 @@ body header nav .nav-link:hover {
   margin: 5px;
   padding: 5px;
 }
-.outro .botones {
-  grid-area: botones;
+.outro .linksnav nav {
   display: flex;
+  flex-direction: column;
+  height: 150px;
   gap: 10px;
-  justify-self: end;
+  text-align: end;
 }
-.outro .botones .ingreso {
-  color: black;
-  background-color: aqua;
-  border-radius: 5px;
-  height: 50px;
-  padding: 10px 15px;
-  cursor: pointer;
-}
-.outro .botones .registro {
-  background-color: white;
-  border-radius: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
-}
-.outro .botones button {
-  padding: 10px 15px;
-  cursor: pointer;
-}
-.outro .botones button:hover {
-  background-color: lightblue;
+.outro .linksnav nav a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 footer {
@@ -112,34 +97,10 @@ footer {
   color: white;
 }
 
-.navoutro {
-  background-color: black;
-  align-self: center;
-}
-.navoutro::before {
-  content: "";
-  display: block;
-  max-width: 30%;
-  height: 2px;
-  background-color: aqua;
-  margin: 0 auto;
-}
-.navoutro .linksnav nav {
-  display: flex;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  text-align: center;
-}
-.navoutro .linksnav nav a {
-  color: white !important;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
 /* div bienvenida */
+main {
+  background-color: black;
+}
 main section {
   display: flex;
 }
@@ -157,12 +118,10 @@ main .background img {
 }
 main .bienvenida {
   color: black;
-  text-align: left;
-  margin: 10px 40px 10px 40px;
   background-color: white;
-  padding: 15px;
-  margin: 150px;
-  text-align: start;
+  padding: 150px;
+  text-align: center;
+  transition: opacity 2s ease;
 }
 main .bienvenida h1 {
   line-height: 1.6;
@@ -174,15 +133,21 @@ main .bienvenida p {
 }
 main .titulo {
   text-align: center;
-  background-color: black;
-  color: aqua;
-  margin: 0;
-  padding: 40px;
-  text-decoration: underline;
+  transition: opacity 2s ease;
+  padding: 15px 30px;
+  margin: 50px auto;
+  background-color: aqua;
+  background-size: 10px;
+  border-radius: 40px;
+  color: black;
+  font-weight: bold;
+  height: 70px;
+  max-width: 250px;
 }
 main .containers {
   background-color: black;
-  margin: 20px solid black;
+  padding: 20px;
+  transition: opacity 1.2s ease;
 }
 main .containers .testimonio {
   border-radius: 10px;
@@ -207,6 +172,7 @@ main .containers .testimonio .estrellas {
   padding: 15px;
   margin: 100px 200px;
   text-align: center;
+  background-color: white;
 }
 .sobrenosotros .nosotros {
   -webkit-text-decoration: underline aqua;
@@ -219,6 +185,7 @@ main .containers .testimonio .estrellas {
   border-radius: 40px;
   color: white;
   font-weight: bold;
+  transition: opacity 1s ease;
 }
 .sobrenosotros p {
   font-size: 1.2rem;
@@ -243,23 +210,31 @@ main .containers .testimonio .estrellas {
   padding: 10px;
   min-height: 300px;
   text-align: center;
+  padding: 50px;
 }
 .app div .celular {
   margin: 10px;
   max-width: 450px;
   height: auto;
   opacity: 0;
-  transition: opacity 1.2s ease;
+  transition: opacity 2s ease;
 }
 .app div .animate__fadeInUp {
   opacity: 1 !important;
 }
-.app div .encabezado1, .app div .encabezado2, .app div .x, .app div .y {
-  margin-top: 40px;
-  color: aqua;
+.app .info1,
+.app .info2 {
+  transition: opacity 1.2s ease;
 }
-.app div .x, .app div .y {
-  margin-top: 100px;
+.app .info1 h2,
+.app .info2 h2 {
+  color: aqua;
+  font-size: 1.8rem;
+}
+.app .info1 p,
+.app .info2 p {
+  font-size: 1.2rem;
+  line-height: 1.2;
 }
 
 .sedes .containerservice {
@@ -275,6 +250,8 @@ main .containers .testimonio .estrellas {
   overflow: hidden;
   background-color: white;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3 ease;
 }
 .sedes .containerservice .card:hover {
   box-shadow: 5px 5px 20px rgb(0, 240, 255);
@@ -321,6 +298,7 @@ main .containers .testimonio .estrellas {
   position: relative;
   max-width: 100%;
   margin: auto;
+  transition: opacity 1.2s ease;
 }
 .carruselfl .carousel-inner img,
 .carruselfl .carousel-item img,
@@ -410,6 +388,7 @@ main .containers .testimonio .estrellas {
   grid-template-columns: repeat(33, 50px);
   grid-template-rows: repeat(9, 50px);
   max-width: 100%;
+  transition: opacity 1.2s ease;
 }
 .virtual .titulovirtual {
   grid-row: 3/4;
@@ -434,6 +413,7 @@ main .containers .testimonio .estrellas {
   width: 100%;
 }
 .eventoprimavera .infoevento {
+  background-color: white;
   display: grid;
   grid-template-columns: repeat(29, 1fr);
   grid-template-rows: repeat(7, 1fr);
@@ -453,24 +433,28 @@ main .containers .testimonio .estrellas {
   color: white;
   font-weight: bold;
   height: 70px;
+  transition: opacity 2s ease;
 }
 .eventoprimavera .infoevento h2 {
   grid-row: 3/4;
   grid-column: 11/20;
   text-align: center;
   font-size: 1.5rem;
+  transition: opacity 3s ease;
 }
 .eventoprimavera .infoevento p {
   grid-row: 4/5;
   grid-column: 10/21;
   text-align: center;
   font-size: 1.5rem;
+  transition: opacity 4s ease;
 }
 .eventoprimavera .infoevento .containerinfoevento {
   display: flex;
   grid-column: 5/26;
   grid-row: 5/7;
   margin: 30px;
+  transition: opacity 2s ease;
 }
 .eventoprimavera .infoevento .containerinfoevento .quehacer h3 {
   -webkit-text-decoration: underline aqua;
@@ -498,7 +482,8 @@ main .containers .testimonio .estrellas {
 
 /* CONTACTO */
 .acordion {
-  margin: 40px;
+  margin: 70px;
+  background-color: white;
 }
 .acordion .preguntas {
   -webkit-text-decoration: underline aqua;
@@ -586,15 +571,6 @@ main .containers .testimonio .estrellas {
   grid-row: 6/9;
 }
 
-@media (max-width: 1500px) {
-  .navoutro::before {
-    max-width: 40%;
-  }
-  .navoutro,
-  .linksnav nav {
-    gap: 10px;
-  }
-}
 /* TABLETS */
 @media (max-width: 1500px) {
   .outro {
@@ -613,21 +589,32 @@ main .containers .testimonio .estrellas {
     gap: 15px;
     justify-content: center;
   }
-  .outro .botones {
-    justify-content: center;
-    display: flex;
-    gap: 10px;
+  .outro .linksnav {
+    padding-top: 40px;
+  }
+  .outro .linksnav nav {
+    flex-direction: row;
+    padding: 10px;
+  }
+  .outro .linksnav::before {
+    content: "";
+    display: block;
+    max-width: 90%;
+    height: 2px;
+    background-color: aqua;
+    margin: 0 auto;
   }
 }
 @media (max-width: 1500px) {
   main .bienvenida {
     text-align: center;
-    margin: 40px;
     line-height: 1.6;
     font-size: 1.5rem;
   }
   main .titulo {
     padding: 40px;
+    display: flex;
+    align-items: center;
   }
   main .containers {
     margin: 20px black;
@@ -827,18 +814,6 @@ main .containers .testimonio .estrellas {
   }
 }
 @media (max-width: 760px) {
-  .navoutro::before {
-    max-width: 90%;
-  }
-  .navoutro,
-  .linksnav,
-  nav {
-    height: auto;
-    gap: 5px;
-    padding: 10px;
-  }
-}
-@media (max-width: 760px) {
   body {
     margin: 0;
   }
@@ -895,19 +870,28 @@ main .containers .testimonio .estrellas {
   .outro .redes img {
     width: 40px;
   }
-  .outro .botones {
-    justify-self: center;
-    flex-direction: column;
-    gap: 10px;
+  .outro .linksnav {
+    padding-top: 40px;
   }
-  .outro .botones button {
-    width: 100%;
+  .outro .linksnav nav {
+    flex-direction: row;
+    padding: 10px;
+    gap: 15px;
+    text-align: center;
+  }
+  .outro .linksnav::before {
+    content: "";
+    display: block;
+    max-width: 90%;
+    height: 2px;
+    background-color: aqua;
+    margin: 0 auto;
   }
 }
 @media (max-width: 760px) {
   main .bienvenida {
     text-align: center;
-    margin: 60px;
+    padding: 60px;
   }
   main .bienvenida p {
     line-height: 1.6;
@@ -915,6 +899,8 @@ main .containers .testimonio .estrellas {
   }
   main .titulo {
     padding: 40px;
+    text-align: center;
+    display: flex;
   }
   main .containers {
     align-items: center;

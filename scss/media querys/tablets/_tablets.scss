@@ -18,10 +18,22 @@
             justify-content: center;
         }
 
-        .botones {
-            justify-content: center;
-            display: flex;
-            gap: 10px;
+        .linksnav {
+            padding-top: 40px;
+
+            nav {
+                flex-direction: row;
+                padding: 10px;
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                max-width: 90%;
+                height: 2px;
+                background-color: aqua;
+                margin: 0 auto;
+            }
         }
     }
 }

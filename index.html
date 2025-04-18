@@ -9,6 +9,8 @@
     <meta name="keywords" content="gimnasio, musculación, entrenamiento, salud, Ballester, Florida, Xplora-t, xplorat,">
 
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>  
 
@@ -33,16 +35,16 @@
             <img src="assets/img/background.jpg" alt="background" class="presentacion">
         </div>
 
-        <div class="bienvenida">
+        <div class="bienvenida" data-aos="fade-up">
             <h1>Bienvenido a Xplora-t | Actividad física y salud</h1>
             <p>Un lugar donde toda la familia pueda disfrutar de actividades de todo tipo, acompañados de profesionales de la actividad física y la salud.</p>
         </div>
 
-        <div class="titulo">
+        <div class="titulo" data-aos="fade-up">
             <h1>Testimonios</h1>
         </div>
 
-        <section class="containers">
+        <section class="containers" data-aos="fade-up">
             <div class="testimonio">
                 <img src="assets/img/png-5-estrellas.png" alt="5 Estrellas" class="estrellas">
                 <p>Muy buena atención por parte de los profes que están muy atentos a los que vamos. Tienen buenos materiales y buena variedad. Las rutinas son variables y entretenidas.</p>
@@ -63,43 +65,39 @@
     </main>
 
     <section class="outro">
-
-        <a href="index.html" class="logo">
-            <img src="assets/img/isologo xt.png" alt="Xplora-t" class="isologo">
-        </a>
-
-        <div class="redes">
-            <a href="https://www.instagram.com/xplorat/" class="instagram">
-                <img src="assets/img/logo-ig.png" alt="Instagram" class="ig">
+        <div>
+            <a href="index.html" class="logo">
+                <img src="assets/img/isologo xt.png" alt="Xplora-t" class="isologo">
             </a>
-
-            <a href="https://www.facebook.com/xploratmueve/" class="facebook">
-                <img src="assets/img/logo-fb-con-blanco.png" alt="Facebook" class="fb">
-            </a>
-
-            <a href="http://wa.me/message/LN4BUKVY6CCKH1" class="whatsapp">
-                <img src="assets/img/logo-wpp.png" alt="Whatsapp" class="wpp">
-            </a>
-        </div>
-
-        <div class="botones">
-            <button class="ingreso" type="ingreso">Ingresar</button>
-            <button class="registro" type="registro">Registrarse</button>
-        </div>
-    </section>
-
-    <section class="navoutro">
-            <div class="linksnav">
-                <nav>
-                    <a href="index.html" class="nav-link">Inicio</a>
-                    <a href="nosotros.html" class="nav-link">Sobre Nosotros</a>
-                    <a href="servicios.html" class="nav-link">Servicios</a>
-                    <a href="eventoprimavera.html" class="nav-link">Eventos</a>
-                    <a href="contacto.html" class="nav-link">Contacto</a>
-                </nav>
+    
+            <div class="redes">
+                <a href="https://www.instagram.com/xplorat/" class="instagram">
+                    <img src="assets/img/logo-ig.png" alt="Instagram" class="ig">
+                </a>
+    
+                <a href="https://www.facebook.com/xploratmueve/" class="facebook">
+                    <img src="assets/img/logo-fb-con-blanco.png" alt="Facebook" class="fb">
+                </a>
+    
+                <a href="http://wa.me/message/LN4BUKVY6CCKH1" class="whatsapp">
+                    <img src="assets/img/logo-wpp.png" alt="Whatsapp" class="wpp">
+                </a>
             </div>
-            
+        </div>
+        
+        <div class="linksnav">
+            <nav>
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="nosotros.html" class="nav-link">Sobre Nosotros</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
+                <a href="eventoprimavera.html" class="nav-link">Eventos</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+
     </section>
+
+
 
     <footer>&copy; 2025 Todos los derechos reservados.</footer>
 
@@ -113,6 +111,66 @@
             });
         });
     </script>
+
+    <!-- Scripts de transiciones -->
+    <section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.bienvenida');
+    
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+    
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+    
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.titulo');
+
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.containers');
+
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+    </section>
 
 </body>
 </html>

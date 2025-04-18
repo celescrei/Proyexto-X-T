@@ -25,63 +25,55 @@
         </nav>
     </header>
     
-    <main class="sobrenosotros">
+    <main class="sobrenosotros" data-aos="fade-up">
         <h1 class="nosotros">Sobre nosotros</h1>
         <p>Desde nuestros inicios en 2014, entrenando al aire libre en una plaza, hasta hoy, con dos sedes en pleno crecimiento, hemos mantenido el mismo compromiso: ayudar a las personas a transformar su bienestar físico y mental.</p>
         <p>Creemos que el ejercicio no solo fortalece el cuerpo, sino también la confianza y la determinación. En nuestro gimnasio, cada cliente es parte de una comunidad donde el apoyo, la motivación y la superación personal son el pilar de cada entrenamiento. ¡Te invitamos a formar parte de esta historia y a alcanzar juntos tus objetivos!</p>
     </main>
     
-    <section class="app">
+    <section class="app" data-aos="fade-up">
         <div class="celular-container" data-aos="fade-up">
             <img src="assets/img/celular.png" alt="Celular" class="celular">
         </div>
 
-        <div class="info1"> 
+        <div class="info1" data-aos="fade-up"> 
             <h2 class="encabezado1">Xplora-t Link</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consequuntur repellendus veniam, iste, aut, ut aperiam corporis corrupti vero ipsam qui eum praesentium labore accusamus! Dolorum ratione dolor eos dicta.</p>
+            <p>¿Querés entrenar con un plan hecho solo para vos? Con Xplora-t es posible. Escaneá el QR en cualquiera de nuestras sedes o ingresá al link desde tu celu y registrate en pocos pasos.
+                Una vez inscripto, nuestros profesores te van a hacer algunas preguntas para armar un plan de entrenamiento personalizado según tus objetivos.
+                En la app vas a encontrar tu rutina separada por días y sesiones. </p>
+            <p>¡Entrená con foco y sin perder tiempo!</p>
 
-            <h2 class="x">fwefa</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus autem consequatur accusamus praesentium quisquam necessitatibus mollitia at quis maxime vel! Ducimus aut et quam atque, deserunt autem rem vel perferendis?</p>
         </div>
 
-        <div class="info2">
-            <h2 class="encabezado2">¿Qué Ofrecemos?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi possimus, blanditiis dolores, placeat autem incidunt ea voluptates aliquid mollitia accusamus voluptate temporibus quis voluptatem, reiciendis est impedit fuga adipisci odit.</p>
+        <div class="info2" data-aos="fade-up">
+            <h2 class="encabezado2">¿Querés más info? Hablá con nosotros:</h2>
+            <p>Si tenés dudas sobre cómo empezar, cómo funciona el sistema o qué incluye tu rutina, podés escribirnos. Estamos para ayudarte a dar el primer paso. ¡Sumate y empezá a entrenar con tu plan en el bolsillo!</p>
             
-            <h2 class="y">wefawe</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nihil nam nulla minima architecto fugiat cum deserunt consequuntur error, dolore ab, veniam quisquam soluta corrupti ipsam vitae minus magnam. Non!</p>
         </div>
 
     </section>
 
     <section class="outro">
-
-        <a href="index.html" class="logo">
-            <img src="assets/img/isologo xt.png" alt="Xplora-t" class="isologo">
-        </a>
-
-        <div class="redes">
-            <a href="https://www.instagram.com/xplorat/" class="instagram">
-                <img src="assets/img/logo-ig.png" alt="Instagram" class="ig">
+        <div>
+            <a href="index.html" class="logo">
+                <img src="assets/img/isologo xt.png" alt="Xplora-t" class="isologo">
             </a>
-
-            <a href="https://www.facebook.com/xploratmueve/" class="facebook">
-                <img src="assets/img/logo-fb-con-blanco.png" alt="Facebook" class="fb">
-            </a>
-
-            <a href="http://wa.me/message/LN4BUKVY6CCKH1" class="whatsapp">
-                <img src="assets/img/logo-wpp.png" alt="Whatsapp" class="wpp">
-            </a>
+    
+            <div class="redes">
+                <a href="https://www.instagram.com/xplorat/" class="instagram">
+                    <img src="assets/img/logo-ig.png" alt="Instagram" class="ig">
+                </a>
+    
+                <a href="https://www.facebook.com/xploratmueve/" class="facebook">
+                    <img src="assets/img/logo-fb-con-blanco.png" alt="Facebook" class="fb">
+                </a>
+    
+                <a href="http://wa.me/message/LN4BUKVY6CCKH1" class="whatsapp">
+                    <img src="assets/img/logo-wpp.png" alt="Whatsapp" class="wpp">
+                </a>
+            </div>
         </div>
-
-        <div class="botones">
-            <button class="ingreso" type="ingreso">Ingresar</button>
-            <button class="registro" type="registro">Registrarse</button>
-        </div>
-
-    </section>
-
-    <section class="navoutro">
+        
         <div class="linksnav">
             <nav>
                 <a href="index.html" class="nav-link">Inicio</a>
@@ -91,7 +83,7 @@
                 <a href="contacto.html" class="nav-link">Contacto</a>
             </nav>
         </div>
-        
+
     </section>
     
     <footer>&copy; 2025 Todos los derechos reservados.</footer>
@@ -108,29 +100,85 @@
         });
     </script>
 
-    <!-- Script de animacion para app -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const elemento = document.querySelector('.celular');
+    <!-- Scripts de transitions -->
+    <section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.sobrenosotros');
     
-            function mostrarAlScroll() {
-                const rect = elemento.getBoundingClientRect();
-                const estaVisible = rect.top < window.innerHeight;
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
     
-                if (estaVisible) {
-                    elemento.classList.add('animate__animated', 'animate__fadeInUp');
-                    window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
                 }
-            }
-
-            window.addEventListener('scroll', mostrarAlScroll);
-            mostrarAlScroll(); // Por si ya está visible al cargar
-        });
-    </script>
     
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.info1');
+
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.info2');
+
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
     
-
-
-
+        <!-- Script de animacion para app -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.celular');
+        
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+        
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+    
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+    </section>
+    
 </body>
 </html>

@@ -2,8 +2,7 @@
     main {
         .bienvenida {
             text-align: center;
-            margin: 60px;
-
+            padding: 60px;
             p {
                 line-height: 1.6;
                 font-size: 1.2rem;
@@ -12,6 +11,8 @@
 
         .titulo {
             padding: 40px;
+            text-align: center;
+            display: flex;
         }
 
         .containers {

@@ -28,7 +28,7 @@
 
     <main class="sedes">
         <div class="containerservice">
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <figure>
                     <img src="assets/img/sedevb.jpg" class="sedevb">
                 </figure>
@@ -37,7 +37,7 @@
                     <a href="https://maps.app.goo.gl/MjxmXm4AcW2MH5Gy8">Google Maps</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <figure>
                     <img src="assets/img/sedefl.jpg" class="sedefl">
                 </figure>
@@ -49,7 +49,7 @@
         </div>
     </main>
 
-    <section class="carruselfl">
+    <section class="carruselfl" >
         <div id="carruselflfuntion" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carruselflfuntion" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -106,7 +106,7 @@
         </div>
     </section>
 
-    <section class="carruselvb">
+    <section class="carruselvb" >
         <div id="carruselvbfuntion" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carruselvbfuntion" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -162,7 +162,7 @@
         </div>
     </section>
 
-    <section class="virtual">
+    <section class="virtual" data-aos="fade-up">
         <h1 class="titulovirtual">¡Entrená en tu casa!</h1>
         <p class="p1">Con nuestro link de Xplora-t te ofrecemos planes de entrenamiento totalmente personalizados y ajustables a tu progreso.</p>
         <p class="p2">Cada ejercicio está detallado con videos y guías paso a paso para asegurar una correcta ejecución.</p>
@@ -170,33 +170,26 @@
     </section>
 
     <section class="outro">
-
-        <a href="index.html" class="logo">
-            <img src="assets/img/isologo xt.png" alt="Xplora-t" class="isologo">
-        </a>
-
-        <div class="redes">
-            <a href="https://www.instagram.com/xplorat/" class="instagram">
-                <img src="assets/img/logo-ig.png" alt="Instagram" class="ig">
+        <div>
+            <a href="index.html" class="logo">
+                <img src="assets/img/isologo xt.png" alt="Xplora-t" class="isologo">
             </a>
-
-            <a href="https://www.facebook.com/xploratmueve/" class="facebook">
-                <img src="assets/img/logo-fb-con-blanco.png" alt="Facebook" class="fb">
-            </a>
-
-            <a href="http://wa.me/message/LN4BUKVY6CCKH1" class="whatsapp">
-                <img src="assets/img/logo-wpp.png" alt="Whatsapp" class="wpp">
-            </a>
-        </div>
-
-        <div class="botones">
-            <button class="ingreso" type="ingreso">Ingresar</button>
-            <button class="registro" type="registro">Registrarse</button>
+    
+            <div class="redes">
+                <a href="https://www.instagram.com/xplorat/" class="instagram">
+                    <img src="assets/img/logo-ig.png" alt="Instagram" class="ig">
+                </a>
+    
+                <a href="https://www.facebook.com/xploratmueve/" class="facebook">
+                    <img src="assets/img/logo-fb-con-blanco.png" alt="Facebook" class="fb">
+                </a>
+    
+                <a href="http://wa.me/message/LN4BUKVY6CCKH1" class="whatsapp">
+                    <img src="assets/img/logo-wpp.png" alt="Whatsapp" class="wpp">
+                </a>
+            </div>
         </div>
         
-    </section>
-
-    <section class="navoutro">
         <div class="linksnav">
             <nav>
                 <a href="index.html" class="nav-link">Inicio</a>
@@ -206,7 +199,7 @@
                 <a href="contacto.html" class="nav-link">Contacto</a>
             </nav>
         </div>
-        
+
     </section>
     
     <footer>&copy; 2025 Todos los derechos reservados.</footer>
@@ -224,5 +217,58 @@
         });
     </script>
 
+    <!-- Scripts de transiciones -->
+    <section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const tarjetas = document.querySelectorAll('.card');
+                const animadas = new Set();
+            
+                function mostrarAlScroll() {
+                    tarjetas.forEach(function (card, index) {
+                        const rect = card.getBoundingClientRect();
+                        const estaVisible = rect.top < window.innerHeight;
+            
+                        if (estaVisible && !animadas.has(index)) {
+                            card.classList.add('animate__animated', 'animate__fadeInUp');
+            
+                            card.addEventListener('animationend', () => {
+                                card.classList.remove('animate__animated', 'animate__fadeInUp');
+                            }, { once: true });
+            
+                            animadas.add(index);
+                        }
+                    });
+            
+                    // Si todas ya se animaron, dejamos de escuchar el scroll
+                    if (animadas.size === tarjetas.length) {
+                        window.removeEventListener('scroll', mostrarAlScroll);
+                    }
+                }
+            
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Ejecutar una vez al cargar
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.virtual');
+
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+    </section>
 </body>
 </html>

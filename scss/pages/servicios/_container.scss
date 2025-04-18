@@ -7,12 +7,13 @@
         background-color: black;
 
         .card {
-            
             margin: 30px;
             border-radius: 6px;
             overflow: hidden;
             background-color: white;
             box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+            transform: translateY(0);
+            transition: transform 0.3s ease, box-shadow 0.3 ease;
         
             &:hover {
                 box-shadow: 5px 5px 20px rgba(0, 240, 255, 4);
