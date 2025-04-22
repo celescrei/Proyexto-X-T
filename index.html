@@ -14,6 +14,7 @@
 </head>
 <body>  
 
+    <!-- Navegador superior -->
     <header class="tipografia">
         <a href="index.html" class="logo">
             <img src="assets/img/logo-blango-ok.png" alt="Logo Xplora-t" class="logo">
@@ -26,65 +27,79 @@
             <a href="eventoprimavera.html" class="nav-link">Eventos</a>
             <a href="contacto.html" class="nav-link">Contacto</a>
         </nav>
-
     </header>
 
     <main class="container">
 
+        <!-- Foto principal -->
         <div class="background">
             <img src="assets/img/background.jpg" alt="background" class="presentacion">
         </div>
-
+        
+        <!-- Texto de bienvenida -->
         <div class="bienvenida" data-aos="fade-up">
             <h1>Bienvenido a Xplora-t | Actividad física y salud</h1>
             <p>Un lugar donde toda la familia pueda disfrutar de actividades de todo tipo, acompañados de profesionales de la actividad física y la salud.</p>
         </div>
 
+        <!-- Testimonios de clientes -->
         <div class="titulo" data-aos="fade-up">
             <h1>Testimonios</h1>
         </div>
 
+        <!-- 3 Testimonios sacados de GM -->
         <section class="containers" data-aos="fade-up">
+
+            <!-- Testimonio 1 -->
             <div class="testimonio">
                 <img src="assets/img/png-5-estrellas.png" alt="5 Estrellas" class="estrellas">
                 <p>Muy buena atención por parte de los profes que están muy atentos a los que vamos. Tienen buenos materiales y buena variedad. Las rutinas son variables y entretenidas.</p>
                 <p>- Anto Quarra.</p>
             </div>
+
+            <!-- Testimonio 2 -->
             <div class="testimonio">
                 <img src="assets/img/png-5-estrellas.png" alt="5 Estrellas" class="estrellas">
                 <p>Excelente lugar de entrenamiento. Las instalaciones son cómodas y los profes muy atentos. Recomiendo Cross/funcional.</p>
                 <p>- David Alegre.</p>
             </div>
+
+            <!-- Testimonio 3 -->
             <div class="testimonio">
                 <img src="assets/img/png-5-estrellas.png" alt="5 Estrellas" class="estrellas">
                 <p>¡Excelente atención! Tienen muchos elementos para trabajar peso libre. Máquinas en buen estado, espacioso y bien ventilado.</p>
                 <p>- Diana Cozzani.</p>
             </div>
-
         </section>
     </main>
 
     <section class="outro">
         <div>
+        <!-- Firma X-t -->
             <a href="index.html" class="logo">
                 <img src="assets/img/isologo xt.png" alt="Xplora-t" class="isologo">
             </a>
-    
+            
+            <!-- Div de links de Redes Sociales -->
             <div class="redes">
+                <!-- Instagram -->
                 <a href="https://www.instagram.com/xplorat/" class="instagram">
                     <img src="assets/img/logo-ig.png" alt="Instagram" class="ig">
                 </a>
     
+                <!-- Facebook -->
                 <a href="https://www.facebook.com/xploratmueve/" class="facebook">
                     <img src="assets/img/logo-fb-con-blanco.png" alt="Facebook" class="fb">
                 </a>
     
+                <!-- Whatsapp -->
                 <a href="http://wa.me/message/LN4BUKVY6CCKH1" class="whatsapp">
                     <img src="assets/img/logo-wpp.png" alt="Whatsapp" class="wpp">
                 </a>
             </div>
         </div>
         
+        <!-- Nav inferior  -->
         <div class="linksnav">
             <nav>
                 <a href="index.html" class="nav-link">Inicio</a>
@@ -94,13 +109,13 @@
                 <a href="contacto.html" class="nav-link">Contacto</a>
             </nav>
         </div>
-
     </section>
 
 
 
     <footer>&copy; 2025 Todos los derechos reservados.</footer>
-
+    
+    <!-- Script de menu -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const menuBtn = document.querySelector(".abrir-menu");
@@ -112,8 +127,10 @@
         });
     </script>
 
-    <!-- Scripts de transiciones -->
+    <!-- Scripts de transiciones fadeInUp-->
     <section>
+
+        <!-- Script de .bienvenida -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const elemento = document.querySelector('.bienvenida');
@@ -133,6 +150,7 @@
             });
         </script>
 
+        <!-- Script de .titulo -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const elemento = document.querySelector('.titulo');
@@ -152,6 +170,7 @@
             });
         </script>
 
+        <!-- Script de .containers -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const elemento = document.querySelector('.containers');
@@ -171,6 +190,5 @@
             });
         </script>
     </section>
-
 </body>
 </html>

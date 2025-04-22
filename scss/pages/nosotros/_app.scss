@@ -1,3 +1,7 @@
+@mixin p ($fs) {
+    font-size: $fs;
+}
+
 .app {
     display: flex;
     color: white;
@@ -9,7 +13,6 @@
     
     div {
         width: 100%;
-        padding: 10px;
         min-height: 300px;
         text-align: center;
         padding: 50px;
@@ -25,20 +28,19 @@
         .animate__fadeInUp {
             opacity: 1 !important;
         }
-
-        
     }
+
     .info1,
     .info2 {
         transition: opacity 1.2s ease;
 
         h2 {
             color: aqua;
-            font-size: 1.8rem;
+            @include p(1.6rem);
         }
 
         p {
-            font-size: 1.2rem;
+            @include p(1.2rem);
             line-height: 1.2;    
         }
     }

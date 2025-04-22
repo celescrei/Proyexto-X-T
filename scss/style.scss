@@ -1,10 +1,12 @@
 @use 'base/generales';
 @use 'base/outro';
 @use 'base/footer';
+@use 'base/placeholder';
+@use 'base/forwards';
 
 @use 'pages/index';
 
-@use 'pages/nosotros/nosotros';
+@use 'pages/nosotros/nosotros' ;
 @use 'pages/nosotros/app';
 
 @use 'pages/servicios/container';
@@ -32,4 +34,3 @@
 @use 'media querys/moviles/mservicios';
 @use 'media querys/moviles/meventos';
 @use 'media querys/moviles/mcontacto';
-

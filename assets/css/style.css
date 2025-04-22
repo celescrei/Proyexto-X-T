@@ -186,6 +186,7 @@ main .containers .testimonio .estrellas {
   color: white;
   font-weight: bold;
   transition: opacity 1s ease;
+  max-height: 200px;
 }
 .sobrenosotros p {
   font-size: 1.2rem;
@@ -207,7 +208,6 @@ main .containers .testimonio .estrellas {
 }
 .app div {
   width: 100%;
-  padding: 10px;
   min-height: 300px;
   text-align: center;
   padding: 50px;
@@ -229,7 +229,7 @@ main .containers .testimonio .estrellas {
 .app .info1 h2,
 .app .info2 h2 {
   color: aqua;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .app .info1 p,
 .app .info2 p {
@@ -419,7 +419,7 @@ main .containers .testimonio .estrellas {
   grid-template-rows: repeat(7, 1fr);
   max-width: 100%;
 }
-.eventoprimavera .infoevento h1 {
+.eventoprimavera .infoevento .tituloevento {
   grid-row: 2/3;
   grid-column: 12/19;
   -webkit-text-decoration: underline aqua;
@@ -432,8 +432,8 @@ main .containers .testimonio .estrellas {
   border-radius: 40px;
   color: white;
   font-weight: bold;
-  height: 70px;
-  transition: opacity 2s ease;
+  transition: opacity 1s ease;
+  max-height: 200px;
 }
 .eventoprimavera .infoevento h2 {
   grid-row: 3/4;
@@ -451,28 +451,26 @@ main .containers .testimonio .estrellas {
 }
 .eventoprimavera .infoevento .containerinfoevento {
   display: flex;
-  grid-column: 5/26;
+  grid-column: 6/26;
   grid-row: 5/7;
-  margin: 30px;
+  padding: 30px;
+  gap: 25px;
   transition: opacity 2s ease;
 }
 .eventoprimavera .infoevento .containerinfoevento .quehacer h3 {
   -webkit-text-decoration: underline aqua;
           text-decoration: underline aqua;
   font-size: 2rem;
-  margin: 20px;
 }
 .eventoprimavera .infoevento .containerinfoevento .quehacer p {
   font-size: 1.2rem;
   text-align: left;
   margin-left: 60px;
-  margin-right: 80px;
 }
 .eventoprimavera .infoevento .containerinfoevento .extra h3 {
   -webkit-text-decoration: underline aqua;
           text-decoration: underline aqua;
   font-size: 2rem;
-  margin: 20px;
 }
 .eventoprimavera .infoevento .containerinfoevento .extra p {
   font-size: 1.2rem;
@@ -594,7 +592,7 @@ main .containers .testimonio .estrellas {
   }
   .outro .linksnav nav {
     flex-direction: row;
-    padding: 10px;
+    padding-top: 20px;
   }
   .outro .linksnav::before {
     content: "";
@@ -736,7 +734,7 @@ main .containers .testimonio .estrellas {
   }
 }
 @media (max-width: 1500px) {
-  .eventoprimavera {
+  .eventoprimavera, .eventoprimavera .infoevento {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -745,17 +743,11 @@ main .containers .testimonio .estrellas {
     width: 100%;
   }
   .eventoprimavera .infoevento {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px;
-    margin: 30px;
   }
   .eventoprimavera .infoevento h1,
   .eventoprimavera .infoevento h2,
-  .eventoprimavera .infoevento p,
-  .eventoprimavera .infoevento .quehacer,
-  .eventoprimavera .infoevento .extra {
+  .eventoprimavera .infoevento p {
     text-align: center;
     width: 100%;
     margin-bottom: 15px;
@@ -769,6 +761,14 @@ main .containers .testimonio .estrellas {
     margin: 20px;
     display: flex;
     gap: 40px;
+  }
+  .eventoprimavera .infoevento .containerinfoevento .quehacer,
+  .eventoprimavera .infoevento .containerinfoevento .extra {
+    padding: 5px;
+  }
+  .eventoprimavera .infoevento .containerinfoevento .quehacer ul,
+  .eventoprimavera .infoevento .containerinfoevento .extra ul {
+    padding: 20px;
   }
 }
 @media (max-width: 1500px) {
@@ -823,7 +823,6 @@ main .containers .testimonio .estrellas {
     position: relative;
     background-color: black;
     flex-direction: row;
-    padding: 10px;
   }
   body header .logo img {
     height: 80px;
@@ -878,11 +877,12 @@ main .containers .testimonio .estrellas {
     padding: 10px;
     gap: 15px;
     text-align: center;
+    flex-direction: column;
   }
   .outro .linksnav::before {
     content: "";
     display: block;
-    max-width: 90%;
+    max-width: 100%;
     height: 2px;
     background-color: aqua;
     margin: 0 auto;
@@ -1034,7 +1034,6 @@ main .containers .testimonio .estrellas {
 @media (max-width: 760px) {
   .eventoprimavera {
     flex-direction: column;
-    align-items: center;
   }
   .eventoprimavera .fotoevento {
     width: 100%;
@@ -1064,10 +1063,16 @@ main .containers .testimonio .estrellas {
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin-top: 80px;
+    justify-content: start;
+    padding: 0;
   }
-  .eventoprimavera .infoevento .containerinfoevento h3 {
-    font-size: 1.6rem;
+  .eventoprimavera .infoevento .containerinfoevento .quehacer h3,
+  .eventoprimavera .infoevento .containerinfoevento .extra h3 {
+    font-size: 1.8rem;
+  }
+  .eventoprimavera .infoevento .containerinfoevento .quehacer p,
+  .eventoprimavera .infoevento .containerinfoevento .extra p {
+    margin-left: 10px;
   }
 }
 @media (max-width: 760px) {
