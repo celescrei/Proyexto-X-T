@@ -11,6 +11,7 @@
 
 </head>
 <body>
+    <!-- Nav superior -->
     <header class="tipografia">
         <a href="index.html" class="logo">
             <img src="assets/img/logo-blango-ok.png" alt="Logo Xplora-t" class="logo">
@@ -25,14 +26,20 @@
         </nav>
     </header>
 
+
     <main class="eventoprimavera">
+        <!-- Logo -->
         <div>
             <img src="assets/img/Xplorat-Rio.png" alt="evento" class="fotoevento">
         </div>
+
+        <!-- Informacion del evento -->
         <div class="infoevento" data-aos="fade-up">
             <h1 class="tituloevento">Evento de Primavera</h1>
             <h2>¡Sumate a nuestras actividades en el río!</h2>
             <p>¡Empezá la primavera de la mejor forma posible! Te invitamos al río para una mañana de fitness abierta y gratuita. ¡Es el momento perfecto para moverte y disfrutar!</p>
+            
+            <!-- Info contenido del evento -->
             <div class="containerinfoevento" data-aos="fade-up">
                 <div class="quehacer">
                     <h3>¿Qué vas a hacer?</h3>
@@ -51,32 +58,38 @@
                     </ul>
                 </div>
             </div>
-            
         </div>
-        
     </main>
 
     <section class="outro">
         <div>
+
+            <!-- Firma X-t -->
             <a href="index.html" class="logo">
                 <img src="assets/img/isologo xt.png" alt="Xplora-t" class="isologo">
             </a>
-    
+            
+            <!-- Links de redes sociales -->
             <div class="redes">
+
+                <!-- Instagram -->
                 <a href="https://www.instagram.com/xplorat/" class="instagram">
                     <img src="assets/img/logo-ig.png" alt="Instagram" class="ig">
                 </a>
-    
+                
+                <!-- Facebook -->
                 <a href="https://www.facebook.com/xploratmueve/" class="facebook">
                     <img src="assets/img/logo-fb-con-blanco.png" alt="Facebook" class="fb">
                 </a>
-    
+                
+                <!-- Whatsapp -->
                 <a href="http://wa.me/message/LN4BUKVY6CCKH1" class="whatsapp">
                     <img src="assets/img/logo-wpp.png" alt="Whatsapp" class="wpp">
                 </a>
             </div>
         </div>
         
+        <!-- Nav inferior -->
         <div class="linksnav">
             <nav>
                 <a href="index.html" class="nav-link">Inicio</a>
@@ -86,11 +99,11 @@
                 <a href="contacto.html" class="nav-link">Contacto</a>
             </nav>
         </div>
-
     </section>
     
     <footer>&copy; 2025 Todos los derechos reservados.</footer>
 
+    <!-- Script de menu -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const menuBtn = document.querySelector(".abrir-menu");
@@ -102,8 +115,10 @@
         });
     </script>
 
-    <!-- Scripts de transiciones -->
+    <!-- Scripts de transiciones fadeInUp-->
     <section>
+
+        <!-- Script de .infoevento h1 -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const elemento = document.querySelector('.infoevento h1');
@@ -123,6 +138,7 @@
             });
         </script>
 
+        <!-- Scriptde .infoevento h2 -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const elemento = document.querySelector('.infoevento h2');
@@ -142,6 +158,7 @@
             });
         </script>
 
+        <!-- Script de .infoevento p -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const elemento = document.querySelector('.infoevento p');
@@ -161,6 +178,7 @@
             });
         </script>
 
+        <!-- Script de .containerinfoevento -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const elemento = document.querySelector('.containerinfoevento');
