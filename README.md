@@ -1,6 +1,6 @@
 #  💪 Proyecto Xplora-t
 
-¡Hola! Soy **Celes**, diseñadora web enfocada en crear experiencias modernas, limpias y responsivas. Este repositorio contiene el código de mi portfolio personal desplegado en Vercel.
+¡Hola! Soy **Celeste**, diseñadora web enfocada en crear experiencias modernas, limpias y responsivas. Este repositorio contiene el código de mi portfolio personal desplegado en Vercel.
 
 🔗 **Sitio en línea:** www.xploratarg.com
 
