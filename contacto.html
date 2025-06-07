@@ -104,38 +104,46 @@
 
             <!-- Input de contacto -->
             <div class="formulario">
+                <form action="https://formsubmit.co/administracion@xploratarg.com" method="POST" class="formulario-mail">
+                
+                    <!-- Input Nombre y apellido -->
+                    <div class="form-floating1">
+                        <input type="text" name="nombre" class="form-control" id="floatingInput" placeholder="Nombre y Apellido">
+                    </div>
 
-                <!-- Input Nombre y apellido -->
-                <div class="form-floating1">
-                    <input type="name" class="form-control" id="floatingInput" placeholder="Nombre y Apellido">
-                </div>
+                    <!-- Input Telefono -->
+                    <div class="form-floating2">
+                        <input type="tel" name="telefono" class="form-control" id="floatingInput" placeholder="Telefono">
+                    </div>
 
-                <!-- Input Telefono -->
-                <div class="form-floating2">
-                    <input type="phone" class="form-control" id="floatingInput" placeholder="Telefono">
-                </div>
+                    <!-- Input Email -->
+                    <div class="form-floating3">
+                        <input type="email" name="email" class="form-control" id="floatingInput" placeholder="Email">
+                    </div>
 
-                <!-- Input Email -->
-                <div class="form-floating3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="Email">
-                </div>
+                    <!-- Input Sede -->
+                    <div class="form-floating4">
+                        <input type="text" name="sede" class="form-control" id="floatingInput" placeholder="Sede">
+                    </div>
 
-                <!-- Input Sede -->
-                <div class="form-floating4">
-                    <input type="location" class="form-control" id="floatingInput" placeholder="Sede">
-                </div>
+                    <!-- Input Asunto -->
+                    <div class="form-floating5">
+                        <input type="text" name="asunto" class="form-control" id="floatingInput" placeholder="Asunto">
+                    </div>
 
-                <!-- Input Asunto -->
-                <div class="form-floating5">
-                    <input type="affair" class="form-control" id="floatingInput" placeholder="Asunto">
-                </div>
+                    <!-- Input "Deja un comentario aqui..." -->
+                    <div class="form-floating6">
+                        <textarea name="mensaje" class="form-control" placeholder="Deja un comentario aqui..." id="floatingTextarea2" style="height: 150px"></textarea>
+                    </div>
+                    
+                    <!-- Campos ocultos recomendados -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://www.xploratarg.com/contacto.html">
 
-                <!-- Input "Deja un comentario aqui..." -->
-                <div class="form-floating6">
-                    <textarea class="form-control" placeholder="Deja un comentario aqui..." id="floatingTextarea2" style="height: 150px"></textarea>
-                </div>
+                    <!-- Boton de envio -->
+                    <input type="submit" class="btn-enviar" value="Enviar">
+                </form>
             </div>
-            
         </div>
     </section>
 

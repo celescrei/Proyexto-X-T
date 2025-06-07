@@ -11,6 +11,9 @@
         h1 {
             grid-column: 14/20;
             grid-row: 2/3;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: bold;
+            letter-spacing: 2px;
         }
 
         .infocontacto {
@@ -56,10 +59,14 @@
             grid-column: 19/29;
             grid-row: 3/6;
             gap: 10px;
-
+            
             input, textarea {
                 padding: 10px;
                 font-size: 1rem;
+                background-color: aqua;
+                border-radius: 10px;
+                border-width: 1px;
+                border-color: black;
             }
 
             
@@ -92,6 +99,17 @@
             .form-floating6 {
                 grid-column: 18/26;
                 grid-row: 6/9;
+            }
+
+            .btn-enviar {
+                background-color: black;
+                color: white;
+                max-width: 90px;
+
+                &:hover {
+                    background-color: aqua;
+                    color: black;
+                }
             }
         }
     }

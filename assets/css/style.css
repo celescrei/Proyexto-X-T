@@ -501,6 +501,9 @@ main .containers .testimonio .estrellas {
 .contacto .contenidocontact h1 {
   grid-column: 14/20;
   grid-row: 2/3;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 .contacto .contenidocontact .infocontacto {
   margin: 10px;
@@ -543,6 +546,10 @@ main .containers .testimonio .estrellas {
 .contacto .contenidocontact .formulario input, .contacto .contenidocontact .formulario textarea {
   padding: 10px;
   font-size: 1rem;
+  background-color: aqua;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: black;
 }
 .contacto .contenidocontact .formulario .form-floating1 {
   grid-column: 17/22;
@@ -567,6 +574,15 @@ main .containers .testimonio .estrellas {
 .contacto .contenidocontact .formulario .form-floating6 {
   grid-column: 18/26;
   grid-row: 6/9;
+}
+.contacto .contenidocontact .formulario .btn-enviar {
+  background-color: black;
+  color: white;
+  max-width: 90px;
+}
+.contacto .contenidocontact .formulario .btn-enviar:hover {
+  background-color: aqua;
+  color: black;
 }
 
 /* TABLETS */
@@ -996,7 +1012,7 @@ main .containers .testimonio .estrellas {
   .carruselfl .carousel-item img,
   .carruselvb .carousel-inner img,
   .carruselvb .carousel-item img {
-    height: 250px;
+    height: 180px;
   }
   .carruselfl .carousel-caption,
   .carruselvb .carousel-caption {
