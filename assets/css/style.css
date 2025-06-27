@@ -412,6 +412,7 @@ main .containers .testimonio .estrellas {
   padding: 150px;
   background-color: white;
   text-align: center;
+  transition: opacity 2s ease;
 }
 .intro-blog .container-blog .texto-intro p {
   line-height: 1.6;

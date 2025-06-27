@@ -7,6 +7,7 @@
     <link rel="icon" href="assets/img/logo-negro.png">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 <body>
@@ -28,7 +29,7 @@
     </header>
 
     <!-- Introducción Blog -->
-    <main class="intro-blog">
+    <main class="intro-blog" data-aos="fade-up">
         <div class="container-blog">
             <h1 class="blog-titulo">Blog´s Xplora-t</h1>
             <div class="texto-intro">
@@ -37,7 +38,7 @@
         </div>
     </main>
 
-    <section class="que-es">
+    <section class="que-es" data-aos="fade-up">
         <div class="que-es-sub">
             <h2 class="que-es-titulo1">¿Qué es...?</h1>
 
@@ -171,6 +172,49 @@
             });
         });
     </script>
+
+    <!-- Script de fadeInUp-->
+    <section>
+        <!-- Intro-blog -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.intro-blog');
+    
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+    
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+    
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+
+        <!-- Script de .que-es -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.que-es');
+    
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+    
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+    
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+    </section>
 
 </body>
 </html>
