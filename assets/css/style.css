@@ -442,7 +442,7 @@ main .containers .testimonio .estrellas {
   max-height: 200px;
   font-size: 30px;
 }
-.que-es .que-es-sub .container-que-es, .que-es .que-es-sub .container2 {
+.que-es .que-es-sub .container-que-es {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -450,7 +450,7 @@ main .containers .testimonio .estrellas {
   max-width: 1550px;
   margin: 40px auto;
 }
-.que-es .que-es-sub .container-que-es .bordes-grises, .que-es .que-es-sub .container2 .bordes-grises {
+.que-es .que-es-sub .container-que-es .bordes-grises {
   display: flex;
   align-items: center;
   text-align: left;
@@ -458,38 +458,32 @@ main .containers .testimonio .estrellas {
   border: 1px solid gray;
   padding: 10px;
 }
-.que-es .que-es-sub .container-que-es .bordes-grises .texto-blog, .que-es .que-es-sub .container2 .bordes-grises .texto-blog {
+.que-es .que-es-sub .container-que-es .bordes-grises .texto-blog {
   display: flex;
   flex-direction: column;
   margin: 10px;
 }
-.que-es .que-es-sub .container-que-es .michael-boyle-foto, .que-es .que-es-sub .container2 .michael-boyle-foto,
+.que-es .que-es-sub .container-que-es .michael-boyle-foto,
 .que-es .que-es-sub .container-que-es .ejercicio-poli-foto,
-.que-es .que-es-sub .container2 .ejercicio-poli-foto,
 .que-es .que-es-sub .container-que-es .priming-foto,
-.que-es .que-es-sub .container2 .priming-foto,
 .que-es .que-es-sub .container-que-es .thomas-foto,
-.que-es .que-es-sub .container2 .thomas-foto,
 .que-es .que-es-sub .container-que-es .tecnica-foto,
-.que-es .que-es-sub .container2 .tecnica-foto,
-.que-es .que-es-sub .container-que-es .cardio-foto,
-.que-es .que-es-sub .container2 .cardio-foto {
+.que-es .que-es-sub .container-que-es .cardio-foto {
   max-height: 150px;
   max-width: 250px;
   margin: 10px;
 }
-.que-es .que-es-sub .container-que-es .et1, .que-es .que-es-sub .container2 .et1, .que-es .que-es-sub .container-que-es .p1, .que-es .que-es-sub .container2 .p1,
-.que-es .que-es-sub .container-que-es .p2,
-.que-es .que-es-sub .container2 .p2 {
+.que-es .que-es-sub .container-que-es .et1, .que-es .que-es-sub .container-que-es .p1,
+.que-es .que-es-sub .container-que-es .p2 {
   text-align: left;
   margin-bottom: 5px;
   font-size: 20px;
 }
-.que-es .que-es-sub .container-que-es .p1, .que-es .que-es-sub .container2 .p1,
-.que-es .que-es-sub .container-que-es .p2,
-.que-es .que-es-sub .container2 .p2 {
+.que-es .que-es-sub .container-que-es .p1,
+.que-es .que-es-sub .container-que-es .p2 {
   font-size: 15px;
 }
+
 /* EVENTO PRIMAVERA */
 .eventoprimavera .fotoevento {
   width: 100%;
