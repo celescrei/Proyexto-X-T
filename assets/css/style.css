@@ -408,6 +408,16 @@ main .containers .testimonio .estrellas {
   height: 350px;
 }
 
+.intro-blog {
+  padding: 150px;
+  background-color: white;
+  text-align: center;
+}
+.intro-blog .container-blog .texto-intro p {
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
 .que-es {
   background-color: white;
 }
@@ -423,7 +433,6 @@ main .containers .testimonio .estrellas {
           text-decoration: underline aqua;
   display: inline-block;
   padding: 15px 30px;
-  margin: 40px auto;
   background-color: black;
   background-size: 10px;
   border-radius: 40px;
@@ -435,20 +444,24 @@ main .containers .testimonio .estrellas {
 }
 .que-es .que-es-sub .container-que-es, .que-es .que-es-sub .container2 {
   display: flex;
-  gap: 70px;
+  flex-direction: column;
+  gap: 20px;
   width: 100%;
   max-width: 1550px;
   margin: 40px auto;
 }
 .que-es .que-es-sub .container-que-es .bordes-grises, .que-es .que-es-sub .container2 .bordes-grises {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   text-align: left;
-  width: 350px;
   border-radius: 20px;
   border: 1px solid gray;
-  padding: 40px;
+  padding: 10px;
+}
+.que-es .que-es-sub .container-que-es .bordes-grises .texto-blog, .que-es .que-es-sub .container2 .bordes-grises .texto-blog {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 .que-es .que-es-sub .container-que-es .michael-boyle-foto, .que-es .que-es-sub .container2 .michael-boyle-foto,
 .que-es .que-es-sub .container-que-es .ejercicio-poli-foto,
@@ -461,14 +474,13 @@ main .containers .testimonio .estrellas {
 .que-es .que-es-sub .container2 .tecnica-foto,
 .que-es .que-es-sub .container-que-es .cardio-foto,
 .que-es .que-es-sub .container2 .cardio-foto {
-  max-height: 200px;
+  max-height: 150px;
   max-width: 250px;
   margin: 10px;
 }
 .que-es .que-es-sub .container-que-es .et1, .que-es .que-es-sub .container2 .et1, .que-es .que-es-sub .container-que-es .p1, .que-es .que-es-sub .container2 .p1,
 .que-es .que-es-sub .container-que-es .p2,
 .que-es .que-es-sub .container2 .p2 {
-  max-width: 400px;
   text-align: left;
   margin-bottom: 5px;
   font-size: 20px;
