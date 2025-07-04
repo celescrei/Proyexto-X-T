@@ -260,58 +260,7 @@
     <!-- Scripts de transiciones fadeInUp -->
     <section>
 
-        <!-- Transicion de .card -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const tarjetas = document.querySelectorAll('.card');
-                const animadas = new Set();
-            
-                function mostrarAlScroll() {
-                    tarjetas.forEach(function (card, index) {
-                        const rect = card.getBoundingClientRect();
-                        const estaVisible = rect.top < window.innerHeight;
-            
-                        if (estaVisible && !animadas.has(index)) {
-                            card.classList.add('animate__animated', 'animate__fadeInUp');
-            
-                            card.addEventListener('animationend', () => {
-                                card.classList.remove('animate__animated', 'animate__fadeInUp');
-                            }, { once: true });
-            
-                            animadas.add(index);
-                        }
-                    });
-            
-                    // Si todas ya se animaron, dejamos de escuchar el scroll
-                    if (animadas.size === tarjetas.length) {
-                        window.removeEventListener('scroll', mostrarAlScroll);
-                    }
-                }
-            
-                window.addEventListener('scroll', mostrarAlScroll);
-                mostrarAlScroll(); // Ejecutar una vez al cargar
-            });
-        </script>
 
-        <!-- Script de transicion .virtual -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const elemento = document.querySelector('.virtual');
-
-                function mostrarAlScroll() {
-                    const rect = elemento.getBoundingClientRect();
-                    const estaVisible = rect.top < window.innerHeight;
-
-                    if (estaVisible) {
-                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
-                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
-                    }
-                }
-
-                window.addEventListener('scroll', mostrarAlScroll);
-                mostrarAlScroll(); // Por si ya está visible al cargar
-            });
-        </script>
     </section>
 </body>
 </html>

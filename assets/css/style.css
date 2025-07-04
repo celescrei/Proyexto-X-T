@@ -98,40 +98,46 @@ footer {
 }
 
 /* div bienvenida */
-main {
+body {
   background-color: black;
 }
-main section {
-  display: flex;
+body .container-fluid {
+  padding: 0;
 }
-main .background {
+body .container-fluid .background {
   margin: 0;
   position: static;
-  max-height: 600px;
+  max-height: 1000px;
+  max-width: 2200px;
   display: flex;
   justify-content: center;
 }
-main .background img {
+body .container-fluid .background img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .bienvenida {
+body .container-fluid .bienvenida {
   color: black;
   background-color: white;
   padding: 150px;
   text-align: center;
   transition: opacity 2s ease;
 }
-main .bienvenida h1 {
+body .container-fluid .bienvenida h1 {
   line-height: 1.6;
   font-size: 2rem;
 }
-main .bienvenida p {
+body .container-fluid .bienvenida p {
   line-height: 1.6;
   font-size: 1.5rem;
 }
-main .titulo {
+body .section-test {
+  background-color: black;
+  padding: 20px;
+  transition: opacity 1.2s ease;
+}
+body .section-test .titulo {
   text-align: center;
   transition: opacity 2s ease;
   padding: 15px 30px;
@@ -142,26 +148,26 @@ main .titulo {
   color: black;
   font-weight: bold;
   height: 70px;
-  max-width: 250px;
+  max-width: 300px;
 }
-main .containers {
-  background-color: black;
-  padding: 20px;
-  transition: opacity 1.2s ease;
+body .section-test .containers-testimonios {
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
-main .containers .testimonio {
+body .section-test .containers-testimonios .testimonio {
   border-radius: 10px;
   padding: 15px;
   text-align: center;
   max-width: 550px;
   line-height: 1.6;
 }
-main .containers .testimonio h2, main .containers .testimonio img, main .containers .testimonio p {
+body .section-test .containers-testimonios .testimonio h2, body .section-test .containers-testimonios .testimonio img, body .section-test .containers-testimonios .testimonio p {
   display: block;
   margin: 10px auto;
   color: white;
 }
-main .containers .testimonio .estrellas {
+body .section-test .containers-testimonios .testimonio .estrellas {
   width: 50%;
   max-width: 100px;
   height: auto;
@@ -187,6 +193,7 @@ main .containers .testimonio .estrellas {
   font-weight: bold;
   transition: opacity 1s ease;
   max-height: 200px;
+  font-size: 2rem;
 }
 .sobrenosotros p {
   font-size: 1.2rem;
@@ -205,6 +212,7 @@ main .containers .testimonio .estrellas {
   align-items: center;
   min-height: 600px;
   gap: 30px;
+  padding: 20px;
 }
 .app div {
   width: 100%;

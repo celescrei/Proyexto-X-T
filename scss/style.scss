@@ -4,14 +4,13 @@
 @use 'base/placeholder';
 @use 'base/forwards';
 
-@use 'pages/index';
+@use 'pages/index/index';
 
-@use 'pages/nosotros/nosotros' ;
-@use 'pages/nosotros/app';
-
-@use 'pages/servicios/container';
-@use 'pages/servicios/carrusel';
-@use 'pages/servicios/encasa';
+@use 'pages/index/nosotros/nosotros' ;
+@use 'pages/index/nosotros/app';
+@use 'pages/index/servicios/container';
+@use 'pages/index/servicios/carrusel';
+@use 'pages/index/servicios/encasa';
 
 @use 'pages/blog/blog';
 

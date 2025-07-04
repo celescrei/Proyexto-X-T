@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>  
 
@@ -35,7 +37,8 @@
         </nav>
     </header>
 
-    <main class="container">
+    <!-- Intro bienvenida -->
+    <main class="container-fluid">
 
         <!-- Foto principal -->
         <div class="background">
@@ -47,37 +50,247 @@
             <h1>Bienvenido a Xplora-t | Actividad física y salud</h1>
             <p>Un lugar donde toda la familia pueda disfrutar de actividades de todo tipo, acompañados de profesionales de la actividad física y la salud.</p>
         </div>
+    </main>
 
+    <!-- Sobre nosotros -->
+    <section>
+        <!-- Texto principal descriptivo -->
+        <main class="sobrenosotros" data-aos="fade-up">
+            <h1 class="nosotros">Sobre nosotros</h1>
+            <p>Desde nuestros inicios en 2014, entrenando al aire libre en una plaza, hasta hoy, con dos sedes en pleno crecimiento, hemos mantenido el mismo compromiso: ayudar a las personas a transformar su bienestar físico y mental.</p>
+            <p>Creemos que el ejercicio no solo fortalece el cuerpo, sino también la confianza y la determinación. En nuestro gimnasio, cada cliente es parte de una comunidad donde el apoyo, la motivación y la superación personal son el pilar de cada entrenamiento. ¡Te invitamos a formar parte de esta historia y a alcanzar juntos tus objetivos!</p>
+        </main>
+        
+        <!-- Section de aplicacion -->
+        <section class="app" data-aos="fade-up">
+
+            <!-- Div de imagen de celular -->
+            <div class="celular-container" data-aos="fade-up">
+                <img src="assets/img/celular.png" alt="Celular" class="celular">
+            </div>
+
+            <!-- Texto informativo 1 -->
+            <div class="info1" data-aos="fade-up"> 
+                <h2 class="encabezado1">Xplora-t Link</h2>
+                <p>¿Querés entrenar con un plan hecho solo para vos? Con Xplora-t es posible. Escaneá el QR en cualquiera de nuestras sedes o ingresá al link desde tu celu y registrate en pocos pasos.
+                    Una vez inscripto, nuestros profesores te van a hacer algunas preguntas para armar un plan de entrenamiento personalizado según tus objetivos.
+                    En la app vas a encontrar tu rutina separada por días y sesiones. </p>
+                <p>¡Entrená con foco y sin perder tiempo!</p>
+            </div>
+
+            <!-- Texto informativo 2 -->
+            <div class="info2" data-aos="fade-up">
+                <h2 class="encabezado2">¿Querés más info? Hablá con nosotros:</h2>
+                <p>Si tenés dudas sobre cómo empezar, cómo funciona el sistema o qué incluye tu rutina, podés escribirnos. Estamos para ayudarte a dar el primer paso. ¡Sumate y empezá a entrenar con tu plan en el bolsillo!</p>
+            </div>
+        </section>
+    </section>
+
+    <!-- Sucursales -->
+    <section>
+        <!-- Cards de sedes -->
+        <main class="sedes">
+            <div class="containerservice">
+                <!-- Card Villa Ballester -->
+                <div class="card" data-aos="fade-up">
+                    <figure>
+                        <img src="assets/img/sedevb.jpg" class="sedevb">
+                    </figure>
+                    <div class="contenido">
+                        <h2>Sede Villa Ballester</h2>
+                        <a href="https://maps.app.goo.gl/MjxmXm4AcW2MH5Gy8">Google Maps</a>
+                    </div>
+                </div>
+
+                <!-- Card Florida -->
+                <div class="card" data-aos="fade-up">
+                    <figure>
+                        <img src="assets/img/sedefl.jpg" class="sedefl">
+                    </figure>
+                    <div class="contenido">
+                        <h2>Sede Florida</h2>
+                        <a href="https://maps.app.goo.gl/wJsGcwwuSnezqoUt7">Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Carrusel Florida -->
+        <section class="carruselfl" >
+            <div id="carruselflfuntion" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselflfuntion" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carruselflfuntion" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carruselflfuntion" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carruselflfuntion" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carruselflfuntion" data-bs-slide-to="4" aria-label="Slide 0"></button>
+                </div>
+
+                <!-- Imagenes -->
+                <div class="carousel-inner">
+
+                    <!-- Imagen de Funcional -->
+                    <div class="carousel-item active">
+                        <img src="assets/img/funcionalok.png" class="d-block w-100" alt="funcional">
+                        <div class="carousel-caption">
+                            <h5>Funcional</h5>
+                        </div>
+                    </div>
+
+                    <!-- Imagen de Cross -->
+                    <div class="carousel-item">
+                        <img src="assets/img/crossfitok.png" class="d-block w-100" alt="cross">
+                        <div class="carousel-caption">
+                            <h5>Cross Training</h5>
+                        </div>
+                    </div>
+
+                    <!-- Imagen de Fortalecimiento -->
+                    <div class="carousel-item">
+                        <img src="assets/img/fortalecimientook.png" class="d-block w-100" alt="fortalecimiento">
+                        <div class="carousel-caption">
+                            <h5>Fortalecimiento</h5>
+                        </div>
+                    </div>
+
+                    <!-- Imagen de Postural -->
+                    <div class="carousel-item">
+                        <img src="assets/img/posturalok.png" class="d-block w-100" alt="postural">
+                        <div class="carousel-caption">
+                            <h5>Postural</h5>
+                        </div>
+                    </div>
+
+                    <!-- Imagen de Fuerza y Aerobic Club -->
+                    <div class="carousel-item">
+                        <img src="assets/img/f&acok.png" class="d-block w-100" alt="fuerza">
+                        <div class="carousel-caption">
+                            <h5>Fuerza y Aerobic Club</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botones de slide prev y next -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselflfuntion" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselflfuntion" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Carrusel Villa Ballester -->
+        <section class="carruselvb" >
+            <div id="carruselvbfuntion" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselvbfuntion" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carruselvbfuntion" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carruselvbfuntion" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carruselvbfuntion" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carruselvbfuntion" data-bs-slide-to="4" aria-label="Slide 0"></button>
+                </div>
+
+                <!-- Imagenes -->
+                <div class="carousel-inner">
+
+                    <!-- Imagen de Rutina Personal -->
+                    <div class="carousel-item active">
+                        <img src="assets/img/rutinapersonal.png" class="d-block w-100" alt="rutina personal">
+                        <div class="carousel-caption">
+                            <h5>Rutina Personal</h5>
+                        </div>
+                    </div>
+
+                    <!-- Imagen de Funcional -->
+                    <div class="carousel-item">
+                        <img src="assets/img/funcionalvb.png" class="d-block w-100" alt="funcional">
+                        <div class="carousel-caption">
+                            <h5>Funcional</h5>
+                        </div>
+                    </div>
+
+                    <!-- Imagen de Boxeo -->
+                    <div class="carousel-item">
+                        <img src="assets/img/boxeo.png" class="d-block w-100" alt="boxeo">
+                        <div class="carousel-caption">
+                            <h5>Boxeo</h5>
+                        </div>
+                    </div>
+
+                    <!-- Imagen de Postural -->
+                    <div class="carousel-item">
+                        <img src="assets/img/posturalvb.png" class="d-block w-100" alt="postural">
+                        <div class="carousel-caption">
+                            <h5>Postural</h5>
+                        </div>
+                    </div>
+
+                    <!-- Imagen de Yoga -->
+                    <div class="carousel-item">
+                        <img src="assets/img/yoga.png" class="d-block w-100" alt="yoga">
+                        <div class="carousel-caption">
+                            <h5>Yoga</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botones de slide prev y next -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselvbfuntion" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselvbfuntion" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Section de informacion entrenamiento virtual -->
+        <section class="virtual" data-aos="fade-up">
+            <h1 class="titulovirtual">¡Entrená en tu casa!</h1>
+            <p class="p1">Con nuestro link de Xplora-t te ofrecemos planes de entrenamiento totalmente personalizados y ajustables a tu progreso.</p>
+            <p class="p2">Cada ejercicio está detallado con videos y guías paso a paso para asegurar una correcta ejecución.</p>
+            <img src="assets/img/encasa.jpg" alt="ejercicio" class="encasa">
+        </section>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section-test">
         <!-- Testimonios de clientes -->
         <div class="titulo" data-aos="fade-up">
             <h1>Testimonios</h1>
         </div>
 
         <!-- 3 Testimonios sacados de GM -->
-        <section class="containers" data-aos="fade-up">
+        <section class="containers-testimonios" data-aos="fade-up">
 
             <!-- Testimonio 1 -->
             <div class="testimonio">
                 <img src="assets/img/png-5-estrellas.png" alt="5 Estrellas" class="estrellas">
                 <p>Muy buena atención por parte de los profes que están muy atentos a los que vamos. Tienen buenos materiales y buena variedad. Las rutinas son variables y entretenidas.</p>
-                <p>- Anto Quarra.</p>
+                <p>- Anto Q.</p>
             </div>
 
             <!-- Testimonio 2 -->
             <div class="testimonio">
                 <img src="assets/img/png-5-estrellas.png" alt="5 Estrellas" class="estrellas">
                 <p>Excelente lugar de entrenamiento. Las instalaciones son cómodas y los profes muy atentos. Recomiendo Cross/funcional.</p>
-                <p>- David Alegre.</p>
+                <p>- David A.</p>
             </div>
 
             <!-- Testimonio 3 -->
             <div class="testimonio">
                 <img src="assets/img/png-5-estrellas.png" alt="5 Estrellas" class="estrellas">
                 <p>¡Excelente atención! Tienen muchos elementos para trabajar peso libre. Máquinas en buen estado, espacioso y bien ventilado.</p>
-                <p>- Diana Cozzani.</p>
+                <p>- Diana C.</p>
             </div>
         </section>
-    </main>
+    </section>
+    
 
     <section class="outro">
         <div>
@@ -135,8 +348,9 @@
     </script>
 
     <!-- Scripts de transiciones fadeInUp-->
+    
+    <!-- Bienvenida  -->
     <section>
-
         <!-- Script de .bienvenida -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
@@ -197,5 +411,145 @@
             });
         </script>
     </section>
+
+    <!-- Sobre nosotros -->
+    <section>
+        <!-- Script de .sobrenosotros -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.sobrenosotros');
+    
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+    
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+    
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+
+        <!-- Script de .info1 -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.info1');
+
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+
+        <!-- Script de .info2 -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.info2');
+
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+    
+        <!-- Script de animacion para app -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.celular');
+        
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+        
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+    
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+    </section>
+
+    <!-- Sucursales -->
+    <section>
+        <!-- Transicion de .card -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const tarjetas = document.querySelectorAll('.card');
+                const animadas = new Set();
+            
+                function mostrarAlScroll() {
+                    tarjetas.forEach(function (card, index) {
+                        const rect = card.getBoundingClientRect();
+                        const estaVisible = rect.top < window.innerHeight;
+            
+                        if (estaVisible && !animadas.has(index)) {
+                            card.classList.add('animate__animated', 'animate__fadeInUp');
+            
+                            card.addEventListener('animationend', () => {
+                                card.classList.remove('animate__animated', 'animate__fadeInUp');
+                            }, { once: true });
+            
+                            animadas.add(index);
+                        }
+                    });
+            
+                    // Si todas ya se animaron, dejamos de escuchar el scroll
+                    if (animadas.size === tarjetas.length) {
+                        window.removeEventListener('scroll', mostrarAlScroll);
+                    }
+                }
+            
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Ejecutar una vez al cargar
+            });
+        </script>
+
+        <!-- Script de transicion .virtual -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const elemento = document.querySelector('.virtual');
+
+                function mostrarAlScroll() {
+                    const rect = elemento.getBoundingClientRect();
+                    const estaVisible = rect.top < window.innerHeight;
+
+                    if (estaVisible) {
+                        elemento.classList.add('animate__animated', 'animate__fadeInUp');
+                        window.removeEventListener('scroll', mostrarAlScroll); // Evita que se dispare varias veces
+                    }
+                }
+
+                window.addEventListener('scroll', mostrarAlScroll);
+                mostrarAlScroll(); // Por si ya está visible al cargar
+            });
+        </script>
+    </section>
+
 </body>
 </html>
