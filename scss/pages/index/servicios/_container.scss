@@ -5,6 +5,7 @@
         justify-content: center;
         gap: 20px;
         background-color: black;
+        padding: 160px 0;
 
         .card {
             margin: 30px;
@@ -47,6 +48,7 @@
                     border-radius: 4px;
                     background-color: aqua;
                     color: black;
+                    font-family: 'Montserrat', sans-serif;
 
                     &:hover {
                         background-color: black;

@@ -18,12 +18,13 @@
     .app {
         flex-direction: column;
         padding: 20px;
+        gap: 20px;
 
         .celular-container {
             width: 100%;
             margin: 20px 0;
             padding: 10px;
-            max-height: 350px;
+            max-height: 600px;
 
             .celular {
                 max-width: 80%;
