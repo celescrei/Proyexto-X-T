@@ -27,6 +27,8 @@
             font-weight: bold;
             transition: opacity 1s ease;
             max-height: 200px;
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 4px;
         }
 
         h2 {
@@ -53,31 +55,17 @@
             gap: 25px;
             transition: opacity 2s ease;
 
-            .quehacer {
-                h3  {
-                    text-decoration: underline aqua;
-                    font-size: 2rem;
-                }
-    
-                p {
-                    font-size: 1.2rem;
-                    text-align: left;
-                    margin-left: 60px;
-                }
+            .nombre {
+                text-decoration: underline aqua;
+                font-size: 2rem;
+                font-family: 'Bebas Neue', sans-serif;
+                letter-spacing: 2px;
             }
     
-            .extra {
-
-                h3  {
-                    text-decoration: underline aqua;
-                    font-size: 2rem;
-                }
-    
-                p {
+            p {
                     font-size: 1.2rem;
                     text-align: left;
                     margin-left: 60px;
-                }
             }
         }
     }

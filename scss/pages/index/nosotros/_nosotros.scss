@@ -1,1 +1,38 @@
+@mixin titulo-styles ($padding, $margin, $bg-size, $border-radius, $font-weight, $font-size, $letter-spacing, $bg-color, $color){
+    padding: $padding;
+    margin: $margin;
+    background-size: $bg-size;
+    border-radius: $border-radius;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+    background-color: $bg-color;
+    color: $color;
+}
 
+// SOBRE NOSOTROS //
+
+    .sobrenosotros {
+        padding: 15px;
+        margin: 100px 200px;
+        text-align: center;
+        background-color: white;
+
+        .nosotros {
+            text-decoration: underline aqua;
+            display: inline-block;
+            max-height: 200px;
+            transition: opacity 1s ease;
+            @include titulo-styles (15px 30px, 20px auto, 10px, 40px, bold, 2rem, 2px, black, white);
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            padding: 10px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 20px;
+        }
+    }

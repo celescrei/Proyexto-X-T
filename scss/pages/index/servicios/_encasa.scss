@@ -1,5 +1,6 @@
 /* en casa */
 .virtual {
+    margin: 0 auto;
     background-color: aqua;
     display: grid;
     grid-template-columns: repeat(33, 50px);
@@ -8,6 +9,8 @@
     transition: opacity 1.2s ease;
 
     .titulovirtual {
+        font-family: 'Bebas Neue', sans-serif;
+
         grid-row: 3/4;
         grid-column: 7/15;
     }

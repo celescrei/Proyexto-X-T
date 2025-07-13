@@ -11,9 +11,11 @@
         h1 {
             grid-column: 14/20;
             grid-row: 2/3;
+            text-align: center;
             font-family: "Bebas Neue", sans-serif;
             font-weight: bold;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
+            font-size: 3rem;
         }
 
         .infocontacto {
@@ -32,7 +34,10 @@
                 h5 {
                     grid-column: 1/8;
                     grid-row: 1/2;
-                    font-size: 1.5rem;
+                    font-size: 1.8rem;
+                    font-family: 'Bebas Neue', sans-serif;
+                    letter-spacing: 2px;
+                    font-weight: bold;
                 }
             }
 
@@ -44,7 +49,10 @@
                 h5 {
                     grid-column: 1/12;
                     grid-row: 1/4;
-                    font-size: 1.5rem;
+                    font-size: 1.8rem;
+                    font-family: 'Bebas Neue', sans-serif;
+                    letter-spacing: 2px;
+                    font-weight: bold;
                 }
             }
 
@@ -105,6 +113,8 @@
                 background-color: black;
                 color: white;
                 max-width: 90px;
+                font-family: 'Bebas Neue', sans-serif;
+                letter-spacing: 2px;
 
                 &:hover {
                     background-color: aqua;

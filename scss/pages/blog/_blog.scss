@@ -14,6 +14,13 @@
     transition: opacity 2s ease;
 
     .container-blog {
+
+        .blog-titulo {
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 2px;
+            font-size: 2rem;
+        }
+
         .texto-intro {
             p{
                 line-height: 1.6;
@@ -23,7 +30,7 @@
     }
 }
 
-
+// QUE ES... //
 
 .que-es {
     background-color: white;
@@ -46,7 +53,9 @@
             font-weight: bold;
             transition: opacity 1s ease;
             max-height: 200px;
-            font-size: 30px;
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 3px;
+            font-size: 2rem;
         }
 
         // Section 1 //

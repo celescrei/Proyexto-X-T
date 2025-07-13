@@ -42,6 +42,12 @@
         .carousel-caption {
             position: absolute;
             z-index: 2;
+            
+            .nombre {
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 2rem;
+                letter-spacing: 2px;
+            }
         }
     }
 
@@ -49,12 +55,14 @@
         position: relative;
     }
 
-    .carousel-control-prev, .carousel-control-next {
+    .carousel-control-prev,
+    .carousel-control-next {
         width: 5%;
         height: 100%;
         top: 50%;
         transform: translateY(-50%);
         position:absolute;
+        z-index: 2;
 
         /* Degradado lateral */
         &::before {
@@ -69,21 +77,26 @@
         }
     }
 
-    .carousel-control-prev::before {
+    .carousel-control-prev {
         left: 0;
-        background: linear-gradient(to right, rgba(0, 240, 255, 1), transparent);
-        transition: opacity 0.3s ease-in-out;
+        &::before {
+            background: linear-gradient(to right, rgba(0, 240, 255, 1), transparent);
+            transition: opacity 0.3s ease-in-out;
+        }
     }
 
-    .carousel-control-next::before {
+    .carousel-control-next {
         right: 0;
-        background: linear-gradient(to left, rgba(0, 240, 255, 1), transparent);
-        transition: opacity 0.3s ease-in-out;
+        &::before {
+            background: linear-gradient(to left, rgba(0, 240, 255, 1), transparent);
+            transition: opacity 0.3s ease-in-out;
+        }
     }
+    
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
         position: relative;
-        z-index: 1;
+        z-index: 3;
     }
 }

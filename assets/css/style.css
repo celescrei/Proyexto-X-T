@@ -37,7 +37,8 @@ body header nav {
 body header nav .nav-link {
   font-weight: 600;
   padding-right: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 3px;
   color: white;
   text-decoration: none;
 }
@@ -87,6 +88,8 @@ body header nav .nav-link:hover {
   color: white !important;
   text-decoration: none;
   font-size: 1.2rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
 }
 
 footer {
@@ -97,7 +100,6 @@ footer {
   color: white;
 }
 
-/* div bienvenida */
 body {
   background-color: black;
 }
@@ -127,33 +129,50 @@ body .container-fluid .bienvenida {
 body .container-fluid .bienvenida h1 {
   line-height: 1.6;
   font-size: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
 }
 body .container-fluid .bienvenida p {
-  line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 10px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 20px;
 }
 body .section-test {
   background-color: black;
   padding: 20px;
   transition: opacity 1.2s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body .section-test .titulo {
   text-align: center;
   transition: opacity 2s ease;
+  max-width: 300px;
+  height: 70px;
+  margin: 0 auto;
   padding: 15px 30px;
-  margin: 50px auto;
-  background-color: aqua;
+  margin: 20px auto;
   background-size: 10px;
   border-radius: 40px;
-  color: black;
   font-weight: bold;
-  height: 70px;
-  max-width: 300px;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  background-color: aqua;
+  color: black;
+}
+body .section-test .titulo .titulo-test {
+  font-family: "Bebas Neue", sans-serif;
 }
 body .section-test .containers-testimonios {
   display: flex;
-  text-align: center;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 body .section-test .containers-testimonios .testimonio {
   border-radius: 10px;
@@ -161,8 +180,9 @@ body .section-test .containers-testimonios .testimonio {
   text-align: center;
   max-width: 550px;
   line-height: 1.6;
+  margin: 10px auto;
 }
-body .section-test .containers-testimonios .testimonio h2, body .section-test .containers-testimonios .testimonio img, body .section-test .containers-testimonios .testimonio p {
+body .section-test .containers-testimonios .testimonio img, body .section-test .containers-testimonios .testimonio p {
   display: block;
   margin: 10px auto;
   color: white;
@@ -173,7 +193,72 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   height: auto;
 }
 
-/* NOSOTROS */
+.light-small {
+  background-color: white;
+  font-size: 1em;
+}
+.light-small .logo {
+  filter: none;
+}
+
+.light-medium {
+  background-color: white;
+  font-size: 1.5em;
+}
+.light-medium .logo {
+  filter: none;
+}
+
+.light-large {
+  background-color: white;
+  font-size: 2em;
+}
+.light-large .logo {
+  filter: none;
+}
+
+.dark-small {
+  background-color: black;
+  font-size: 1em;
+}
+.dark-small .card {
+  background-color: white;
+}
+.dark-small .card .contenido {
+  color: black;
+}
+.dark-small .logo {
+  filter: none;
+}
+
+.dark-medium {
+  background-color: black;
+  font-size: 1.5em;
+}
+.dark-medium .card {
+  background-color: white;
+}
+.dark-medium .card .contenido {
+  color: black;
+}
+.dark-medium .logo {
+  filter: none;
+}
+
+.dark-large {
+  background-color: black;
+  font-size: 2em;
+}
+.dark-large .card {
+  background-color: white;
+}
+.dark-large .card .contenido {
+  color: black;
+}
+.dark-large .logo {
+  filter: none;
+}
+
 .sobrenosotros {
   padding: 15px;
   margin: 100px 200px;
@@ -184,23 +269,25 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   -webkit-text-decoration: underline aqua;
           text-decoration: underline aqua;
   display: inline-block;
+  max-height: 200px;
+  transition: opacity 1s ease;
   padding: 15px 30px;
   margin: 20px auto;
-  background-color: black;
   background-size: 10px;
   border-radius: 40px;
-  color: white;
   font-weight: bold;
-  transition: opacity 1s ease;
-  max-height: 200px;
   font-size: 2rem;
+  letter-spacing: 2px;
+  background-color: black;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
 }
 .sobrenosotros p {
   font-size: 1.2rem;
   line-height: 1.5;
   padding: 10px 20px;
   text-align: center;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto 20px;
 }
 
@@ -238,6 +325,9 @@ body .section-test .containers-testimonios .testimonio .estrellas {
 .app .info2 h2 {
   color: aqua;
   font-size: 1.6rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
 }
 .app .info1 p,
 .app .info2 p {
@@ -278,6 +368,8 @@ body .section-test .containers-testimonios .testimonio .estrellas {
 .sedes .containerservice .card .contenido h2 {
   font-weight: 400px;
   margin-bottom: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
 }
 .sedes .containerservice .card .contenido a {
   text-decoration: none;
@@ -343,11 +435,18 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   position: absolute;
   z-index: 2;
 }
+.carruselfl .carousel-item .carousel-caption .nombre,
+.carruselvb .carousel-item .carousel-caption .nombre {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
 .carruselfl .carousel-slide,
 .carruselvb .carousel-slide {
   position: relative;
 }
-.carruselfl .carousel-control-prev, .carruselfl .carousel-control-next,
+.carruselfl .carousel-control-prev,
+.carruselfl .carousel-control-next,
 .carruselvb .carousel-control-prev,
 .carruselvb .carousel-control-next {
   width: 5%;
@@ -355,9 +454,11 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
+  z-index: 2;
   /* Degradado lateral */
 }
-.carruselfl .carousel-control-prev::before, .carruselfl .carousel-control-next::before,
+.carruselfl .carousel-control-prev::before,
+.carruselfl .carousel-control-next::before,
 .carruselvb .carousel-control-prev::before,
 .carruselvb .carousel-control-next::before {
   content: "";
@@ -369,15 +470,21 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   z-index: 0;
   pointer-events: none;
 }
+.carruselfl .carousel-control-prev,
+.carruselvb .carousel-control-prev {
+  left: 0;
+}
 .carruselfl .carousel-control-prev::before,
 .carruselvb .carousel-control-prev::before {
-  left: 0;
   background: linear-gradient(to right, rgb(0, 240, 255), transparent);
   transition: opacity 0.3s ease-in-out;
 }
+.carruselfl .carousel-control-next,
+.carruselvb .carousel-control-next {
+  right: 0;
+}
 .carruselfl .carousel-control-next::before,
 .carruselvb .carousel-control-next::before {
-  right: 0;
   background: linear-gradient(to left, rgb(0, 240, 255), transparent);
   transition: opacity 0.3s ease-in-out;
 }
@@ -386,11 +493,12 @@ body .section-test .containers-testimonios .testimonio .estrellas {
 .carruselvb .carousel-control-prev-icon,
 .carruselvb .carousel-control-next-icon {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 /* en casa */
 .virtual {
+  margin: 0 auto;
   background-color: aqua;
   display: grid;
   grid-template-columns: repeat(33, 50px);
@@ -399,6 +507,7 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   transition: opacity 1.2s ease;
 }
 .virtual .titulovirtual {
+  font-family: "Bebas Neue", sans-serif;
   grid-row: 3/4;
   grid-column: 7/15;
 }
@@ -421,6 +530,11 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   background-color: white;
   text-align: center;
   transition: opacity 2s ease;
+}
+.intro-blog .container-blog .blog-titulo {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
 }
 .intro-blog .container-blog .texto-intro p {
   line-height: 1.6;
@@ -449,7 +563,9 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   font-weight: bold;
   transition: opacity 1s ease;
   max-height: 200px;
-  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 3px;
+  font-size: 2rem;
 }
 .que-es .que-es-sub .container-que-es {
   display: flex;
@@ -519,6 +635,8 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   font-weight: bold;
   transition: opacity 1s ease;
   max-height: 200px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 4px;
 }
 .eventoprimavera .infoevento h2 {
   grid-row: 3/4;
@@ -542,22 +660,14 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   gap: 25px;
   transition: opacity 2s ease;
 }
-.eventoprimavera .infoevento .containerinfoevento .quehacer h3 {
+.eventoprimavera .infoevento .containerinfoevento .nombre {
   -webkit-text-decoration: underline aqua;
           text-decoration: underline aqua;
   font-size: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
 }
-.eventoprimavera .infoevento .containerinfoevento .quehacer p {
-  font-size: 1.2rem;
-  text-align: left;
-  margin-left: 60px;
-}
-.eventoprimavera .infoevento .containerinfoevento .extra h3 {
-  -webkit-text-decoration: underline aqua;
-          text-decoration: underline aqua;
-  font-size: 2rem;
-}
-.eventoprimavera .infoevento .containerinfoevento .extra p {
+.eventoprimavera .infoevento .containerinfoevento p {
   font-size: 1.2rem;
   text-align: left;
   margin-left: 60px;
@@ -571,6 +681,8 @@ body .section-test .containers-testimonios .testimonio .estrellas {
 .acordion .preguntas {
   -webkit-text-decoration: underline aqua;
           text-decoration: underline aqua;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
 }
 
 .contacto {
@@ -586,9 +698,11 @@ body .section-test .containers-testimonios .testimonio .estrellas {
 .contacto .contenidocontact h1 {
   grid-column: 14/20;
   grid-row: 2/3;
+  text-align: center;
   font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  font-size: 3rem;
 }
 .contacto .contenidocontact .infocontacto {
   margin: 10px;
@@ -606,7 +720,10 @@ body .section-test .containers-testimonios .testimonio .estrellas {
 .contacto .contenidocontact .infocontacto .contactofl h5 {
   grid-column: 1/8;
   grid-row: 1/2;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 .contacto .contenidocontact .infocontacto .contactovb {
   display: grid;
@@ -616,7 +733,10 @@ body .section-test .containers-testimonios .testimonio .estrellas {
 .contacto .contenidocontact .infocontacto .contactovb h5 {
   grid-column: 1/12;
   grid-row: 1/4;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 .contacto .contenidocontact .infocontacto div .direccion {
   grid-column: 4/-1;
@@ -664,6 +784,8 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   background-color: black;
   color: white;
   max-width: 90px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
 }
 .contacto .contenidocontact .formulario .btn-enviar:hover {
   background-color: aqua;
