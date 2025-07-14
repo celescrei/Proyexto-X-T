@@ -1,32 +1,34 @@
 @media (max-width: 724px) {
-    main {
-        .bienvenida {
-            text-align: center;
-            padding: 60px;
-            p {
-                line-height: 1.6;
-                font-size: 1.2rem;
+    body {
+        .container-fluid {
+            .bienvenida {
+                text-align: center;
+                padding: 20px;
+                p {
+                    line-height: 1.6;
+                    font-size: 1.2rem;
+                }
             }
         }
 
-        .titulo {
-            padding: 40px;
-            text-align: center;
-            display: flex;
-        }
+        .section-test {
+            .titulo {
+                padding: 40px;
+                text-align: center;
+                display: flex;
+            }
 
-        .containers {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding: 20px;
-            
-        }
-
-        .testimonio {
-            width: 285px;
-
+            .containers-testimonios {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+                
+                .testimonio {
+                    width: 285px;
+                }
+            }
         }
     }
 }

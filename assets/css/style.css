@@ -1072,6 +1072,8 @@ body .section-test .containers-testimonios .testimonio .estrellas {
     padding: 10px;
     margin-top: 10px;
     border-radius: 8px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
   }
   body header nav {
     display: none;
@@ -1124,27 +1126,27 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   }
 }
 @media (max-width: 724px) {
-  main .bienvenida {
+  body .container-fluid .bienvenida {
     text-align: center;
-    padding: 60px;
+    padding: 20px;
   }
-  main .bienvenida p {
+  body .container-fluid .bienvenida p {
     line-height: 1.6;
     font-size: 1.2rem;
   }
-  main .titulo {
+  body .section-test .titulo {
     padding: 40px;
     text-align: center;
     display: flex;
   }
-  main .containers {
+  body .section-test .containers-testimonios {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
   }
-  main .testimonio {
+  body .section-test .containers-testimonios .testimonio {
     width: 285px;
   }
 }
