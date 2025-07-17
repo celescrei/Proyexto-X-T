@@ -77,7 +77,7 @@ body {
             max-width: 300px;
             height: 70px;
             margin: 0 auto;
-            @include titulo-styles(15px 30px, 20px auto, 10px, 40px, bold, 2rem, 2px, aqua, black);
+            @include titulo-styles(15px 30px, 20px auto, 10px, 40px, bold, 2rem, 2px, #91ffff, black);
 
             .titulo-test {
                 font-family: 'Bebas Neue', sans-serif;

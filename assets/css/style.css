@@ -164,7 +164,7 @@ body .section-test .titulo {
   font-weight: bold;
   font-size: 2rem;
   letter-spacing: 2px;
-  background-color: aqua;
+  background-color: #91ffff;
   color: black;
 }
 body .section-test .titulo .titulo-test {
@@ -269,8 +269,8 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   background-color: white;
 }
 .sobrenosotros .nosotros {
-  -webkit-text-decoration: underline aqua;
-          text-decoration: underline aqua;
+  -webkit-text-decoration: underline #91ffff;
+          text-decoration: underline #91ffff;
   display: inline-block;
   max-height: 200px;
   transition: opacity 1s ease;
@@ -327,7 +327,7 @@ body .section-test .containers-testimonios .testimonio .estrellas {
 }
 .app .info1 h2,
 .app .info2 h2 {
-  color: aqua;
+  color: #91ffff;
   font-size: 1.6rem;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
@@ -381,9 +381,8 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   text-decoration: none;
   display: inline-block;
   padding: 10px;
-  border: 1px solid aqua;
   border-radius: 4px;
-  background-color: aqua;
+  background-color: #91ffff;
   color: black;
   font-family: "Montserrat", sans-serif;
 }
@@ -506,7 +505,7 @@ body .section-test .containers-testimonios .testimonio .estrellas {
 /* en casa */
 .virtual {
   margin: 0 auto;
-  background-color: aqua;
+  background-color: #67ffff;
   display: grid;
   grid-template-columns: repeat(33, 50px);
   grid-template-rows: repeat(9, 50px);
@@ -632,8 +631,8 @@ body .section-test .containers-testimonios .testimonio .estrellas {
 .eventoprimavera .infoevento .tituloevento {
   grid-row: 2/3;
   grid-column: 12/19;
-  -webkit-text-decoration: underline aqua;
-          text-decoration: underline aqua;
+  -webkit-text-decoration: underline #91ffff;
+          text-decoration: underline #91ffff;
   display: inline-block;
   padding: 15px 30px;
   margin: 20px auto;
@@ -672,8 +671,8 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   transition: opacity 2s ease;
 }
 .eventoprimavera .infoevento .containerinfoevento .nombre {
-  -webkit-text-decoration: underline aqua;
-          text-decoration: underline aqua;
+  -webkit-text-decoration: underline #91ffff;
+          text-decoration: underline #91ffff;
   font-size: 2rem;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
@@ -691,116 +690,92 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   background-color: white;
 }
 .acordion .preguntas {
-  -webkit-text-decoration: underline aqua;
-          text-decoration: underline aqua;
+  -webkit-text-decoration: underline #91ffff;
+          text-decoration: underline #91ffff;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
 }
 
 .contacto {
-  background-color: aqua;
+  background-color: black;
   width: 100%;
+  padding: 80px;
 }
 .contacto .contenidocontact {
-  display: grid;
-  grid-template-columns: repeat(32, 1fr);
-  grid-template-rows: repeat(6, 120px);
   max-width: 100%;
+  background-color: #91ffff;
+  border-radius: 30px;
+  margin: 80px;
+  padding: 40px;
 }
 .contacto .contenidocontact h1 {
-  grid-column: 14/20;
-  grid-row: 2/3;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
   letter-spacing: 3px;
   font-size: 3rem;
+  color: black;
+  margin: 20px;
 }
-.contacto .contenidocontact .infocontacto {
+.contacto .contenidocontact .containercontact {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+}
+.contacto .contenidocontact .containercontact .infocontacto {
+  display: flex;
+  flex-direction: column;
   margin: 10px;
-  grid-column: 6/15;
-  grid-row: 3/6;
-  display: grid;
-  grid-template-columns: 1fr;
   gap: 20px;
 }
-.contacto .contenidocontact .infocontacto .contactofl {
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-}
-.contacto .contenidocontact .infocontacto .contactofl h5 {
-  grid-column: 1/8;
-  grid-row: 1/2;
+.contacto .contenidocontact .containercontact .infocontacto .contactofl h5 {
   font-size: 1.8rem;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
   font-weight: bold;
 }
-.contacto .contenidocontact .infocontacto .contactovb {
-  display: grid;
-  grid-template-columns: repeat(17, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-}
-.contacto .contenidocontact .infocontacto .contactovb h5 {
-  grid-column: 1/12;
-  grid-row: 1/4;
+.contacto .contenidocontact .containercontact .infocontacto .contactovb h5 {
   font-size: 1.8rem;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
   font-weight: bold;
 }
-.contacto .contenidocontact .infocontacto div .direccion {
-  grid-column: 4/-1;
-  grid-row: 2/8;
+.contacto .contenidocontact .containercontact .infocontacto div .direccion {
   margin-top: 20px;
   font-family: "Montserrat", sans-serif;
+  margin-left: 20px;
 }
-.contacto .contenidocontact .formulario {
-  grid-column: 19/29;
-  grid-row: 3/6;
-  gap: 10px;
-}
-.contacto .contenidocontact .formulario input, .contacto .contenidocontact .formulario textarea {
+.contacto .contenidocontact .containercontact .formulario input, .contacto .contenidocontact .containercontact .formulario textarea {
   padding: 10px;
   font-size: 1rem;
-  background-color: aqua;
+  background-color: #91ffff;
   border-radius: 10px;
   border-width: 1px;
   border-color: black;
+  gap: 10px;
+  width: 500px;
+  color: black;
 }
-.contacto .contenidocontact .formulario .form-floating1 {
-  grid-column: 17/22;
-  grid-row: 3/4;
+.contacto .contenidocontact .containercontact .formulario input::-moz-placeholder, .contacto .contenidocontact .containercontact .formulario text-area::-moz-placeholder {
+  color: black;
+  opacity: 1;
 }
-.contacto .contenidocontact .formulario .form-floating2 {
-  grid-column: 22/26;
-  grid-row: 3/4;
+.contacto .contenidocontact .containercontact .formulario input::placeholder,
+.contacto .contenidocontact .containercontact .formulario text-area::placeholder {
+  color: black;
+  opacity: 1;
 }
-.contacto .contenidocontact .formulario .form-floating3 {
-  grid-column: 18/22;
-  grid-row: 4/5;
+.contacto .contenidocontact .containercontact .formulario .form-floating {
+  margin: 10px 0;
 }
-.contacto .contenidocontact .formulario .form-floating4 {
-  grid-column: 22/26;
-  grid-row: 4/5;
-}
-.contacto .contenidocontact .formulario .form-floating5 {
-  grid-column: 1/26;
-  grid-row: 5/6;
-}
-.contacto .contenidocontact .formulario .form-floating6 {
-  grid-column: 18/26;
-  grid-row: 6/9;
-}
-.contacto .contenidocontact .formulario .btn-enviar {
+.contacto .contenidocontact .containercontact .formulario .btn-enviar {
   background-color: black;
   color: white;
   max-width: 90px;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
 }
-.contacto .contenidocontact .formulario .btn-enviar:hover {
+.contacto .contenidocontact .containercontact .formulario .btn-enviar:hover {
   background-color: aqua;
   color: black;
 }

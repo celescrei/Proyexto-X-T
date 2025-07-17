@@ -16,7 +16,7 @@
         .tituloevento {
             grid-row: 2/3;
             grid-column: 12/19;
-            text-decoration: underline aqua;
+            text-decoration: underline #91ffff;
             display: inline-block;
             padding: 15px 30px;
             margin: 20px auto;
@@ -58,7 +58,7 @@
             transition: opacity 2s ease;
 
             .nombre {
-                text-decoration: underline aqua;
+                text-decoration: underline #91ffff;
                 font-size: 2rem;
                 font-family: 'Bebas Neue', sans-serif;
                 letter-spacing: 2px;
