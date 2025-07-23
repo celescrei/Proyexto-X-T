@@ -9,14 +9,16 @@ body {
     margin: 0;
     padding: 0;
     
-    header {
+    .tipografia {
         display: flex;
         height: 100px;
         background-color: black;
         justify-content: space-between;
         align-items: center;
         padding: 60px;
-        position: relative;
+        position: sticky;
+        z-index: 1000;
+        top: 0;
 
         .logo {
             display: flex;

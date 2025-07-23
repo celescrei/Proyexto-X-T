@@ -9,32 +9,34 @@ body {
   margin: 0;
   padding: 0;
 }
-body header {
+body .tipografia {
   display: flex;
   height: 100px;
   background-color: black;
   justify-content: space-between;
   align-items: center;
   padding: 60px;
-  position: relative;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
 }
-body header .logo {
+body .tipografia .logo {
   display: flex;
   align-items: center;
 }
-body header .logo img {
+body .tipografia .logo img {
   height: 100px;
   margin-left: 10px;
 }
-body header .abrir-menu {
+body .tipografia .abrir-menu {
   display: none;
 }
-body header nav {
+body .tipografia nav {
   display: flex;
   gap: 15px;
   align-items: center;
 }
-body header nav .nav-link {
+body .tipografia nav .nav-link {
   font-weight: 600;
   padding-right: 10px;
   font-family: "Bebas Neue", sans-serif;
@@ -43,23 +45,26 @@ body header nav .nav-link {
   text-decoration: none;
   font-size: 1.2rem;
 }
-body header nav .nav-link:hover {
+body .tipografia nav .nav-link:hover {
   color: aqua;
 }
 
-/* redes sociales */
-.outro {
+footer {
+  text-align: center;
+  align-content: center;
   background-color: black;
-  display: grid;
-  grid-template-columns: auto 1fr;
+  color: white;
+  border-top: 2px solid aqua;
+}
+footer .outro {
   align-items: center;
+  display: flex;
+  background-color: black;
   padding: 60px;
-  grid-template-areas: "logo botones" "redes botones";
+  justify-content: space-between;
+  text-align: center;
 }
-.outro .logo {
-  grid-area: logo;
-}
-.outro .logo .isologo {
+footer .outro .logo .isologo {
   display: flex;
   margin-top: 10px;
   padding: 10px;
@@ -67,38 +72,56 @@ body header nav .nav-link:hover {
   height: auto;
   border-bottom: 2px solid aqua;
 }
-.outro .redes {
-  grid-area: redes;
+footer .outro .outro-dire .direccion {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+footer .outro .outro-dire .direccion .balles,
+footer .outro .outro-dire .direccion .flori,
+footer .outro .outro-dire .direccion .mail {
+  display: flex;
+  align-items: center;
+}
+footer .outro .outro-dire .direccion .balles .icono,
+footer .outro .outro-dire .direccion .flori .icono,
+footer .outro .outro-dire .direccion .mail .icono {
+  height: 20px;
+  margin: 10px;
+}
+footer .outro .outro-dire .direccion .balles p,
+footer .outro .outro-dire .direccion .flori p,
+footer .outro .outro-dire .direccion .mail p {
+  margin-top: 15px;
+}
+footer .outro .outro-dire .redes {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-.outro .redes .ig, .outro .redes .fb, .outro .redes .wpp {
+footer .outro .outro-dire .redes .ig, footer .outro .outro-dire .redes .fb, footer .outro .outro-dire .redes .wpp {
   width: 50px;
   margin: 5px;
   padding: 5px;
 }
-.outro .linksnav nav {
+footer .outro .linksnav nav {
   display: flex;
   flex-direction: column;
-  height: 150px;
-  gap: 10px;
+  gap: 30px;
   text-align: end;
 }
-.outro .linksnav nav a {
-  color: white !important;
+footer .outro .linksnav nav a {
+  color: white;
   text-decoration: none;
   font-size: 1.2rem;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
 }
-
-footer {
-  height: 50px;
-  text-align: center;
-  align-content: center;
-  background-color: black;
-  color: white;
+footer .outro .linksnav nav a:hover {
+  color: aqua;
 }
 
 body {
@@ -117,8 +140,7 @@ body .container-fluid .background {
 }
 body .container-fluid .background img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 body .container-fluid .bienvenida {
   color: black;
@@ -269,8 +291,7 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   background-color: white;
 }
 .sobrenosotros .nosotros {
-  -webkit-text-decoration: underline #91ffff;
-          text-decoration: underline #91ffff;
+  text-decoration: underline #91ffff;
   display: inline-block;
   max-height: 200px;
   transition: opacity 1s ease;
@@ -413,8 +434,7 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   width: 100%;
   height: 800px;
   display: block;
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 .carruselfl .carousel-item,
 .carruselvb .carousel-item {
@@ -560,8 +580,7 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   max-width: 1200px;
 }
 .que-es .que-es-sub .que-es-titulo1 {
-  -webkit-text-decoration: underline aqua;
-          text-decoration: underline aqua;
+  text-decoration: underline aqua;
   display: inline-block;
   padding: 15px 30px;
   background-color: black;
@@ -631,8 +650,7 @@ body .section-test .containers-testimonios .testimonio .estrellas {
 .eventoprimavera .infoevento .tituloevento {
   grid-row: 2/3;
   grid-column: 12/19;
-  -webkit-text-decoration: underline #91ffff;
-          text-decoration: underline #91ffff;
+  text-decoration: underline #91ffff;
   display: inline-block;
   padding: 15px 30px;
   margin: 20px auto;
@@ -671,8 +689,7 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   transition: opacity 2s ease;
 }
 .eventoprimavera .infoevento .containerinfoevento .nombre {
-  -webkit-text-decoration: underline #91ffff;
-          text-decoration: underline #91ffff;
+  text-decoration: underline #91ffff;
   font-size: 2rem;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
@@ -690,8 +707,7 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   background-color: white;
 }
 .acordion .preguntas {
-  -webkit-text-decoration: underline #91ffff;
-          text-decoration: underline #91ffff;
+  text-decoration: underline #91ffff;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
 }
@@ -755,10 +771,6 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   gap: 10px;
   width: 500px;
   color: black;
-}
-.contacto .contenidocontact .containercontact .formulario input::-moz-placeholder, .contacto .contenidocontact .containercontact .formulario text-area::-moz-placeholder {
-  color: black;
-  opacity: 1;
 }
 .contacto .contenidocontact .containercontact .formulario input::placeholder,
 .contacto .contenidocontact .containercontact .formulario text-area::placeholder {
@@ -1366,4 +1378,6 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   .contacto .contenidocontact .formulario .form-floating6 textarea {
     height: 120px !important;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

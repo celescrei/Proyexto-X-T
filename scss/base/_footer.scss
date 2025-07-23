@@ -1,7 +1,88 @@
 footer {
-    height: 50px;
     text-align: center;
     align-content: center;
     background-color: black;
     color: white;
+    border-top: 2px solid aqua;
+
+    .outro {
+        align-items: center;
+        display: flex;
+        background-color: black;
+        padding: 60px;
+        justify-content: space-between;
+        text-align: center;
+
+        .logo {
+            .isologo {
+                display: flex;
+                margin-top: 10px;
+                padding: 10px;
+                max-width: 300px;
+                height: auto;
+                border-bottom: 2px solid aqua;
+            }
+        }
+
+        .outro-dire {
+            .direccion {
+                display: flex;
+                flex-direction: column;
+                text-align: start;
+                text-decoration: none;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1rem;
+
+                .balles,
+                .flori,
+                .mail {
+                    display: flex;
+                    align-items: center;
+
+                    .icono {
+                        height: 20px;
+                        margin: 10px;
+                    }
+
+                    p {
+                        margin-top: 15px;
+                    }
+                }
+            }
+            
+            .redes {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+
+                .ig, .fb, .wpp {
+                    width: 50px;
+                    margin: 5px;
+                    padding: 5px;
+                
+                }
+            }
+        }
+
+        .linksnav {
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                text-align: end;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    font-family: 'Bebas Neue', sans-serif;
+                    letter-spacing: 2px;
+
+                    &:hover {
+                        color: aqua;
+                    }
+                }
+            }
+        }
+    }
 }
