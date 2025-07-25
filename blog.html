@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="blog-bg">
 
     <!-- Navegador superior -->
     <header class="tipografia">
@@ -37,82 +37,203 @@
         </div>
     </main>
 
+    <section class="mis-categorias">
+        <h2>Categorias</h2>
+        <div class="fotos-categories">
+            <a href="#que-es" class="category">
+                <h3>Sabias que...</h3>
+                <img src="assets/img/categoria-1.png" alt="que-es..." class="blog-que-es">
+            </a>
+            <a href="#tips-de-entrenamiento" class="category">
+                <h3>Tips de Entrenamiento</h3>
+                <img src="assets/img/categoria-2.png" alt="tips" class="tips">
+            </a>
+        </div>
+    </section>
+    
     <section class="que-es" data-aos="fade-up">
         <div class="que-es-sub">
-            <h2 class="que-es-titulo1">¿Qué es...?</h1>
+            <h2 id="que-es" class="que-es-titulo1">Sabias que...</h1>
 
-            <!-- Section 1 -->
             <section class="container-que-es">
-                <!-- Michael Boyle -->
-                <div class="bordes-grises">
-                    <div>
-                        <img src="assets/img/michael boyle.jpg" alt="fotomb" class="michael-boyle-foto">
+
+                <!-- Contenido 1 -->
+                <div class="contenido-que-es">
+                    <!-- Michael Boyle -->
+                    <div class="bordes-grises">
+                        <div>
+                            <img src="assets/img/michael boyle.jpg" alt="fotomb" class="michael-boyle-foto">
+                        </div>
+                        <div class="texto-blog">
+                            <h2 class="et1">El equilibrio perfecto en el entrenamiento. - Michael Boyle</h2>
+                            <p class="p1">"El 80% de los ejercicios que se realizan en una sala de musculación serán iguales para todos."</p>
+                            <p class="p2">El 20% restante va dirigido a ejercicios que sean más especificos a movimientos y vectores de fuerza del deporte o de la vida cotidiana.</p>
+                        </div>
                     </div>
-                    <div class="texto-blog">
-                        <h2 class="et1">El equilibrio perfecto en el entrenamiento. - Michael Boyle</h2>
-                        <p class="p1">"El 80% de los ejercicios que se realizan en una sala de musculación serán iguales para todos."</p>
-                        <p class="p2">El 20% restante va dirigido a ejercicios que sean más especificos a movimientos y vectores de fuerza del deporte o de la vida cotidiana.</p>
+                    
+                    <!-- Polimetria -->
+                    <div class="bordes-grises">
+                        <div>
+                            <img src="assets/img/ejercicio polimetrico.jpg" alt="fotop" class="ejercicio-poli-foto">
+                        </div>
+                        <div class="texto-blog">
+                            <h2 class="et1">Polimetria: Potencia en movimiento. - Gilles Cometti</h2>
+                            <p class="p1">Forma de contraccion neuromuscular denominada ciclo de estiramiento-acortamiento. En un primer momento las inserciones del musculo que actura se alejan estirandose de manera concentrica. Para que este mecanismo tenga caracter polimetrico, el ciclo debe darse rapidamente.</p>
+                        </div>
+                    </div>
+
+                    <!-- Priming -->
+                    <div class="bordes-grises">
+                        <div>
+                            <img src="assets/img/priming.JPG" alt="priming" class="priming-foto">
+                        </div>
+                        <div class="texto-blog">
+                            <h2 class="et1">Priming: Prepara tu cuerpo para la competencia.</h4>
+                            <p class="p1">Entrenar el dia previo a la competencia puede mejorar el rendimiento. Este efecto se conoce como potenciacion post activacion (PAP): Tras un ejercicio de fuerza inicial, el sistema neuromuscular rinde mejor durante los siguientes 4 a 12 minutos.</p>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Polimetria -->
-                <div class="bordes-grises">
-                    <div>
-                        <img src="assets/img/ejercicio polimetrico.jpg" alt="fotop" class="ejercicio-poli-foto">
+                <!-- Contenido 2 -->
+                <div class="contenido-que-es">
+                    
+                    <!-- Posicion Thomas -->
+                    <div class="bordes-grises">
+                        <div>
+                            <img src="assets/img/posicion thomas.jpeg" alt="thomas" class="thomas-foto">
+                        </div>
+                        <div class="texto-blog">
+                            <h2 class="et1">Posición Thomas: Más que un estiramiento</h2>
+                            <p class="p1">La posición Thomas es una herramienta poderosa tanto para evaluar como para liberar tensión en el flexor de la cadera. Al enfocarnos en la postura correcta, trabajamos profundamente el psoas, un músculo clave para la estabilidad y movilidad de la zona lumbar.</p>
+                        </div>
                     </div>
-                    <div class="texto-blog">
-                        <h2 class="et1">Polimetria: Potencia en movimiento. - Gilles Cometti</h2>
-                        <p class="p1">Forma de contraccion neuromuscular denominada ciclo de estiramiento-acortamiento. En un primer momento las inserciones del musculo que actura se alejan estirandose de manera concentrica. Para que este mecanismo tenga caracter polimetrico, el ciclo debe darse rapidamente.</p>
+
+                    <!-- Tecnica -->
+                    <div class="bordes-grises">
+                        <div>
+                            <img src="assets/img/tecnica.jpeg" alt="tecnica" class="tecnica-foto">
+                        </div>
+                        <div class="texto-blog">
+                            <h2 class="et1">La Técnica Primero, Siempre.</h2>
+                            <p class="p1">En cada entrenamiento, la técnica es nuestra prioridad. No se trata solo de levantar mas peso o hacer mas repeticiones, sino de hacerlo bien.</p>
+                            <p class="p2">Si la técnica empieza a fallar, es momento de reducir peso, retrocedemos en la progresión o simplificamos el ejercicio.</p>
+                        </div>
+                    </div>
+
+                    <!-- Beneficios del cardio -->
+                    <div class="bordes-grises">
+                        <div>
+                            <img src="assets/img/cardio.jpg" alt="cardio" class="cardio-foto">
+                        </div>
+                        <div class="texto-blog">
+                            <h2 class="et1">¿Cuáles son los beneficios del cardio?</h2>
+                            <p class="p1">Incorporar el cardio:
+                                <li>Mejora la salud cardiovascular</li>
+                                <li>Fortalece los músculos</li>
+                                <li>Mejora la salud ósea</li>
+                                <li>Reduce el riesgo de lesiones</li>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </section>
+
+    <section class="tips-de-entrenamiento">
+        <div class="tips-sub">
+            <h2 id="tips-de-entrenamiento" class="tips-titulo">Tips de Entrenamiento</h2>
+            <section class="container-tips">
+
+                <!-- Contenido 1 -->
+                <div class="contenido-tips">
+                    <!-- Entrenamiento en casa 2 -->
+                    <div class="bordes-grises">
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <div class="texto-blog">
+                            <h2 class="et1">Escuchá a tu cuerpo</h2>
+                            <p class="p1">No todo esfuerzo es bueno.
+                                <li>Sentir desafio es normal.</li>
+                                <li>Dolor intenso o agudo no.</li>
+                                Respetá tus tiempos, progresá a tu ritmo y priorizá tu bienestar.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Entrenamiento en casa 1 -->
+                    <div class="bordes-grises">
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <div class="texto-blog">
+                            <h2 class="et1">La constancia es todo</h2>
+                            <p class="p1">No se trata de entrenar a fondo un solo dia, sino de construir el hábito. Mejor poco pero todos los dias, que mucho y abandonarlo. ¡Sumá movimiento a tu vida de forma constante!</p>
+                        </div>
+                    </div>
+
+                    <!-- importancia calentamiento -->
+                    <div class="bordes-grises">
+                        <div>
+                            <img src="assets/img/calentamiento.png" alt="calentamiento-xt" class="foto-tips">
+                        </div>
+                        <div class="texto-blog">
+                            <h2 class="et1">¿Por qué es importante calentar antes de entrenar?</h2>
+                            <p class="p1">Antes de levantar peso o hacer cardio intenso, tu cuerpo necesita preprararse. ¿Cómo hacerlo? Con 5-10 minutos de cardio suave (bici, caminata rapida), movilidad articular (hombros, cadera rodillas), series con poco peso del ejercicio que vas a trabajar.</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Priming -->
-                <div class="bordes-grises">
-                    <div>
-                        <img src="assets/img/priming.JPG" alt="priming" class="priming-foto">
+                <!-- Contenido 2 -->
+                <div class="contenido-tips">
+                    <div class="bordes-grises">
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <div class="texto-blog">
+                            <h2 class="et1">Calentá y estirá siempre</h2>
+                            <p class="p1">Antes de empezar: Calentá para activar músculos y articulaciones.</p>
+                            <p class="p1">Después de entrenar: Estirá para recuperarte y ganar flexibilidad.</p>
+                            <p class="p1">Prevenir lesiones también es parte del entrenamiento.</p>
+                        </div>
                     </div>
-                    <div class="texto-blog">
-                        <h2 class="et1">Priming: Prepara tu cuerpo para la competencia.</h4>
-                        <p class="p1">Entrenar el dia previo a la competencia puede mejorar el rendimiento. Este efecto se conoce como potenciacion post activacion (PAP): Tras un ejercicio de fuerza inicial, el sistema neuromuscular rinde mejor durante los siguientes 4 a 12 minutos.</p>
-                    </div>
-                </div>
 
-                <!-- Posicion Thomas -->
-                <div class="bordes-grises">
-                    <div>
-                        <img src="assets/img/posicion thomas.jpeg" alt="thomas" class="thomas-foto">
+                    <div class="bordes-grises">
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <div class="texto-blog">
+                            <h2 class="et1">Entrenamiento en casa para este frío #1:</h2>
+                            <p class="p1">Full Body Express (15 minutos)</p>
+                            <div class="lista-n1">
+                                <li>30" Sentadillas</li>
+                                <li>30" Flexiones (pueden ser apoyando las rodillas)</li>
+                                <li>30" Jumping Jacks</li>
+                                <li>30" Plancha</li>
+                                <li>30" Descansá</li>
+                                <li>Repetí 3 veces. ¡Listo!</li>
+                            </div>
+                        </div>
                     </div>
-                    <div class="texto-blog">
-                        <h2 class="et1">Posicion Thomas: Mas que un estiramiento</h2>
-                        <p class="p1">La posicion Thomas es una herramienta poderosa tanto para evaluar como para liberar tension en el flexor de la cadera. Al enfocarnos en la postura correcta, trabajamos profundamente el psoas, un musculo clave para la estabilidad y movilidad de la zona lumbar.</p>
-                    </div>
-                </div>
 
-                <!-- Tecnica -->
-                <div class="bordes-grises">
-                    <div>
-                        <img src="assets/img/tecnica.jpeg" alt="tecnica" class="tecnica-foto">
-                    </div>
-                    <div class="texto-blog">
-                        <h2 class="et1">La Tecnica Primero, Siempre.</h2>
-                        <p class="p1">En cada entrenamiento, la tecnica es nuestra prioridad. No se trata solo de levantar mas peso o hacer mas repeticiones, sino de hacerlo bien.</p>
-                        <p class="p2">Si la tecnica empieza a fallar, es momento de reducir peso, retrocedemos en la progresion o simplificamos el ejercicio.</p>
-                    </div>
-                </div>
-
-                <!-- Beneficios del cardio -->
-                <div class="bordes-grises">
-                    <div>
-                        <img src="assets/img/cardio.jpg" alt="cardio" class="cardio-foto">
-                    </div>
-                    <div class="texto-blog">
-                        <h2 class="et1">Cuales son los beneficios del cardio?</h2>
-                        <p class="p1">Incorporar el cardio:
-                            <li>Mejora la salud cardiovascular</li>
-                            <li>Fortalece los musculos</li>
-                            <li>Mejora la salud osea</li>
-                            <li>Reduce el riesgo de lesiones</li>
-                        </p>
+                    <div class="bordes-grises">
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <div class="texto-blog">
+                            <h2 class="et1">Entrenamiento en casa para este frío #2:</h2>
+                            <p class="p1">Fuerza sin pesas (20 minutos)</p>
+                            <div class="lista-n1">
+                                <li>15 Sentadillas lentas (bajando bien)</li>
+                                <li>12 Zancadas (por pierna)</li>
+                                <li>10 Flexiones clásicas o apoyando rodillas</li>
+                                <li>15 Puentes de glúteos (acostado, elevá cadera)</li>
+                                <li>20 Segundos plancha lateral (cada lado)</li>
+                                <li>Repetí 3 rondas con 1 minuto de descanso entre cada una.</li>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

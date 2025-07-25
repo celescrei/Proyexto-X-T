@@ -110,7 +110,7 @@ footer .outro .outro-dire .redes .ig, footer .outro .outro-dire .redes .fb, foot
 footer .outro .linksnav nav {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   text-align: end;
 }
 footer .outro .linksnav nav a {
@@ -140,7 +140,8 @@ body .container-fluid .background {
 }
 body .container-fluid .background img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body .container-fluid .bienvenida {
   color: black;
@@ -291,7 +292,8 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   background-color: white;
 }
 .sobrenosotros .nosotros {
-  text-decoration: underline #91ffff;
+  -webkit-text-decoration: underline #91ffff;
+          text-decoration: underline #91ffff;
   display: inline-block;
   max-height: 200px;
   transition: opacity 1s ease;
@@ -434,7 +436,8 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   width: 100%;
   height: 800px;
   display: block;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .carruselfl .carousel-item,
 .carruselvb .carousel-item {
@@ -553,11 +556,21 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   height: 350px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.blog-bg {
+  background-color: #060021;
+}
+
 .intro-blog {
   padding: 150px;
-  background-color: white;
   text-align: center;
   transition: opacity 2s ease;
+}
+.intro-blog .container-blog {
+  color: white;
 }
 .intro-blog .container-blog .blog-titulo {
   font-family: "Bebas Neue", sans-serif;
@@ -569,24 +582,42 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   font-size: 1.5rem;
 }
 
-.que-es {
-  background-color: white;
-}
-.que-es .que-es-sub {
+.mis-categorias {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  align-items: center;
-  margin: 0 auto;
-  padding: 0 20px;
-  max-width: 1200px;
 }
-.que-es .que-es-sub .que-es-titulo1 {
-  text-decoration: underline aqua;
+.mis-categorias h2 {
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  text-decoration: none;
+}
+.mis-categorias .fotos-categories {
+  display: flex;
+  margin: 20px auto;
+}
+.mis-categorias .fotos-categories .category h3 {
+  color: white;
+  position: relative;
+  top: 140px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+.mis-categorias .fotos-categories .category .blog-que-es,
+.mis-categorias .fotos-categories .category .tips {
+  width: 580px;
+}
+
+.tips-de-entrenamiento .tips-sub .tips-titulo, .que-es .que-es-sub .que-es-titulo1 {
   display: inline-block;
   padding: 15px 30px;
-  background-color: black;
+  background-color: #91ffff;
   background-size: 10px;
   border-radius: 40px;
-  color: white;
+  color: black;
   font-weight: bold;
   transition: opacity 1s ease;
   max-height: 200px;
@@ -594,26 +625,43 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   letter-spacing: 3px;
   font-size: 2rem;
 }
+
+.que-es {
+  margin-top: 80px;
+}
+.que-es .que-es-sub {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1200px;
+}
 .que-es .que-es-sub .container-que-es {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 80px;
   width: 100%;
   max-width: 1550px;
   margin: 40px auto;
 }
-.que-es .que-es-sub .container-que-es .bordes-grises {
+.que-es .que-es-sub .container-que-es .contenido-que-es {
   display: flex;
+  gap: 50px;
+}
+.que-es .que-es-sub .container-que-es .bordes-grises {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: left;
   border-radius: 20px;
-  border: 1px solid gray;
-  padding: 10px;
+  box-shadow: 5px 5px 20px rgb(0, 240, 255);
+  width: 500px;
 }
 .que-es .que-es-sub .container-que-es .bordes-grises .texto-blog {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  color: white;
 }
 .que-es .que-es-sub .container-que-es .michael-boyle-foto,
 .que-es .que-es-sub .container-que-es .ejercicio-poli-foto,
@@ -629,10 +677,64 @@ body .section-test .containers-testimonios .testimonio .estrellas {
 .que-es .que-es-sub .container-que-es .p2 {
   text-align: left;
   margin-bottom: 5px;
-  font-size: 20px;
+  font-size: 1.6rem;
 }
 .que-es .que-es-sub .container-que-es .p1,
 .que-es .que-es-sub .container-que-es .p2 {
+  font-size: 1rem;
+}
+
+.tips-de-entrenamiento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+.tips-de-entrenamiento .tips-sub {
+  max-width: 1200px;
+  text-align: center;
+}
+.tips-de-entrenamiento .tips-sub .container-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 100%;
+  max-width: 1550px;
+  margin: 40px auto;
+}
+.tips-de-entrenamiento .tips-sub .container-tips .contenido-tips {
+  display: flex;
+  gap: 50px;
+}
+.tips-de-entrenamiento .tips-sub .container-tips .bordes-grises {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgb(0, 240, 255);
+  width: 500px;
+}
+.tips-de-entrenamiento .tips-sub .container-tips .bordes-grises .foto-tips {
+  max-height: 150px;
+  max-width: 250px;
+  margin: 10px;
+}
+.tips-de-entrenamiento .tips-sub .container-tips .bordes-grises .texto-blog {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  color: white;
+}
+.tips-de-entrenamiento .tips-sub .container-tips .et1, .tips-de-entrenamiento .tips-sub .container-tips .p1,
+.tips-de-entrenamiento .tips-sub .container-tips .p2 {
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 1.6rem;
+}
+.tips-de-entrenamiento .tips-sub .container-tips .p1,
+.tips-de-entrenamiento .tips-sub .container-tips .p2 {
   font-size: 15px;
 }
 
@@ -650,7 +752,8 @@ body .section-test .containers-testimonios .testimonio .estrellas {
 .eventoprimavera .infoevento .tituloevento {
   grid-row: 2/3;
   grid-column: 12/19;
-  text-decoration: underline #91ffff;
+  -webkit-text-decoration: underline #91ffff;
+          text-decoration: underline #91ffff;
   display: inline-block;
   padding: 15px 30px;
   margin: 20px auto;
@@ -689,7 +792,8 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   transition: opacity 2s ease;
 }
 .eventoprimavera .infoevento .containerinfoevento .nombre {
-  text-decoration: underline #91ffff;
+  -webkit-text-decoration: underline #91ffff;
+          text-decoration: underline #91ffff;
   font-size: 2rem;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
@@ -707,7 +811,8 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   background-color: white;
 }
 .acordion .preguntas {
-  text-decoration: underline #91ffff;
+  -webkit-text-decoration: underline #91ffff;
+          text-decoration: underline #91ffff;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
 }
@@ -771,6 +876,10 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   gap: 10px;
   width: 500px;
   color: black;
+}
+.contacto .contenidocontact .containercontact .formulario input::-moz-placeholder, .contacto .contenidocontact .containercontact .formulario text-area::-moz-placeholder {
+  color: black;
+  opacity: 1;
 }
 .contacto .contenidocontact .containercontact .formulario input::placeholder,
 .contacto .contenidocontact .containercontact .formulario text-area::placeholder {
@@ -1378,6 +1487,4 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   .contacto .contenidocontact .formulario .form-floating6 textarea {
     height: 120px !important;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
