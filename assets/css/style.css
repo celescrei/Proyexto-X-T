@@ -29,14 +29,18 @@ body .tipografia .logo img {
   margin-left: 10px;
 }
 body .tipografia .abrir-menu {
-  display: none;
+  z-index: 60;
+  position: relative;
 }
-body .tipografia nav {
+body .tipografia .abrir-menu:hover {
+  color: aqua;
+}
+body .tipografia .menu-nav .nav-list {
   display: flex;
   gap: 15px;
   align-items: center;
 }
-body .tipografia nav .nav-link {
+body .tipografia .menu-nav .nav-list .nav-link {
   font-weight: 600;
   padding-right: 10px;
   font-family: "Bebas Neue", sans-serif;
@@ -45,7 +49,7 @@ body .tipografia nav .nav-link {
   text-decoration: none;
   font-size: 1.2rem;
 }
-body .tipografia nav .nav-link:hover {
+body .tipografia .menu-nav .nav-list .nav-link:hover {
   color: aqua;
 }
 
@@ -122,6 +126,22 @@ footer .outro .linksnav nav a {
 }
 footer .outro .linksnav nav a:hover {
   color: aqua;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 45;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.menu-overlay.mostrar-overlay {
+  opacity: 1;
+  visibility: visible;
 }
 
 body {
@@ -1160,30 +1180,45 @@ html {
     margin: 10px;
   }
   body header .abrir-menu {
-    display: block !important;
-    background: aqua;
-    font-size: 15px;
-    color: black;
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
     cursor: pointer;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 8px;
-    font-family: "Bebas Neue", sans-serif;
-    letter-spacing: 1px;
+    z-index: 60;
+    position: relative;
   }
-  body header nav {
-    display: none;
+  body header .menu-nav {
     flex-direction: column;
-    width: 100%;
+    align-items: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
     background-color: black;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 20px;
-    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 50;
   }
-  body header nav.mostrar-menu {
-    display: flex !important;
+  body header .menu-nav.mostrar-menu {
+    transform: translateX(0);
+  }
+  body header .menu-nav .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    align-items: flex-end;
+    margin-top: 60px;
+  }
+  body header .menu-nav .nav-list .nav-link {
+    font-size: 1.5rem;
+    transition: all 0.3s aease;
+  }
+  body header .menu-nav .nav-list .nav-link:hover {
+    color: #00c5e4;
+    transform: translateX(-10px);
   }
   .outro {
     grid-template-areas: "logo" "redes" "botones";
@@ -1221,6 +1256,21 @@ html {
     margin: 0 auto;
   }
 }
+.cerrar-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 60;
+}
+.cerrar-menu:hover {
+  color: #00c5e4;
+}
+
 @media (max-width: 724px) {
   body .container-fluid .bienvenida {
     text-align: center;

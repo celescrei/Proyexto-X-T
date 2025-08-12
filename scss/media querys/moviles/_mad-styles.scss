@@ -1,0 +1,15 @@
+.cerrar-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 60;
+
+    &:hover {
+        color: #00c5e4;
+    }
+}

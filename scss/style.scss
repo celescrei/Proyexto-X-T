@@ -1,5 +1,6 @@
 @use 'base/generales';
 @use 'base/footer';
+@use 'base/ad-style';
 
 @use 'pages/index/index';
 
@@ -26,6 +27,7 @@
 
 
 @use 'media querys/moviles/mgral';
+@use 'media querys/moviles/mad-styles';
 @use 'media querys/moviles/mindex';
 @use 'media querys/moviles/mnosotros';
 @use 'media querys/moviles/mservicios';

@@ -34,12 +34,14 @@
         <a href="index.html" class="logo">
             <img src="assets/img/logo-blango-ok.png" alt="Logo Xplora-t" class="logo">
         </a>
-        <button type="button" class="abrir-menu">Abrir</button>
-        <nav>
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="blog.html" class="nav-link">Blog</a>
-            <a href="eventoprimavera.html" class="nav-link">Eventos</a>
-            <a href="contacto.html" class="nav-link">Contacto</a>
+        <button type="button" class="abrir-menu">☰</button>
+        <nav class="menu-nav">
+            <div class="nav-list">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="eventoprimavera.html" class="nav-link">Eventos</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </div>
         </nav>
     </header>
 
@@ -356,17 +358,9 @@
         </div>
     </footer>
     
+    
     <!-- Script de menu -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuBtn = document.querySelector(".abrir-menu");
-            const nav = document.querySelector("nav");
-        
-            menuBtn.addEventListener("click", function () {
-                nav.classList.toggle("mostrar-menu");
-            });
-        });
-    </script>
+    <script src="assets/js/menu.js" defer></script>
 
     <!-- Scripts de transiciones fadeInUp-->
     

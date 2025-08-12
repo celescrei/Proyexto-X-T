@@ -31,25 +31,33 @@ body {
         }
 
         .abrir-menu {
-            display: none;
+            
+            z-index: 60;
+            position: relative;
+
+            &:hover {
+                color: aqua;
+            }
         }
 
-        nav {
-            display: flex;
-            gap: 15px;
-            align-items: center;
+        .menu-nav {
+            .nav-list {
+                display: flex;
+                gap: 15px;
+                align-items: center;
 
-            .nav-link {
-                font-weight: 600;
-                padding-right: 10px;
-                font-family: 'Bebas Neue', sans-serif;
-                letter-spacing: 3px;
-                color: white;
-                text-decoration: none;
-                font-size: 1.2rem;
+                .nav-link {
+                    font-weight: 600;
+                    padding-right: 10px;
+                    font-family: 'Bebas Neue', sans-serif;
+                    letter-spacing: 3px;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.2rem;
 
-                &:hover {
-                    color: aqua;
+                    &:hover {
+                        color: aqua;
+                    }
                 }
             }
         }
