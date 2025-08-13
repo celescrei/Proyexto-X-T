@@ -18,12 +18,14 @@
         <a href="index.html" class="logo">
             <img src="assets/img/logo-blango-ok.png" alt="Logo Xplora-t" class="logo">
         </a>
-        <button type="button" class="abrir-menu">Abrir</button>
-        <nav>
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="blog.html" class="nav-link">Blog</a>
-            <a href="eventoprimavera.html" class="nav-link">Eventos</a>
-            <a href="contacto.html" class="nav-link">Contacto</a>
+        <button type="button" class="abrir-menu">☰</button>
+        <nav class="menu-nav">
+            <div class="nav-list">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="eventoprimavera.html" class="nav-link">Eventos</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </div>
         </nav>
     </header>
 
@@ -36,26 +38,31 @@
         <!-- Informacion del evento -->
         <div class="infoevento" data-aos="fade-up">
             <h1 class="tituloevento">Evento de Primavera</h1>
-            <h2>¡Sumate a nuestras actividades en el río!</h2>
-            <p>¡Empezá la primavera de la mejor forma posible! Te invitamos al río para una mañana de fitness abierta y gratuita. ¡Es el momento perfecto para moverte y disfrutar!</p>
+            <h2 class="subtitulo">¡Sumate a nuestras actividades en el río!</h2>
+            <p class="texto-info">¡Empezá la primavera de la mejor forma posible! Te invitamos al río para una mañana de fitness abierta y gratuita. ¡Es el momento perfecto para moverte y disfrutar!</p>
             
             <!-- Info contenido del evento -->
             <div class="containerinfoevento" data-aos="fade-up">
                 <div class="quehacer">
                     <h3 class="nombre">¿Qué vas a hacer?</h3>
-                    <ul>
-                        <p>Funcional: Ejercicios para fortalecer y tonificar tu cuerpo.</p>
-                        <p>Postural: Técnicas para mejorar tu postura y flexibilidad.</p>
-                        <p>Aeróbica: Ritmo y energía para levantar el ánimo y ponerte en forma.</p>
-                    </ul>
                 </div>
-                <div class="extra">
-                    <h3 class="nombre">Para más información:</h3>
-                    <ul>
-                        <p>Bernardo de Irigoyen 1540, Florida</p>
-                        <p>Boulevard Ballester 5555, Villa Ballester</p>
-                        <p>Celular: 1124535832</p>
-                    </ul>
+
+                <div class="fotos-evento">
+                    <div class="evento-foto1">
+                        <img src="assets/img/funcional-evento.jpg" alt="funcional evento" class="evento-fun">
+                        <h4 class="fun-titulo">Funcional</h4>
+                        <p class="fun-texto">Ejercicios para fortalecer y tonificar tu cuerpo.</p>
+                    </div>
+                    <div class="evento-foto2">
+                        <img src="assets/img/postural-evento.jpg" alt="postural evento" class="evento-post">
+                        <h4 class="post-titulo">Postural</h4>
+                        <p class="post-texto">Técnicas para mejorar tu postura y flexibilidad.</p>
+                    </div>
+                    <div class="evento-foto3">
+                        <img src="assets/img/aerobico-evento.jpg" alt="aerobico evento" class="evento-aero">
+                        <h4 class="aero-titulo">Aeróbico</h4>
+                        <p class="aero-texto">Ritmo y energía para levantar el ánimo y ponerte en forma.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,21 +126,12 @@
         </div>
     </footer>
 
+
     <!-- Script de menu -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuBtn = document.querySelector(".abrir-menu");
-            const nav = document.querySelector("nav");
-        
-            menuBtn.addEventListener("click", function () {
-                nav.classList.toggle("mostrar-menu");
-            });
-        });
-    </script>
+    <script src="assets/js/menu.js" defer></script>
 
     <!-- Scripts de transiciones fadeInUp-->
     <section>
-
         <!-- Script de .infoevento h1 -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {

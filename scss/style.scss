@@ -3,6 +3,7 @@
 @use 'base/ad-style';
 
 @use 'pages/index/index';
+@use 'pages/index/acordion';
 
 @use 'pages/index/nosotros/nosotros' ;
 @use 'pages/index/nosotros/app';
@@ -14,7 +15,6 @@
 
 @use 'pages/eventos/eventos';
 
-@use 'pages/contacto/acordion';
 @use 'pages/contacto/contacto';
 
 
