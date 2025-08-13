@@ -64,7 +64,8 @@
             .fotos-evento {
                 display: flex;
                 gap: 50px;
-
+                justify-content: center;
+                align-items: flex-start;
                 .evento-foto1,
                 .evento-foto2,
                 .evento-foto3 {
@@ -72,9 +73,10 @@
                     .evento-fun,
                     .evento-post,
                     .evento-aero {
-                        height: 655px;
-                        width: 450px;
+                        height: 555px;
+                        width: 350px;
                         margin-bottom: 20px;
+                        display: block;
                     }
 
                     .fun-titulo,
@@ -90,8 +92,9 @@
                     .post-texto,
                     .aero-texto {
                         font-size: 1rem;
-                        text-align: left;
+                        text-align: start;
                         font-family: 'Montserrat', sans-serif;
+                        max-width: 350px;
                     }
                 }
             }

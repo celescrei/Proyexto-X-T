@@ -38,6 +38,7 @@ footer {
                 .mail {
                     display: flex;
                     align-items: center;
+                    gap: 10px;
 
                     .icono {
                         height: 20px;
@@ -45,7 +46,8 @@ footer {
                     }
 
                     p {
-                        margin-top: 15px;
+                        margin: 0;
+                        line-height: 1;
                     }
                 }
             }

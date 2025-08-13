@@ -14,7 +14,7 @@ html{
 }
 
 .blog-bg {
-    background-color: #040016;
+    background-color: white;
 }
 
 .intro-blog {
@@ -23,7 +23,7 @@ html{
     transition: opacity 2s ease;
 
     .container-blog {
-        color: white;
+        color: black;
 
         .blog-titulo {
             font-family: 'Bebas Neue', sans-serif;
@@ -47,7 +47,7 @@ html{
     text-align: center;
 
     h2 {
-        color: white;
+        color: black;
         font-family: 'Bebas Neue', sans-serif;
         letter-spacing: 2px;
         font-size: 3rem;
@@ -128,7 +128,7 @@ html{
                     display: flex;
                     flex-direction: column;
                     margin: 10px;
-                    color: white;
+                    color: black;
                 }
             }
             
@@ -192,7 +192,7 @@ html{
                     display: flex;
                     flex-direction: column;
                     margin: 10px;
-                    color: white;
+                    color: black;
                 }
             }
 

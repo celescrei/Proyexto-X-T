@@ -90,6 +90,7 @@ footer .outro .outro-dire .direccion .flori,
 footer .outro .outro-dire .direccion .mail {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 footer .outro .outro-dire .direccion .balles .icono,
 footer .outro .outro-dire .direccion .flori .icono,
@@ -100,7 +101,8 @@ footer .outro .outro-dire .direccion .mail .icono {
 footer .outro .outro-dire .direccion .balles p,
 footer .outro .outro-dire .direccion .flori p,
 footer .outro .outro-dire .direccion .mail p {
-  margin-top: 15px;
+  margin: 0;
+  line-height: 1;
 }
 footer .outro .outro-dire .redes {
   display: flex;
@@ -145,8 +147,37 @@ footer .outro .linksnav nav a:hover {
   visibility: visible;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
+}
+body .links-inter {
+  padding: 10px;
+  position: sticky;
+  z-index: 999;
+  top: 120px;
+  background-color: #91ffff;
+}
+body .links-inter .list-inter {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 80px;
+  height: 25px;
+}
+body .links-inter .list-inter .sub-links {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+body .links-inter .list-inter .separacion {
+  font-size: 1.2rem;
+  margin-top: 8px;
 }
 body .container-fluid {
   padding: 0;
@@ -617,7 +648,7 @@ html {
 }
 
 .blog-bg {
-  background-color: #040016;
+  background-color: white;
 }
 
 .intro-blog {
@@ -626,7 +657,7 @@ html {
   transition: opacity 2s ease;
 }
 .intro-blog .container-blog {
-  color: white;
+  color: black;
 }
 .intro-blog .container-blog .blog-titulo {
   font-family: "Bebas Neue", sans-serif;
@@ -644,7 +675,7 @@ html {
   text-align: center;
 }
 .mis-categorias h2 {
-  color: white;
+  color: black;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
   font-size: 3rem;
@@ -721,7 +752,7 @@ html {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  color: white;
+  color: black;
 }
 .que-es .que-es-sub .container-que-es .foto-sub-tips {
   max-height: 150px;
@@ -780,7 +811,7 @@ html {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  color: white;
+  color: black;
 }
 .tips-de-entrenamiento .tips-sub .container-tips .et1, .tips-de-entrenamiento .tips-sub .container-tips .p1,
 .tips-de-entrenamiento .tips-sub .container-tips .p2 {
@@ -853,6 +884,8 @@ html {
 .eventoprimavera .infoevento .containerinfoevento .fotos-evento {
   display: flex;
   gap: 50px;
+  justify-content: center;
+  align-items: flex-start;
 }
 .eventoprimavera .infoevento .containerinfoevento .fotos-evento .evento-foto1 .evento-fun,
 .eventoprimavera .infoevento .containerinfoevento .fotos-evento .evento-foto1 .evento-post,
@@ -863,9 +896,10 @@ html {
 .eventoprimavera .infoevento .containerinfoevento .fotos-evento .evento-foto3 .evento-fun,
 .eventoprimavera .infoevento .containerinfoevento .fotos-evento .evento-foto3 .evento-post,
 .eventoprimavera .infoevento .containerinfoevento .fotos-evento .evento-foto3 .evento-aero {
-  height: 655px;
-  width: 450px;
+  height: 555px;
+  width: 350px;
   margin-bottom: 20px;
+  display: block;
 }
 .eventoprimavera .infoevento .containerinfoevento .fotos-evento .evento-foto1 .fun-titulo,
 .eventoprimavera .infoevento .containerinfoevento .fotos-evento .evento-foto1 .post-titulo,
@@ -891,8 +925,9 @@ html {
 .eventoprimavera .infoevento .containerinfoevento .fotos-evento .evento-foto3 .post-texto,
 .eventoprimavera .infoevento .containerinfoevento .fotos-evento .evento-foto3 .aero-texto {
   font-size: 1rem;
-  text-align: left;
+  text-align: start;
   font-family: "Montserrat", sans-serif;
+  max-width: 350px;
 }
 
 .contacto {
@@ -949,8 +984,7 @@ html {
   font-size: 1rem;
   background-color: #91ffff;
   border-radius: 10px;
-  border-width: 1px;
-  border-color: black;
+  border-color: #00c5e4;
   gap: 10px;
   width: 500px;
   color: black;
@@ -968,11 +1002,12 @@ html {
   margin: 10px 0;
 }
 .contacto .contenidocontact .containercontact .formulario .btn-enviar {
-  background-color: black;
+  background-color: #00c5e4;
   color: white;
   max-width: 90px;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
+  border: none;
 }
 .contacto .contenidocontact .containercontact .formulario .btn-enviar:hover {
   background-color: aqua;

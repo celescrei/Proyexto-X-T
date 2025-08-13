@@ -10,9 +10,42 @@
     color: $color;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: black;
+
+    // links internos //
+    .links-inter {
+        padding: 10px;
+        position: sticky;
+        z-index: 999;
+        top: 120px;
+        background-color: #91ffff;
+
+        .list-inter {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            gap: 80px;
+            height: 25px;
+
+            .sub-links {
+                text-decoration: none;
+                color: black;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+            }
+
+            .separacion {
+                font-size: 1.2rem;
+                margin-top: 8px;
+            }
+        }
+    }
 
     // BIENVENIDA //
     .container-fluid {    

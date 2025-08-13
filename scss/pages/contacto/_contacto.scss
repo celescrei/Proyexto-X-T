@@ -62,8 +62,7 @@
                     font-size: 1rem;
                     background-color: #91ffff;
                     border-radius: 10px;
-                    border-width: 1px;
-                    border-color: black;
+                    border-color: #00c5e4;
                     gap: 10px;
                     width: 500px;
                     color: black;
@@ -80,11 +79,12 @@
                 }
 
                 .btn-enviar {
-                    background-color: black;
+                    background-color: #00c5e4;
                     color: white;
                     max-width: 90px;
                     font-family: 'Bebas Neue', sans-serif;
                     letter-spacing: 2px;
+                    border: none;
 
                     &:hover {
                         background-color: aqua;
