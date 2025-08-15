@@ -26,10 +26,19 @@
 @use 'media querys/tablets/tcontacto';
 
 
-@use 'media querys/moviles/mgral';
-@use 'media querys/moviles/mad-styles';
-@use 'media querys/moviles/mindex';
-@use 'media querys/moviles/mnosotros';
-@use 'media querys/moviles/mservicios';
-@use 'media querys/moviles/meventos';
-@use 'media querys/moviles/mcontacto';
+@use 'media querys/moviles/max-764px/index-724px/mgral';
+@use 'media querys/moviles/max-764px/index-724px/mad-styles';
+@use 'media querys/moviles/max-764px/index-724px/mindex';
+@use 'media querys/moviles/max-764px/index-724px/mnosotros';
+@use 'media querys/moviles/max-764px/index-724px/mservicios';
+@use 'media querys/moviles/max-764px/mblog';
+@use 'media querys/moviles/max-764px/meventos';
+@use 'media querys/moviles/max-764px/mcontacto';
+
+@use 'media querys/moviles/max-400px/gral400';
+@use 'media querys/moviles/max-400px/index400';
+@use 'media querys/moviles/max-400px/blog400';
+@use 'media querys/moviles/max-400px/evento400';
+@use 'media querys/moviles/max-400px/contacto400';
+
+@use 'pages/contacto/overrides';

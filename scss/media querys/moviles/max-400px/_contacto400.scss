@@ -1,0 +1,21 @@
+@media (max-width: 400px) {
+    .contacto {
+        align-items: center;
+        padding: 0;
+        .contenidocontact {
+            margin: 20px;
+            padding: 20px;
+        
+            h1 {
+                font-size: 1.5rem;
+            }
+            .containercontact {
+                margin-bottom: 20px;
+                .infocontacto {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

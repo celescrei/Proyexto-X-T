@@ -1,19 +1,39 @@
 @media (max-width: 724px) {
     body {
+        .links-inter {
+            position: sticky;
+            top: 100px;
+            .list-inter {
+                .sub-links {
+                    font-size: 0.7rem;
+                }
+                .separacion {
+                    padding: 5px;
+                }
+            }
+        }
+
         .container-fluid {
+            .background {
+                .presentacion {
+                    max-width: 605px;
+                }
+            }
             .bienvenida {
                 text-align: center;
-                padding: 20px;
+                padding: 60px 20px;
+                h1 {
+                    font-size: 1.5rem;
+                }
                 p {
                     line-height: 1.6;
-                    font-size: 1.2rem;
+                    font-size: 0.8rem;
                 }
             }
         }
 
         .section-test {
             .titulo {
-                padding: 40px;
                 text-align: center;
                 display: flex;
             }

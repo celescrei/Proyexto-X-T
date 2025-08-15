@@ -1,0 +1,70 @@
+@media (max-width: 724px) {
+    .intro-blog {
+        padding: 80px;
+        .container-blog {
+            .texto-intro {
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .mis-categorias {
+        h2 {
+            font-size: 2rem;
+        }
+        .fotos-categories {
+            .category {
+                h3 {
+                    top: 90px;
+                    font-size: 1.5rem;
+                }
+                .blog-que-es,
+                .tips {
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+    .que-es {
+        .que-es-sub {
+            .que-es-titulo1 {
+                font-size: 1.5rem;
+            }
+            .container-que-es {
+                max-width: 500px;
+                gap: 20px;
+
+                .contenido-que-es {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .bordes-grises {
+                        width: 400px;
+                    }
+                }
+            }
+        }
+    }
+    .tips-de-entrenamiento {
+        .tips-sub {
+            .tips-titulo {
+                font-size: 1.5rem;
+            }
+
+            .container-tips {
+                .contenido-tips {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .bordes-grises {
+                        width: 400px;
+                    }
+                }
+            }
+        }
+    }
+}

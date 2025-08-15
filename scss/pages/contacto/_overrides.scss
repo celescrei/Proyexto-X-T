@@ -1,0 +1,91 @@
+// EVENTO //
+
+.eventoprimavera {
+  display: block !important;
+}
+.eventoprimavera .infoevento {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+
+
+// CONTACTO //
+
+.formulario textarea::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+/* --- Overrides para Bootstrap .form-floating --- */
+/* Tamaño base más chico (por si también lo querés en desktop) */
+.contacto .formulario .form-floating > .form-control {
+  height: 40px !important;
+  min-height: 36px !important;
+  padding: 4px 8px !important;
+  box-sizing: border-box;
+}
+
+/* El label flotante debe acompañar el nuevo alto/padding */
+.contacto .formulario .form-floating > label {
+  height: 40px !important;
+  padding: 4px 8px !important;
+}
+
+/* Textarea: mantiene un alto mayor (podés ajustar) */
+.contacto .formulario .form-floating > textarea.form-control {
+  height: 80px !important; /* o el valor que prefieras */
+  min-height: 80px !important;
+}
+
+/* --- Versión tablet (<1100px) --- */
+@media (max-width: 1100px) {
+  .contacto .formulario .form-floating > .form-control {
+    height: 35px !important;
+    min-height: 30px !important;
+    padding: 4px 8px !important;
+  }
+
+  .contacto .formulario .form-control {
+    width: 300px !important; /* asegura ancho en móvil */
+  }
+
+  .contacto .formulario .form-floating > textarea.form-control {
+    height: 80px !important; /* textarea separado del input */
+  }
+}
+
+// view para movil 700px //
+@media (max-width: 724px) {
+  .contacto .formulario .form-floating > .form-control {
+    height: 40px !important;
+    min-height: 30px !important;
+    padding: 4px 8px !important;
+  }
+
+  .contacto .formulario .form-control {
+    width: 380px !important; /* asegura ancho en móvil */
+  }
+
+  .contacto .formulario .form-floating > textarea.form-control {
+    height: 80px !important; /* textarea separado del input */
+  }
+}
+
+// view para movil 400px //
+@media (max-width: 400px) {
+  .contacto .formulario .form-floating > .form-control {
+    height: 30px !important;
+    min-height: 30px !important;
+    padding: 4px 8px !important;
+  }
+
+  .contacto .formulario .form-control {
+    width: 270px !important; /* asegura ancho en móvil */
+  }
+
+  .contacto .formulario .form-floating > textarea.form-control {
+    height: 80px !important; /* textarea separado del input */
+  }
+}

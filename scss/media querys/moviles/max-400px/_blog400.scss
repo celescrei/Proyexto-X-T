@@ -1,0 +1,92 @@
+@media (max-width: 400px) {
+    .intro-blog {
+        padding: 80px 40px;
+        .container-blog {
+            .blog-titulo {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .mis-categorias {
+        h2 {
+            font-size: 1.5rem;
+        }
+        .fotos-categories {
+            align-items: center;
+            margin: 0;
+            .category {
+                align-items: center;
+                h3 {
+                    top: 52px;
+                    font-size: 0.8rem;
+                }
+                .blog-que-es,
+                .tips {
+                    width: 195px;
+                }
+            }
+        }
+    }
+
+    .que-es {
+        .que-es-sub {
+            .que-es-titulo1 {
+                font-size: 1.2rem;
+            }
+            .container-que-es {
+                gap: 50px;
+                .contenido-que-es {
+                    .bordes-grises {
+                        width: 250px;
+                        div {
+                            .foto-sub-tips {
+                                max-width: 190px;
+                            }
+                        }
+                        .texto-blog {
+                            .et1 {
+                                font-size: 1rem;
+                            }
+                            .p1,
+                            .p2 {
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .tips-de-entrenamiento {
+        margin-top: 100px;
+        .tips-sub {
+            .tips-titulo {
+                font-size: 1.2rem;
+            }
+            .container-tips {
+                gap: 50px;
+                .contenido-tips {
+                    .bordes-grises {
+                        width: 250px;
+                        div {
+                            .foto-sub-tips {
+                                max-width: 190px;
+                            }
+                        }
+                        .texto-blog {
+                            .et1 {
+                                font-size: 1rem;
+                            }
+                            .p1,
+                            .p2 {
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

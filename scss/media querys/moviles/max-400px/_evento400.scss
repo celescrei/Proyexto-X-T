@@ -1,0 +1,55 @@
+@media (max-width: 400px) {
+    .eventoprimavera {
+        .infoevento {
+            .tituloevento {
+                font-size: 1.2rem;
+                width: 90%;
+                max-width: 280px;
+            }
+            .subtitulo {
+                font-size: 0.9rem;
+            }
+            .texto-info {
+                font-size: 0.7rem;
+                width: 90%;
+                max-width: 300px;
+            }
+
+            .containerinfoevento {
+                gap: 20px;
+                .quehacer {
+                    .nombre {
+                        font-size: 1.5rem;
+                    }
+                }
+                .fotos-evento {
+                    .evento-foto1,
+                    .evento-foto2,
+                    .evento-foto3 {
+                        align-items: center;
+
+                        .evento-fun,
+                        .evento-post,
+                        .evento-aero {
+                            height: 300px;
+                            width: 200px;
+                            margin-bottom: 10px;
+                        }
+                        .fun-titulo,
+                        .post-titulo,
+                        .aero-titulo {
+                            margin: 10px;
+                        }
+                        .fun-texto,
+                        .post-texto,
+                        .aero-texto {
+                            width: 90%;
+                            max-width: 208px;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

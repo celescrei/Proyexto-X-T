@@ -9,7 +9,7 @@
         }
 
         p {
-            font-size: 1rem;
+            font-size: 0.8rem;
             padding: 8px 10px;
             line-height: 1.6;
         }
@@ -24,34 +24,31 @@
             width: 100%;
             margin: 20px 0;
             padding: 10px;
-            max-height: 600px;
+            max-height: 400px;
 
             .celular {
-                max-width: 80%;
+                max-width: 60%;
             }
         }
 
         .info1,
         .info2 {
             max-height: 400px;
+            justify-content: center;
+            .encabezado1, .encabezado2, .x, .y {
+                margin-top: 20px !important;
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+                line-height: 1.6;
+                padding: 0 10px;
+            }
         }
 
-        .encabezado1, .encabezado2, .x, .y {
-            margin-top: 20px !important;
-            font-size: 1.2rem;
-        }
-
-        .x, .y {
-            margin-top: 60px;
-        }
-
-        p {
-            font-size: 1rem;
-            line-height: 1.6;
-            padding: 0 10px;
-        }
         .info2 {
-            padding-top: 180px;
+            padding-top: 20px;
         }
     }
 }

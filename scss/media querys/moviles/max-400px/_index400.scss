@@ -1,0 +1,86 @@
+@media (max-width: 400px) {
+    body .tipografia {
+        .menu-nav {
+            width: 180px;
+            .nav-list {
+                .nav-link {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .app {
+        .celular-container {
+            max-height: 300px;
+        }
+        .info1,
+        .info2 {
+            padding: 20px;
+        }
+    }
+
+    .carruselfl,
+    .carruselvb {
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    height: 200px;
+                }
+            }
+            .carousel-caption {
+                .nombre {
+                    font-size: 1rem;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    .virtual {
+        .info-encasa {
+            width: 250px;
+        }
+    }
+
+    body .section-test {
+        .titulo {
+            height: 60px;
+        }
+    }
+
+    .acordion {
+        padding: 40px;
+        .accordion {
+            .accordion-item {
+                .accordion-header {
+                    .accordion-button {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .outro {
+            padding: 30px;
+            .outro-dire {
+                .direccion {
+                    font-size: 0.6rem;
+                }
+            }
+            .linksnav {
+                .nav-inferior {
+                    .nav-link {
+                        font-size: 1rem;
+                    }
+                }
+
+                &::before {
+                    width: 350px;
+                }
+            }
+        }
+    }
+}

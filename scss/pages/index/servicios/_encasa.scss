@@ -1,35 +1,28 @@
 /* en casa */
 .virtual {
-    margin: 0 auto;
+    padding: 50px 200px;
     background-color: #67ffff;
-    display: grid;
-    grid-template-columns: repeat(33, 50px);
-    grid-template-rows: repeat(9, 50px);
     max-width: 100%;
     transition: opacity 1.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    .titulovirtual {
-        font-family: 'Bebas Neue', sans-serif;
-
-        grid-row: 3/4;
-        grid-column: 7/15;
+    .info-encasa {
+        width: 400px;
+        align-items: center;
+        .titulovirtual {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+        .p1,
+        .p2 {
+            font-family: 'Montserrat', sans-serif;
+        }
     }
-
-    .p1 {
-        grid-row: 5/7;
-        grid-column: 8/15;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .p2 {
-        grid-row: 7/9;
-        grid-column: 8/15;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .encasa  {
-        grid-row: 2/8;
-        grid-column: 23/28;
-        height: 350px;
+    
+    .img-encasa {
+        .encasa  {
+            height: 350px;
+        }
     }
 }
