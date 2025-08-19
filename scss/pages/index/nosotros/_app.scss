@@ -10,27 +10,25 @@
         align-items: center;
         min-height: 600px;
         gap: 30px;
-        padding: 60px 20px;
+        padding: 80px;
         
         div {
             width: 100%;
             min-height: 300px;
             text-align: center;
-            padding: 50px;
+            padding: 25px;
 
             .celular {
                 margin: 10px;
                 max-width: 450px;
-                height: auto;
+                height: 400px;
                 opacity: 0;
                 transition: opacity 2s ease;
             }
-
             .animate__fadeInUp {
                 opacity: 1 !important;
             }
         }
-
         .info1,
         .info2 {
             transition: opacity 1.2s ease;
@@ -42,11 +40,11 @@
                 letter-spacing: 2px;
                 font-size: 2rem;
             }
-
             p {
                 @include p(1.2rem);
                 line-height: 1.2; 
-                font-family: 'Montserrat', sans-serif;   
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1rem;
             }
         }
     }

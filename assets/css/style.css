@@ -414,18 +414,18 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   align-items: center;
   min-height: 600px;
   gap: 30px;
-  padding: 60px 20px;
+  padding: 80px;
 }
 .app div {
   width: 100%;
   min-height: 300px;
   text-align: center;
-  padding: 50px;
+  padding: 25px;
 }
 .app div .celular {
   margin: 10px;
   max-width: 450px;
-  height: auto;
+  height: 400px;
   opacity: 0;
   transition: opacity 2s ease;
 }
@@ -449,6 +449,7 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   font-size: 1.2rem;
   line-height: 1.2;
   font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
 }
 
 .sedes .containerservice {
@@ -457,7 +458,7 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   justify-content: center;
   gap: 20px;
   background-color: black;
-  padding: 160px 0;
+  padding: 100px 0;
 }
 .sedes .containerservice .card {
   margin: 30px;
@@ -476,7 +477,7 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   margin: 20px;
 }
 .sedes .containerservice .card figure img {
-  height: 400px;
+  height: 300px;
 }
 .sedes .containerservice .card .contenido {
   padding-bottom: 15px;
@@ -516,13 +517,14 @@ body .section-test .containers-testimonios .testimonio .estrellas {
   max-width: 100%;
   margin: auto;
   transition: opacity 1.2s ease;
+  padding: 50px 100px;
 }
 .carruselfl .carousel-inner img,
 .carruselfl .carousel-item img,
 .carruselvb .carousel-inner img,
 .carruselvb .carousel-item img {
   width: 100%;
-  height: 800px;
+  height: 550px;
   display: block;
   -o-object-fit: fill;
      object-fit: fill;
@@ -854,6 +856,7 @@ html {
   font-size: 1.5rem;
   transition: opacity 3s ease;
   font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
 }
 .eventoprimavera .infoevento .texto-info {
   text-align: center;

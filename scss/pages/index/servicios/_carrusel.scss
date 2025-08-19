@@ -7,18 +7,17 @@
     max-width: 100%;
     margin: auto;
     transition: opacity 1.2s ease;
+    padding: 50px 100px;
 
     .carousel-inner,
     .carousel-item {
         img {
             width: 100%;
-            height: 800px;
+            height: 550px;
             display: block;
             object-fit: fill;
         }
     }
-
-    
 
     .carousel-item {
         position: relative;
